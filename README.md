@@ -2,11 +2,24 @@
   Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks
 </h1>
 
-<div align="center">
   [![DOI](https://img.shields.io/badge/DOI-TechRxiv-1f77b4?style=for-the-badge&logo=ieee&logoColor=white)](https://doi.org/10.36227/techrxiv.176945748.88280394/v1)
   [![Paper](https://img.shields.io/badge/Paper-TechRxiv-ff7f0e?style=for-the-badge&logo=arxiv&logoColor=white)](https://www.techrxiv.org/)
   [![Awesome-Multimodal-Unlearning](https://img.shields.io/badge/Awesome--Multimodal--Unlearning-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
   [![PRs](https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls)
+
+<div align="center">
+  <a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1">
+    <img src="https://img.shields.io/badge/DOI-TechRxiv-1f77b4?style=for-the-badge&logo=ieee&logoColor=white">
+  </a>
+  <a href="https://www.techrxiv.org/">
+    <img src="https://img.shields.io/badge/Paper-TechRxiv-ff7f0e?style=for-the-badge&logo=arxiv&logoColor=white">
+  </a>
+  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning">
+    <img src="https://img.shields.io/badge/Awesome--Multimodal--Unlearning-000000?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white">
+  </a>
 </div>
 
 > **Authors**: Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
