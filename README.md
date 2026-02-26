@@ -20,6 +20,6 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 
 ## ✉️ Contact
 
-For questions, suggestions, or to include your work, please open an issue or reach out directly.
+This repository is actively maintained and continuously updated 🚀. If you notice any issues or would like your work on Multimodal Unlearning included, please open an issue or contact us via email.
 
 **Corresponding author:** Nobin Sarwar (smsarwar96@gmail.com)
