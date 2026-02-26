@@ -1,28 +1,14 @@
 <h1 align="center">Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks</h1>
 
 <div align="center">
-  <a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1">
-    <img src="https://img.shields.io/badge/DOI-TechRxiv-blue.svg" alt="DOI">
-  </a>
-  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
-  </a>
-  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning">
-    <img src="https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning.svg?style=social&label=Star" alt="GitHub Stars">
-  </a>
+  <a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1"><img src="https://img.shields.io/badge/DOI-TechRxiv-blue.svg" alt="DOI"></a>&nbsp;
+  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>&nbsp;
+  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning"><img src="https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning.svg?style=social&label=Star" alt="GitHub Stars"></a>
 </div>
 
-<div align="center">
-<a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1"><img src="https://img.shields.io/badge/DOI-TechRxiv-blue.svg" alt="DOI"></a><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning"><img src="https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning.svg?style=social&label=Star" alt="GitHub Stars"></a>
-</div>
-
-> **Authors**:  
-> Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
+> **Authors**: Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
 >
-> **Affiliations**:  
-> <sup>🏫</sup> University of Maryland, Baltimore County &nbsp;·&nbsp;  
-> <sup>🎓</sup> University of Notre Dame &nbsp;·&nbsp;  
-> <sup>🏛️</sup> UNC Chapel Hill
+> **Affiliations**: <sup>🏫</sup> University of Maryland, Baltimore County &nbsp;·&nbsp; <sup>🎓</sup> University of Notre Dame &nbsp;·&nbsp; <sup>🏛️</sup> UNC Chapel Hill
 
 
 ## 🧾 Citation
