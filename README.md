@@ -8,9 +8,11 @@
 --><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white"></a>
 </div>
 &nbsp;
+                                                                                 
 > **Authors**: Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
->
+
 > **Affiliations**: <sup>🏫</sup> University of Maryland, Baltimore County &nbsp;·&nbsp; <sup>🎓</sup> University of Notre Dame &nbsp;·&nbsp; <sup>🏛️</sup> UNC Chapel Hill
+
 &nbsp;
 > We welcome issues for any related work not discussed and will consider inclusion in future updates.
 
