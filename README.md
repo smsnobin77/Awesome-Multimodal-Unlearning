@@ -15,6 +15,11 @@
 
 > We welcome issues for any related work not discussed and will consider inclusion in future updates.
 
+## 🎉 News
+
+- **[2026-02-14]** 🚀 Repository launched: [GitHub](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)  
+- **[2026-01-26]** 📄 Paper released on [TechRxiv](http://dx.doi.org/10.36227/techrxiv.176945748.88280394/v1)
+
 ## 🧾 Citation
 
 If our work supports your research or applications, we would appreciate a ⭐ and a citation using the BibTeX below.
