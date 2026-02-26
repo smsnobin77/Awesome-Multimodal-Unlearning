@@ -3,18 +3,10 @@
 </h1>
 
 <div align="center">
-  <a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1">
-    <img src="https://img.shields.io/badge/DOI-TechRxiv-blue?logo=ieee" alt="DOI">
-  </a>
-  <a href="https://www.techrxiv.org/">
-    <img src="https://img.shields.io/badge/Paper-TechRxiv-orange" alt="Paper">
-  </a>
-  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
-  </a>
-  <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning">
-    <img src="https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning?style=social" alt="GitHub Stars">
-  </a>
+  <a href="https://doi.org/10.36227/techrxiv.176945748.88280394/v1"><img src="https://img.shields.io/badge/DOI-TechRxiv-blue?logo=ieee"></a><!--
+  --><a href="https://www.techrxiv.org/"><img src="https://img.shields.io/badge/Paper-TechRxiv-orange"></a><!--
+  --><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a><!--
+  --><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning"><img src="https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning?style=social"></a>
 </div>
 
 > **Authors**: Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
