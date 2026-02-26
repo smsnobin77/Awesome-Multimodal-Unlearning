@@ -10,7 +10,7 @@
 &nbsp;
                                                                                  
 > **Authors**: Nobin Sarwar<sup>🏫</sup>, Shubhashis Roy Dipta<sup>🏫</sup>, Zheyuan Liu<sup>🎓</sup>, Vaidehi Patil<sup>🏛️</sup>  
-
+>
 > **Affiliations**: <sup>🏫</sup> University of Maryland, Baltimore County &nbsp;·&nbsp; <sup>🎓</sup> University of Notre Dame &nbsp;·&nbsp; <sup>🏛️</sup> UNC Chapel Hill
 
 > We welcome issues for any related work not discussed and will consider inclusion in future updates.
