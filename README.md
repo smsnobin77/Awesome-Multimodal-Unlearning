@@ -60,6 +60,18 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 
 ## 🧩 Applications of Multimodal Unlearning  
 
+Multimodal unlearning supports deployed settings that require selective removal of learned information without full retraining. Figure~\ref{fig:applications} summarizes the primary application scenarios. Although application settings differ in targets, constraints, and evaluation priorities, they share a common objective: remove specific identities, attributes, concepts, or behaviors while preserving general capability and stability. We defer detailed use cases and representative studies to  Appendix F. <make this writeup within 30-50 words only; Mention appendix F)
+
+Multimodal unlearning enables selective removal of specific identities, attributes, or concepts without full retraining while preserving overall capability and stability. Figure 4 ummarizes the primary application scenarios. Detailed use cases and representative studies are provided in Appendix F.
+
+<p align="center">
+  <img src="assets/multimodal-unlearning-applications.png" width="85%" />
+  <br/>
+  <span style="font-size: 16px;"><i>
+    Figure 4: Core application scenarios of multimodal unlearning across privacy, safety, governance, personalization, and security.
+  </i></span>
+</p>
+
 ## 📑 Curated Paper List  
 
 ## ✉️ Contact
