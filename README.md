@@ -53,7 +53,9 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 ## 📊 Comparison with Existing Surveys
 
 <p align="center">
-  <img src="assets/table-1.png" width="70%"/>
+  <img src="assets/table-1.png" width="50%"/>
+  <br/>
+  <span style="font-size: 10px;">Table 1: Comparison of multimodal unlearning surveys across **modalities** and **system-first taxonomy** coverage.</span>
 </p>
 
 While several surveys address multimodal unlearning (Table 1), most focus on unimodal or limited text–image settings, and adopt algorithm-centric taxonomies that obscure practical intervention points. A unified cross-modal perspective remains lacking; key references are listed below. 
@@ -84,7 +86,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 <p align="center">
   <img src="assets/multimodal-unlearning-applications.png" width="60%" />
   <br/>
-  <span style="font-size: 12px;"><i>Figure 4: Core application scenarios of multimodal unlearning.</i></span>
+  <span style="font-size: 10px;"><i>Figure 4: Core application scenarios of multimodal unlearning.</i></span>
 </p>
 
 
