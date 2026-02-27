@@ -37,6 +37,16 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 ```
 
 ## 📚 Contents  
+- [Latest News](#latest-news)
+- [Citation](#citation)
+- [Overview](#overview)
+- [Comparison with Existing Surveys](#comparison-with-existing-surveys)
+- [Taxonomy of Multimodal Unlearning](#taxonomy-of-multimodal-unlearning)
+- [Benchmarks for Multimodal Unlearning](#benchmarks-for-multimodal-unlearning)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Applications of Multimodal Unlearning](#applications-of-multimodal-unlearning)
+- [Curated Paper List](#curated-paper-list)
+- [Contact](#contact)
 
 ## 🧭 Overview  
 
