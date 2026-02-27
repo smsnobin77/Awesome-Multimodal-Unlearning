@@ -55,7 +55,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 <p align="center">
   <img src="assets/table-1.png" width="50%"/>
   <br/>
-  <span style="font-size: 10px;">Table 1: Comparison of multimodal unlearning surveys across **modalities** and **system-first taxonomy** coverage.</span>
+  <span style="font-size: 10px;">Table 1: Comparison of multimodal unlearning surveys across <br> <b>modalities</b> and <b>system-first taxonomy</b>b> coverage.</span>
 </p>
 
 While several surveys address multimodal unlearning (Table 1), most focus on unimodal or limited text–image settings, and adopt algorithm-centric taxonomies that obscure practical intervention points. A unified cross-modal perspective remains lacking; key references are listed below. 
