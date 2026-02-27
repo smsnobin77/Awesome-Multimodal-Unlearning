@@ -46,7 +46,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
 - [Curated Paper List](#-curated-paper-list)
-- [Contact](#-contact)
+- [✉️ Contact](#-contact)
 
 ## 🧭 Overview  
 
