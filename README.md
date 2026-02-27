@@ -52,6 +52,24 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 
 ## 📊 Comparison with Existing Surveys
 
+<table>
+<thead>
+<tr>
+<th>Survey</th><th>Venue & Year</th><th>System-first</th>
+<th>Text</th><th>Image</th><th>Video</th><th>Audio</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Si et al., 2023</td><td>arXiv'23</td><td></td><td>✓</td><td></td><td></td><td></td></tr>
+<tr><td>Blanco-Justicia et al., 2025</td><td>AIR'24</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr>
+<tr><td>Liu et al., 2024</td><td>arXiv'24</td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td></tr>
+<tr><td>Liu et al., 2025</td><td>NMI'25</td><td></td><td>✓</td><td></td><td></td><td></td></tr>
+<tr><td>Feng et al., 2025</td><td>arXiv'25</td><td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td></tr>
+<tr><td>Geng et al., 2025</td><td>arXiv'25</td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td></tr>
+<tr><td><b>Ours</b></td><td>-</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+</tbody>
+</table>
+
 ## 📂 Taxonomy of Multimodal Unlearning
 
 ## 📈 Benchmarks for Multimodal Unlearning  
