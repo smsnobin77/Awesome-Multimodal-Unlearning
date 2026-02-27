@@ -46,7 +46,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
 - [Curated Paper List](#-curated-paper-list)
-- [Contact](#contact)
+- [Contact](#-contact)
 
 ## 🧭 Overview  
 
@@ -71,8 +71,8 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
-<a id="contact"></a>
-## ✉️ Contact
+<!--<a id="contact"></a>-->
+## 📧 Contact
 
 This repository is actively maintained and continuously updated 🚀. If you notice any issues or would like your work on Multimodal Unlearning included, please open an issue or contact us via email.
 
