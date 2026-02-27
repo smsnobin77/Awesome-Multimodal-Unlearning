@@ -40,8 +40,8 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Latest News](#-latest-news)
 - [Citation](#-citation)
 - [Overview](#-overview)
-- [Comparison with Existing Surveys](#-comparison-with-existing-surveys)
-- [Taxonomy of Multimodal Unlearning](#-taxonomy-of-multimodal-unlearning)
+- [Comparison with Existing Surveys](#comparison-with-existing-surveys)
+- [Taxonomy of Multimodal Unlearning](#taxonomy-of-multimodal-unlearning)
 - [Benchmarks for Multimodal Unlearning](#-benchmarks-for-multimodal-unlearning)
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
@@ -71,7 +71,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
-<!--<a id="contact"></a>-->
+
 ## 📧 Contact
 
 This repository is actively maintained and continuously updated 🚀. If you notice any issues or would like your work on Multimodal Unlearning included, please open an issue or contact us via email.
