@@ -58,7 +58,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
   <span style="font-size: 10px;">Table 1: Comparison of multimodal unlearning surveys <br> across <b>modalities</b> and <b>system-first taxonomy</b> coverage.</span>
 </p>
 
-While several surveys address multimodal unlearning (Table 1), most focus on unimodal or limited text–image settings, and adopt algorithm-centric taxonomies that obscure practical intervention points. A unified cross-modal perspective remains lacking; key references are listed below. 
+While several surveys address multimodal unlearning (Table 1), most focus on unimodal or limited text–image settings, and adopt algorithm-centric taxonomies that obscure practical intervention points. **A unified cross-modal perspective remains lacking**; key references are listed below. 
 
 - **Si et al., 2023** — Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2311.15766)
 
