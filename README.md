@@ -103,6 +103,35 @@ We organize multimodal unlearning via a **system-first taxonomy** across **five*
 
 We organize representative multimodal unlearning benchmarks into **three** categories: **unified suites**, **identity and privacy**, and **content and knowledge**, based on their targets and evaluation focus (Table 3).
 
+### 🧪 Unified Benchmark Suites
+
+| Date | Title | Paper |
+|------|-------|-------|
+| 2025&#8209;12 | UMU-Bench: Closing the Modality Gap in Multimodal Unlearning Evaluation | [![OpenReview](https://img.shields.io/badge/OpenReview-8c1d18?style=flat-square&logo=openreview&logoColor=white)](https://openreview.net/pdf?id=M476xkfNXe) |
+| 2025&#8209;03 | PEBench: A Fictitious Dataset to Benchmark Machine Unlearning for Multimodal Large Language Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.12545) |
+| 2024&#8209;10 | Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.22108) |
+| 2024&#8209;06 | MU-Bench: A Multitask Multimodal Benchmark for Machine Unlearning | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14796) |
+
+### 🔐 Identity and Privacy Unlearning
+
+| Date | Title | Paper |
+|------|-------|-------|
+| 2025&#8209;05 | Alexa, can you forget me? Machine Unlearning Benchmark in Spoken Language Understanding | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2505.15700) |
+| 2024&#8209;11 | Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2411.03554) |
+| 2024&#8209;10 | CLEAR: Character Unlearning in Textual and Visual Modalities | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.18057) |
+
+### 📚 Content and Knowledge Unlearning
+
+| Date | Title | Paper |
+|------|-------|-------|
+| 2025&#8209;05 | Unlearning Sensitive Information in Multimodal LLMs: Benchmark and Attack-Defense Evaluation | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2505.01456) |
+| 2025&#8209;02 | SafeEraser: Enhancing Safety in Multimodal Large Language Models through Multimodal Machine Unlearning | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2502.12520) |
+| 2024&#8209;10 | Holistic Unlearning Benchmark: A Multi-Faceted Evaluation for Text-to-Image Diffusion Model Unlearning | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.05664) |
+| 2024&#8209;06 | Six-CD: Benchmarking Concept Removals for Text-to-image Diffusion Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14855) |
+| 2024&#8209;05 | Single Image Unlearning: Efficient Machine Unlearning in Multimodal Large Language Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.12523) |
+| 2024&#8209;03 | A Dataset and Benchmark for Copyright Infringement Unlearning from Text-to-Image Diffusion Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.12052) |
+| 2024&#8209;02 | UnlearnCanvas: Stylized Image Dataset for Enhanced Machine Unlearning Evaluation in Diffusion Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.11846) |
+
 **🧪 Unified Benchmark Suites**
 - MU-Bench: A Multitask Multimodal Benchmark for Machine Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14796)
 
