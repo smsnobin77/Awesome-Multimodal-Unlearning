@@ -159,6 +159,8 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ### Vision-Language Models (VLMs)
 
+- **2025-12** UMU-Bench: Closing the Modality Gap in Multimodal Unlearning Evaluation [![paper](https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white)](https://openreview.net/pdf?id=M476xkfNXe)
+
 - **2025-09** No Encore: Unlearning as Opt-Out in Music Generation [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.06277)
 
 - **2025-08** Unleashing Uncertainty: Efficient Machine Unlearning for Generative AI [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2508.20773)
