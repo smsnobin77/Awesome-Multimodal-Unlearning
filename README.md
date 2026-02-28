@@ -157,6 +157,8 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
+We curate **111 papers**, comprising **55 on Vision-Language Models (VLMs)** and **56 on Diffusion Models (DMs)**, to provide a structured overview of recent advances in multimodal machine unlearning.
+
 ### Vision-Language Models (VLMs)
 
 - **2025-12** UMU-Bench: Closing the Modality Gap in Multimodal Unlearning Evaluation [![paper](https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white)](https://openreview.net/pdf?id=M476xkfNXe)
