@@ -48,7 +48,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Curated Paper List](#-curated-paper-list)
   - [Vision-Language Models (VLMs)](#vision-language-models-vlms)
   - [Diffusion Models (DMs)](#diffusion-models-dms)
-- [Contributing](#--contributing)
+- [Contributing](#-contributing)
 - [Contact](#-contact)
 
 ## 🧭 Overview  
