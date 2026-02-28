@@ -50,6 +50,14 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 
 ## 🧭 Overview  
 
+Multimodal unlearning requires identifying effective intervention points within the model pipeline. Figure 2 illustrates methods spanning data-side, training-time, architecture-constrained, and decoding-time stages, producing an updated model (MFM′). Training-free approaches instead apply direct parameter or representation edits (Δ).
+
+<p align="center">
+  <img src="assets/multimodal-unlearning-taxonomy.png" width="50%" />
+  <br/>
+  <span style="font-size: 10px;">Figure 2: System-level intervention points for multimodal unlearning across the model pipeline.</span>
+</p>
+
 ## 📊 Comparison with Existing Surveys
 
 <p align="center">
@@ -86,7 +94,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 <p align="center">
   <img src="assets/multimodal-unlearning-applications.png" width="60%" />
   <br/>
-  <span style="font-size: 10px;"><i>Figure 4: Core application scenarios of multimodal unlearning.</i></span>
+  <span style="font-size: 10px;">Figure 4: Core application scenarios of multimodal unlearning.</span>
 </p>
 
 
