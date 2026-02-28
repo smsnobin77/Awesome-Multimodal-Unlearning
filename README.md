@@ -157,7 +157,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
-### Vision-Language Models (VLMs) 🖼️
+### Vision-Language Models (VLMs)
 
 - **2025-09** No Encore: Unlearning as Opt-Out in Music Generation [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.06277)
 
@@ -267,7 +267,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 - **2022-12** Pre-trained Encoders in Self-Supervised Learning Improve Secure and Privacy-preserving Supervised Learning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2212.03334)
 
-### Diffusion Models (DMs) 🎨
+### Diffusion Models (DMs)
 
 
 ## 📧 Contact
