@@ -12,4 +12,4 @@
 - Avoid duplicates
 
 ## Format
-- **YYYY-MM** Paper Title [![badge](BADGE_LINK)](PAPER_LINK)
+- **YYYY-MM** Paper Title `[![badge](BADGE_LINK)](PAPER_LINK)`
