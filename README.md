@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-<a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/"><img src="https://img.shields.io/badge/Project%20Page-1f77b4?style=for-the-badge&logo=github&logoColor=white"></a>&nbsp;<!--
+<a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/"><img src="https://img.shields.io/badge/Project%20Page-1f77b4?style=for-the-badge&logo=google-chrome&logoColor=white"></a>&nbsp;<!--
 --><a href="https://www.techrxiv.org/"><img src="https://img.shields.io/badge/Paper-TechRxiv-ff7f0e?style=for-the-badge&logo=arxiv&logoColor=white"></a>&nbsp;<!--
 --><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white"></a>
 </div>
