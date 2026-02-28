@@ -46,8 +46,8 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
 - [Curated Paper List](#-curated-paper-list)
-  - [Vision-Language Models (VLMs)](#-vision-language-models-vlms)
-  - [Diffusion Models (DMs)](#-diffusion-models-dms)
+  - [Vision-Language Models (VLMs)](#vision-language-models-vlms)
+  - [Diffusion Models (DMs)](#diffusion-models-dms)
 - [Contact](#-contact)
 
 ## 🧭 Overview  
@@ -157,9 +157,9 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
-### 🖼️ Vision-Language Models (VLMs)
+### Vision-Language Models (VLMs)
 
-### 🎨 Diffusion Models (DMs)
+### Diffusion Models (DMs)
 
 
 ## 📧 Contact
