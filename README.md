@@ -103,7 +103,7 @@ We organize multimodal unlearning via a **system-first taxonomy** across **five*
 
 We organize representative multimodal unlearning benchmarks into **three** categories: **unified suites**, **identity and privacy**, and **content and knowledge**, based on their targets and evaluation focus (Table 3).
 
-### 🧪 Unified Benchmark Suites
+**🧪 Unified Benchmark Suites**
 
 | Date | Title | Paper |
 |------|-------|-------|
@@ -112,7 +112,7 @@ We organize representative multimodal unlearning benchmarks into **three** categ
 | 2024&#8209;10 | Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.22108) |
 | 2024&#8209;06 | MU-Bench: A Multitask Multimodal Benchmark for Machine Unlearning | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14796) |
 
-### 🔐 Identity and Privacy Unlearning
+**🔐 Identity and Privacy Unlearning**
 
 | Date | Title | Paper |
 |------|-------|-------|
@@ -120,7 +120,7 @@ We organize representative multimodal unlearning benchmarks into **three** categ
 | 2024&#8209;11 | Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2411.03554) |
 | 2024&#8209;10 | CLEAR: Character Unlearning in Textual and Visual Modalities | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.18057) |
 
-### 📚 Content and Knowledge Unlearning
+**📚 Content and Knowledge Unlearning**
 
 | Date | Title | Paper |
 |------|-------|-------|
