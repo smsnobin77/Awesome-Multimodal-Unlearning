@@ -78,6 +78,7 @@ While several surveys address multimodal unlearning (Table 1), most focus on uni
 | 2024&#8209;07 | Machine Unlearning in Generative AI: A Survey | Liu et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2407.20516) | ✓ | ✓ | ✓ |  |  |
 | 2025&#8209;03 | A Comprehensive Survey of Machine Unlearning Techniques for Large Language Models | Geng et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.01854) | ✓ | ✓ | ✓ |  |  |
 | 2025&#8209;07 | A Survey on Generative Model Unlearning: Fundamentals, Taxonomy, Evaluation, and Future Direction | Feng et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.19894) | ✓ | ✓ | ✓ |  | ✓ |
+| - | Ours | - | - | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 - **Si et al., 2023** — Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2311.15766)
 
