@@ -64,9 +64,9 @@
 <title>Multimodal Unlearning Survey | Sarwar et al.</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32-v2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16-v2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon-180-v2.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -285,6 +285,108 @@
     </div>
   </div>
 </section>
+
+<!--Overview of Survey -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overview of Survey</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Multimodal unlearning requires identifying effective intervention points within the model pipeline. 
+        Figure 2 illustrates methods spanning data-side, training-time, architecture-constrained, and decoding-time stages, 
+        producing an updated model (MFM′). Training-free approaches instead apply direct parameter or representation edits (Δ).
+      </p>
+    </div>
+
+    <div class="has-text-centered">
+      <img src="static/images/multimodal-unlearning-taxonomy.png" style="max-width:55%;">
+      <p class="is-size-6 has-text-grey">
+        Figure 2: <b>System-level intervention points</b> for multimodal unlearning across the model pipeline.
+      </p>
+    </div>
+
+    <div class="content has-text-justified" style="margin-top: 1.5rem;">
+      <p>
+        We organize multimodal unlearning via a system-first taxonomy across five intervention stages: 
+        Data-Side Interventions (Section 3.1); Training-Time Edits (Section 3.2); 
+        Architecture-Constrained Unlearning (Section 3.3); Training-Free Unlearning (Section 3.4); 
+        Decoding-Time Unlearning (Section 3.5).
+      </p>
+    </div>
+
+    <div class="has-text-centered">
+      <img src="static/images/figure-1.png" style="max-width:70%;">
+      <p class="is-size-6 has-text-grey">
+        Figure 1: Taxonomy of multimodal unlearning by <b>intervention stage</b> and <b>control pathway</b>.
+      </p>
+    </div>
+  </div>
+</section>
+<!--End Overview of Survey -->
+
+<!-- Evaluation Metrics -->
+<section class="section is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Evaluation Metrics</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Evaluation uses metric suites that assess forgetting, utility retention, robustness, and efficiency, 
+        as summarized in Figure 3. We defer detailed metric definitions and evaluation protocols to Appendix C.
+      </p>
+    </div>
+
+    <div class="has-text-centered">
+      <img src="static/images/figure-3.png" style="max-width:50%;">
+      <p class="is-size-6 has-text-grey">
+        Figure 3: Evaluation dimensions and representative metrics for multimodal unlearning.
+      </p>
+    </div>
+  </div>
+</section>
+<!--End Evaluation Metrics -->
+
+<!-- Applications -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Applications of Multimodal Unlearning</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Multimodal unlearning enables selective removal of specific identities, attributes, or concepts 
+        without full retraining while preserving overall capability and stability. 
+        Detailed use cases and representative studies are provided in Appendix F.
+      </p>
+    </div>
+
+    <div class="has-text-centered">
+      <img src="static/images/multimodal-unlearning-applications.png" style="max-width:55%;">
+      <p class="is-size-6 has-text-grey">
+        Figure 4: Core application scenarios of multimodal unlearning.
+      </p>
+    </div>
+  </div>
+</section>
+<!--End Applications -->
+
+<!-- Contact -->
+<section class="section is-light">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-4">Contact</h2>
+
+    <p>
+      This repository is actively maintained and continuously updated 🚀.<br>  
+      If you notice any issues or would like your work included, please open an issue or contact us:
+    </p>
+
+    <p style="margin-top: 0.5rem;">
+      📧 <a href="mailto:smsarwar96@gmail.com">smsarwar96@gmail.com</a>
+    </p>
+  </div>
+</section>
+<!--End Contact -->
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
