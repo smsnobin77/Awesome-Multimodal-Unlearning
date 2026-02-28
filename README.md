@@ -46,8 +46,8 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
 - [Curated Paper List](#-curated-paper-list)
-  - [Vision-Language Models (VLMs)](#vision-language-models-vlms)
-  - [Diffusion Models (DMs)](#diffusion-models-dms)
+  - [Vision-Language Models (VLMs)](#vision-language-models-vlms-)
+  - [Diffusion Models (DMs)](#diffusion-models-dms-)
 - [Contributing](#-contributing)
 - [Contact](#-contact)
 
@@ -149,7 +149,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 We curate **111 papers**, comprising **55 on Vision-Language Models (VLMs)** and **56 on Diffusion Models (DMs)**, to provide a structured overview of recent advances in multimodal machine unlearning.
 
-### Vision-Language Models (VLMs)
+### Vision-Language Models (VLMs) 🖼️
 
 | Date | Title | Paper |
 |------|-------|-------|
@@ -209,7 +209,7 @@ We curate **111 papers**, comprising **55 on Vision-Language Models (VLMs)** and
 | 2022&#8209;12 | Editing Models with Task Arithmetic | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2212.04089.pdf) |
 | 2022&#8209;12 | Pre-trained Encoders in Self-Supervised Learning Improve Secure and Privacy-preserving Supervised Learning | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2212.03334) |
 
-### Diffusion Models (DMs)
+### Diffusion Models (DMs) 🎨
 
 | Date | Title | Paper |
 |------|-------|-------|
