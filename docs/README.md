@@ -1,6 +1,6 @@
 # Multimodal Unlearning Survey (Project Page)
 
-🌐 Website: https://smsnobin77.github.io/multimodal_unlearning_survey/
+🌐 Website: https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/
 
 This is the official project page for the paper:
 
