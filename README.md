@@ -99,7 +99,7 @@ We organize multimodal unlearning via a **system-first taxonomy** across **five*
 
 ## 📈 Benchmarks for Multimodal Unlearning  
 
-We organize representative multimodal unlearning benchmarks into three categories: unified suites, identity and privacy, and content and knowledge, based on their targets and evaluation focus (Table 3).
+We organize representative multimodal unlearning benchmarks into **three** categories: **unified suites**, **identity and privacy**, and **content and knowledge**, based on their targets and evaluation focus (Table 3).
 
 **🧪 Unified Benchmark Suites**
 - MU-Bench: A Multitask Multimodal Benchmark for Machine Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14796)
