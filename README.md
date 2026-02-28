@@ -87,12 +87,12 @@ We organize multimodal unlearning via a **system-first taxonomy** across **five*
 
 - **Data-Side Interventions (Section 3.1)** – Modify inputs or data distributions to reduce learnability of target content.  
 - **Training-Time Edits (Section 3.2)** – Update model parameters to suppress target behavior.  
-- **Architecture-Constrained Unlearning (Section 3.3)** – Restrict updates to specific layers or structures for localized, controlled forgetting.  
+- **Architecture-Constrained Unlearning (Section 3.3)** – Localized updates within layers or structures.
 - **Training-Free Unlearning (Section 3.4)** – Apply closed-form parameter or representation edits without retraining.  
-- **Decoding-Time Unlearning (Section 3.5)** – Control generation via guidance or conditioning without modifying parameters.  
+- **Decoding-Time Unlearning (Section 3.5)** – Control generation without modifying model parameters.  
 
 <p align="center">
-  <img src="assets/figure-1.png" width="50%"/>
+  <img src="assets/figure-1.png" width="70%"/>
   <br/>
   <span style="font-size: 10px;">Figure 1: Taxonomy of multimodal unlearning by <b>intervention stage</b> and <b>control pathway</b>.</span>
 </p>
