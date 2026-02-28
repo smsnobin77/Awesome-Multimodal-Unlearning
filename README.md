@@ -278,3 +278,14 @@ Please read the [contributing.md](contributing.md) before submitting a pull requ
 This repository is actively maintained and continuously updated 🚀. If you notice any issues or would like your work on Multimodal Unlearning included, please open an issue or contact us via email.
 
 **Corresponding author:** Nobin Sarwar (smsarwar96@gmail.com)
+
+---
+
+<div align="center">
+
+**⭐ If you find this repository useful, please consider starring it! ⭐**
+
+[![GitHub stars](https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
+[![GitHub forks](https://img.shields.io/github/forks/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
+
+</div>
