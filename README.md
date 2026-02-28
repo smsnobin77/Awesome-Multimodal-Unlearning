@@ -144,7 +144,7 @@ Evaluation uses metric suites that assess forgetting, utility retention, robustn
 
 ## 🧩 Applications of Multimodal Unlearning  
 
-Multimodal unlearning enables selective removal of specific identities, attributes, or concepts without full retraining while preserving overall capability and stability. Detailed use cases and representative studies are provided in Appendix F.
+Multimodal unlearning enables selective removal of specific identities, attributes, or concepts without full retraining while preserving overall capability and stability. Detailed use cases and representative studies are provided in **Appendix F**.
 
 <p align="center">
   <img src="assets/multimodal-unlearning-applications.png" width="60%" />
