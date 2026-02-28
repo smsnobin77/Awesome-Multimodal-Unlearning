@@ -9,6 +9,9 @@
 </div>
 &nbsp;
 
+> <strong>Authors</strong>: Nobin Sarwar<sup><img src="assets/UMBC_logo.png" height="12"></sup>, Shubhashis Roy Dipta<sup><img src="assets/UMBC_logo.png" height="12"></sup>, Zheyuan Liu<sup><img src="assets/UD_logo.png" height="12"></sup>, Vaidehi Patil<sup><img src="assets/UNC_logo.png" height="12"></sup>  
+> <strong>Affiliations</strong>: <img src="assets/UMBC_logo.png" height="14"> University of Maryland, Baltimore County &nbsp;·&nbsp; <img src="assets/UD_logo.png" height="14"> University of Notre Dame &nbsp;·&nbsp; <img src="assets/UNC_logo.png" height="14"> UNC Chapel Hill
+
 <div style="border-left:4px solid #d0d7de;padding-left:12px;margin:8px 0;"><strong>Authors</strong>: Nobin Sarwar<sup><img src="assets/UMBC_logo.png" height="12"></sup>, Shubhashis Roy Dipta<sup><img src="assets/UMBC_logo.png" height="12"></sup>, Zheyuan Liu<sup><img src="assets/UD_logo.png" height="12"></sup>, Vaidehi Patil<sup><img src="assets/UNC_logo.png" height="12"></sup><br><strong>Affiliations</strong>: <img src="assets/UMBC_logo.png" height="14"> University of Maryland, Baltimore County &nbsp;·&nbsp; <img src="assets/UD_logo.png" height="14"> University of Notre Dame &nbsp;·&nbsp; <img src="assets/UNC_logo.png" height="14"> UNC Chapel Hill</div>
 
 > <strong>Authors</strong>: Nobin Sarwar <img src="assets/UMBC_logo.png" height="12">, Shubhashis Roy Dipta <img src="assets/UMBC_logo.png" height="12">, Zheyuan Liu <img src="assets/UD_logo.png" height="12">, Vaidehi Patil <img src="assets/UNC_logo.png" height="12"><br>
