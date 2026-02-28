@@ -55,7 +55,7 @@ Multimodal unlearning requires identifying effective intervention points within 
 <p align="center">
   <img src="assets/multimodal-unlearning-taxonomy.png" width="50%" />
   <br/>
-  <span style="font-size: 10px;">Figure 2: System-level intervention points for multimodal unlearning across the model pipeline.</span>
+  <span style="font-size: 10px;">Figure 2: <b>System-level intervention points</b> for multimodal unlearning across the model pipeline.</span>
 </p>
 
 ## 📊 Comparison with Existing Surveys
@@ -82,6 +82,20 @@ While several surveys address multimodal unlearning (Table 1), most focus on uni
 
 
 ## 📂 Taxonomy of Multimodal Unlearning
+
+We organize multimodal unlearning via a **system-first taxonomy** across **five** intervention stages:
+
+- **Data-Side Interventions (Section 3.1)** – Modify inputs or data distributions to reduce learnability of target content.  
+- **Training-Time Edits (Section 3.2)** – Update model parameters to suppress target behavior.  
+- **Architecture-Constrained Unlearning (Section 3.3)** – Restrict updates to specific layers or structures for localized, controlled forgetting.  
+- **Training-Free Unlearning (Section 3.4)** – Apply closed-form parameter or representation edits without retraining.  
+- **Decoding-Time Unlearning (Section 3.5)** – Control generation via guidance or conditioning without modifying parameters.  
+
+<p align="center">
+  <img src="assets/figure-1.png" width="50%"/>
+  <br/>
+  <span style="font-size: 10px;">Figure 1: Taxonomy of multimodal unlearning by <b>intervention stage</b> and <b>control pathway</b>.</span>
+</p>
 
 ## 📈 Benchmarks for Multimodal Unlearning  
 
