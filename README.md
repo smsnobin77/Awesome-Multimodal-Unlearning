@@ -269,6 +269,117 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ### Diffusion Models (DMs)
 
+- **2025-08** Sealing The Backdoor: Unlearning Adversarial Text Triggers In Diffusion Models Using Knowledge Distillation [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2508.18235)
+
+- **2025-08** UnGuide: Learning to Forget with LoRA-Guided Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2508.05755)
+
+- **2025-08** Steering Guidance for Personalized Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2508.00319)
+
+- **2025-07** LoReUn: Data Itself Implicitly Provides Cues to Improve Machine Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.22499)
+
+- **2025-07** Towards Resilient Safety-driven Unlearning for Diffusion Models against Downstream Fine-tuning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.16302)
+
+- **2025-07** Image Can Bring Your Memory Back: A Novel Multi-Modal Guided Attack against Image Generation Model Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.07139)
+
+- **2025-07** Concept Unlearning by Modeling Key Steps of Diffusion Process [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.06526)
+
+- **2025-06** Large-Scale Training Data Attribution for Music Generative Models via Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2506.18312)
+
+- **2025-06** Video Unlearning via Low-Rank Refusal Vector [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2506.07891)
+
+- **2025-05** CURE: Concept Unlearning via Orthogonal Representation Editing in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2505.12677)
+
+- **2025-04** The Dual Power of Interpretable Token Embeddings: Jailbreaking Attacks and Defenses for Diffusion Model Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.21307)
+
+- **2025-04** Backdoor Defense in Diffusion Models via Spatial Attention Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.18563)
+
+- **2025-04** Sculpting Memory: Multi-Concept Forgetting in Diffusion Models via Dynamic Mask and Concept-Aware Optimization [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.09039)
+
+- **2025-03** Human Motion Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.18674)
+
+- **2025-03** Detect-and-Guide: Self-regulation of Diffusion Models for Safe Text-to-Image Generation via Guideline Token Optimization [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.15197)
+
+- **2025-03** Data Unlearning in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.01034)
+
+- **2025-01** SAeUron: Interpretable Concept Unlearning in Diffusion Models with Sparse Autoencoders [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2501.18052)
+
+- **2024-12** Efficient Fine-Tuning and Concept Suppression for Pruned Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2412.15341)
+
+- **2024-12** Boosting Alignment for Post-Unlearning Text-to-Image Generative Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2412.07808)
+
+- **2024-12** Learning to Forget using Hypernetworks [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2412.00761)
+
+- **2024-11** MUNBa: Machine Unlearning via Nash Bargaining [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2411.15537)
+
+- **2024-11** Model Integrity when Unlearning with T2I Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2411.02068)
+
+- **2024-10** Meta-Unlearning on Diffusion Models: Preventing Relearning Unlearned Concepts [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.12777)
+
+- **2024-10** SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.12761)
+
+- **2024-10** Holistic Unlearning Benchmark: A Multi-Faceted Evaluation for Text-to-Image Diffusion Model Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.05664)
+
+- **2024-10** Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.08074)
+
+- **2024-10** SteerDiff: Steering towards Safe Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.02710)
+
+- **2024-10** Dynamic Negative Guidance of Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.14398)
+
+- **2024-09** Score Forgetting Distillation: A Swift, Data-Free Method for Machine Unlearning in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2409.11219)
+
+- **2024-09** Enhancing User-Centric Privacy Protection: An Interactive Framework through Diffusion Models and Machine Unlearning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2409.03326)
+
+- **2024-09** Unlearning or Concealment? A Critical Analysis and Evaluation Metrics for Unlearning in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2409.05668)
+
+- **2024-08** Moderator: Moderating Text-to-Image Diffusion Models through Fine-grained Context-based Policies [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2408.07728)
+
+- **2024-08** Controllable Unlearning for Image-to-Image Generative Models via ε-Constrained Optimization [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2408.01689)
+
+- **2024-08** DiffZOO: A Purely Query-Based Black-Box Attack for Red-teaming Text-to-Image Generative Model via Zeroth Order Optimization [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2408.11071)
+
+- **2024-08** On the Limitations and Prospects of Machine Unlearning for Generative AI [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2408.00376)
+
+- **2024-07** Unlearning Concepts from Text-to-Video Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2407.14209)
+
+- **2024-06** Diffusion Soup: Model Merging for Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.08431.pdf)
+
+- **2024-06** Six-CD: Benchmarking Concept Removals for Text-to-image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.14855)
+
+- **2024-05** FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.17472)
+
+- **2024-05** Unlearning Concepts in Diffusion Model via Concept Domain Correction and Concept Preserving Gradient [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.15304)
+
+- **2024-04** Probing Unlearned Diffusion Models: A Transferable Adversarial Attack Perspective [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2404.19382)
+
+- **2024-04** SafeGen: Mitigating Sexually Explicit Content Generation in Text-to-Image Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2404.06666)
+
+- **2024-03** A Dataset and Benchmark for Copyright Infringement Unlearning from Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.12052)
+
+- **2024-03** CPR: Retrieval Augmented Generation for Copyright Protection [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.18920)
+
+- **2024-03** Hiding and Recovering Knowledge in Text-to-Image Diffusion Models via Learnable Prompts [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.12326)
+
+- **2024-02** Machine Unlearning for Image-to-Image Generative Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.00351)
+
+- **2024-02** UnlearnCanvas: Stylized Image Dataset for Enhanced Machine Unlearning Evaluation in Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.11846)
+
+- **2024-02** Get What You Want, Not What You Don’t: Image Content Suppression for Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.05375)
+
+- **2024-01** Adaptive Median Smoothing: Adversarial Defense for Unlearned Text-to-Image Diffusion Models at Inference Time [![paper](https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white)](https://openreview.net/pdf?id=PdBEggnDIl)
+
+- **2023-11** MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based Synthesis via Meta-learning [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2311.13127)
+
+- **2023-10** SalUn: Empowering Machine Unlearning via Gradient-Based Weight Saliency in Both Image Classification and Generation [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2310.12508)
+
+- **2023-07** Towards Safe Self-Distillation of Internet-Scale Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2307.05977)
+
+- **2023-06** Training Data Attribution for Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2306.02174)
+
+- **2023-03** Ablating Concepts in Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2303.13516.pdf)
+
+- **2023-03** Forget-Me-Not: Learning to Forget in Text-to-Image Diffusion Models [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2303.17591)
+
+- **2022-09** Exploiting Cultural Biases via Homoglyphs in Text-to-Image Synthesis [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2209.08891)
 
 ## 📧 Contact
 
