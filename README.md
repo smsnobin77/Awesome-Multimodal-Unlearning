@@ -70,14 +70,14 @@ Multimodal unlearning requires identifying effective intervention points within 
 
 While several surveys address multimodal unlearning (Table 1), most focus on unimodal or limited text–image settings, and adopt algorithm-centric taxonomies that obscure practical intervention points. **A unified cross-modal perspective remains lacking**; key references are listed below. 
 
-| Date | Title | Author name | Venue | System-first | Text | Image | Video | Audio |
+| Date | Title | Authors | Paper | System-first | Text | Image | Video | Audio |
 |------|-------|-------------|--------|--------------|------|-------|-------|-------|
 | 2023&#8209;11 | Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges | Si et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2311.15766) |  | ✓ |  |  |  |
+| 2024&#8209;02 | Rethinking Machine Unlearning for Large Language Models | Liu et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.08787) |  | ✓ |  |  |  |
 | 2024&#8209;04 | Digital Forgetting in Large Language Models: A Survey of Unlearning Methods | Blanco-Justicia et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2404.02062) | ✓ | ✓ |  |  |  |
 | 2024&#8209;07 | Machine Unlearning in Generative AI: A Survey | Liu et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2407.20516) | ✓ | ✓ | ✓ |  |  |
-| 2024&#8209;02 | Rethinking Machine Unlearning for Large Language Models | Liu et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.08787) |  | ✓ |  |  |  |
-| 2025&#8209;07 | A Survey on Generative Model Unlearning: Fundamentals, Taxonomy, Evaluation, and Future Direction | Feng et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.19894) | ✓ | ✓ | ✓ |  | ✓ |
 | 2025&#8209;03 | A Comprehensive Survey of Machine Unlearning Techniques for Large Language Models | Geng et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.01854) | ✓ | ✓ | ✓ |  |  |
+| 2025&#8209;07 | A Survey on Generative Model Unlearning: Fundamentals, Taxonomy, Evaluation, and Future Direction | Feng et al. | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.19894) | ✓ | ✓ | ✓ |  | ✓ |
 
 - **Si et al., 2023** — Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2311.15766)
 
