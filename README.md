@@ -48,6 +48,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Curated Paper List](#-curated-paper-list)
   - [Vision-Language Models (VLMs)](#vision-language-models-vlms)
   - [Diffusion Models (DMs)](#diffusion-models-dms)
+- [Contributing](#--contributing)
 - [Contact](#-contact)
 
 ## 🧭 Overview  
@@ -268,6 +269,10 @@ We curate **111 papers**, comprising **55 on Vision-Language Models (VLMs)** and
 | 2023&#8209;03 | Ablating Concepts in Text-to-Image Diffusion Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2303.13516.pdf) |
 | 2023&#8209;03 | Forget-Me-Not: Learning to Forget in Text-to-Image Diffusion Models | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2303.17591) |
 | 2022&#8209;09 | Exploiting Cultural Biases via Homoglyphs in Text-to-Image Synthesis | [![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2209.08891) |
+
+## 🤝 Contributing
+
+Please read the [contributing.md](contributing.md) before submitting a pull request.
 
 ## 📧 Contact
 
