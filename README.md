@@ -137,7 +137,7 @@ We organize representative multimodal unlearning benchmarks into **three** categ
 Evaluation uses metric suites that assess forgetting, utility retention, robustness, and efficiency, as summarized in **Figure 3**. We defer detailed metric definitions and evaluation protocols to **Appendix C**.
 
 <p align="center">
-  <img src="assets/figure-3.png" width="60%" />
+  <img src="assets/figure-3.png" width="50%" />
   <br/>
   <span style="font-size: 10px;">Figure 3: Evaluation dimensions and representative metrics for multimodal unlearning.</span>
 </p>
