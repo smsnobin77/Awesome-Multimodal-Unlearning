@@ -284,9 +284,9 @@ This repository is actively maintained and continuously updated 🚀. If you not
 
 <div align="center">
 
-**⭐ If you find this repository useful, please consider starring it! ⭐**
-
-[![GitHub stars](https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
-[![GitHub forks](https://img.shields.io/github/forks/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
+  **⭐ If you find this repository useful, please consider starring it! ⭐**
+  
+  [![GitHub stars](https://img.shields.io/github/stars/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
+  [![GitHub forks](https://img.shields.io/github/forks/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
 
 </div>
