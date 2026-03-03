@@ -155,12 +155,12 @@ We curate **111 papers**, comprising **55 on Vision–Language Models (VLMs)** a
 
 </td>
 
-<td width="50%" align="center" border="0" cellspacing="0" cellpadding="0">
+<td width="50%" align="center" border="0" cellspacing="0" cellpadding="0" style="text-align: left;">
 
-<img src="assets/vlm_dms_bar_chart.png" width="100%"/>
+<img src="assets/vlm_dms_bar_chart.png" width="80%"/>
 
 <br/>
-<span style="font-size: 10px; text-align:left;">
+<span style="font-size: 10px;">
 <b>Figure:</b> Year-wise distribution of multimodal unlearning papers across VLMs and DMs from 2022 to 2025.
 </span>
 
