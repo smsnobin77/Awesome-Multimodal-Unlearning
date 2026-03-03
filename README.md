@@ -147,29 +147,31 @@ Multimodal unlearning enables selective removal of specific identities, attribut
 
 ## 📑 Curated Paper List  
 
-<div style="display: flex; align-items: flex-start; gap: 20px;">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-  <div style="flex: 1;">
-  
-  We curate **111 papers**, comprising **55 on Vision–Language Models (VLMs)** and **56 on Diffusion Models (DMs)**, covering developments up to **August 2025**. This collection reflects the rapid expansion of multimodal unlearning, where both paradigms exhibit distinct yet complementary growth patterns.
-  
-  Notably, **VLM-based unlearning shows sustained and accelerating growth**, with a clear increase after 2024. In parallel, **diffusion-based approaches demonstrate a substantial surge**, particularly in 2024, driven by concerns around generative safety, copyright, and controllability.
-  
-  The figure highlights this divergence: **DMs dominate 2024**, while **VLMs surpass DMs in 2025**, suggesting a shift toward unified multimodal reasoning frameworks.
-  
-  </div>
+We curate **111 papers**, comprising **55 on Vision–Language Models (VLMs)** and **56 on Diffusion Models (DMs)**, covering developments up to **August 2025**. This collection reflects the rapid expansion of multimodal unlearning, where both paradigms exhibit distinct yet complementary growth patterns.
 
-  <div style="flex: 1; text-align: center;">
-  
-  <img src="assets/vlm_dms_bar_chart.png" width="100%" />
-  
-  <span style="font-size: 10px;">
-  <b>Figure:</b> Year-wise distribution of multimodal unlearning papers across Vision–Language Models (VLMs) and Diffusion Models (DMs) from 2022 to 2025.
-  </span>
-  
-  </div>
+Notably, **VLM-based unlearning shows sustained and accelerating growth**, with a clear increase after 2024. In parallel, **diffusion-based approaches demonstrate a substantial surge**, particularly in 2024, driven by concerns around generative safety, copyright, and controllability.
 
-</div>
+The figure highlights this divergence: **DMs dominate 2024**, while **VLMs surpass DMs in 2025**, suggesting a shift toward unified multimodal reasoning frameworks.
+
+</td>
+
+<td width="50%" align="center">
+
+<img src="assets/vlm_dms_bar_chart.png" width="100%"/>
+
+<br/>
+<span style="font-size: 10px;">
+<b>Figure:</b> Year-wise distribution of multimodal unlearning papers across Vision–Language Models (VLMs) and Diffusion Models (DMs) from 2022 to 2025.
+</span>
+
+</td>
+</tr>
+</table>
+
 We curate **111 papers**, comprising **55 on Vision-Language Models (VLMs)** and **56 on Diffusion Models (DMs)**, to provide a structured overview of recent advances in multimodal machine unlearning.
 
 ### Vision-Language Models (VLMs)
