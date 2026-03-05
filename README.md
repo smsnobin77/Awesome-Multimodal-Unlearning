@@ -50,6 +50,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
   - [Diffusion Models (DMs)](#diffusion-models-dms)
 - [Contributing](#-contributing)
 - [Contact](#-contact)
+- [✨ Star History](#-star-history)
 
 ## 🧭 Overview  
 
@@ -285,6 +286,12 @@ Please read the [contributing.md](contributing.md) before submitting a pull requ
 This repository is actively maintained and continuously updated 🚀. If you notice any issues or would like your work on Multimodal Unlearning included, please open an issue or contact us via email.
 
 **Corresponding author:** Nobin Sarwar (smsarwar96@gmail.com)
+
+---
+
+## ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=smsnobin77/Awesome-Multimodal-Unlearning&type=Date)](https://www.star-history.com/#smsnobin77/Awesome-Multimodal-Unlearning&Date)
 
 ---
 
