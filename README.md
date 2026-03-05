@@ -86,7 +86,7 @@ We organize multimodal unlearning via a **system-first taxonomy** across **five*
 - **Decoding-Time Unlearning (Section 3.5)** – Control generation without modifying model parameters.  
 
 <p align="center">
-  <img src="assets/figure-1.png" width="70%"/>
+  <img src="assets/figure-1-v1.png" width="70%"/>
   <br/>
   <span style="font-size: 10px;">Figure 1: Taxonomy of multimodal unlearning by <b>intervention stage</b> and <b>control pathway</b>.</span>
 </p>
@@ -129,7 +129,7 @@ We organize representative multimodal unlearning benchmarks into **three** categ
 Evaluation uses metric suites that assess forgetting, utility retention, robustness, and efficiency, as summarized in **Figure 3**. We defer detailed metric definitions and evaluation protocols to **Appendix C**.
 
 <p align="center">
-  <img src="assets/figure-3-v1.png" width="50%" />
+  <img src="assets/figure-3-v2.png" width="50%" />
   <br/>
   <span style="font-size: 10px;">Figure 3: Evaluation dimensions and representative metrics for multimodal unlearning.</span>
 </p>
