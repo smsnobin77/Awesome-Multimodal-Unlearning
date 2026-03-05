@@ -296,3 +296,8 @@ This repository is actively maintained and continuously updated 🚀. If you not
   [![GitHub forks](https://img.shields.io/github/forks/smsnobin77/Awesome-Multimodal-Unlearning?style=social)](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)
 
 </div>
+
+<p align="center">
+  <em>Thanks for visiting ✨ Awesome Multimodal Unlearning</em><br><br>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=smsnobin77.Awesome-Multimodal-Unlearning&style=for-the-badge&color=00d4ff" alt="Repository Views">
+</p>
