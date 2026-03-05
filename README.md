@@ -297,6 +297,8 @@ This repository is actively maintained and continuously updated 🚀. If you not
 
 </div>
 
+---
+
 <p align="center">
   <em>Thanks for visiting ✨ Awesome Multimodal Unlearning</em><br><br>
   <img src="https://visitor-badge.laobi.icu/badge?page_id=smsnobin77.Awesome-Multimodal-Unlearning&style=for-the-badge&color=00d4ff" alt="Repository Views">
