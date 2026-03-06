@@ -59,7 +59,7 @@ Multimodal unlearning requires identifying effective intervention points within 
 <p align="center">
   <img src="assets/multimodal-unlearning-taxonomy.png" width="50%" />
   <br/>
-  <span style="font-size: 10px;">Figure 2: <b>System-level intervention points</b> for multimodal unlearning across the model pipeline.</span>
+  <span style="font-size: 10px;">Figure 2: <b>System-level intervention points</b> for multimodal <br> unlearning across the model pipeline.</span>
 </p>
 
 ## 📊 Comparison with Existing Surveys
@@ -132,7 +132,7 @@ Evaluation uses metric suites that assess forgetting, utility retention, robustn
 <p align="center">
   <img src="assets/figure-3-v2.png" width="50%" />
   <br/>
-  <span style="font-size: 10px;">Figure 3: Evaluation dimensions and representative metrics for multimodal unlearning.</span>
+  <span style="font-size: 10px;">Figure 3: Evaluation dimensions and representative <br> metrics for multimodal unlearning.</span>
 </p>
 
 ## 🧩 Applications of Multimodal Unlearning  
