@@ -16,6 +16,7 @@
 
 ## 🎉 Latest News
 
+- **[2026-04-06]** 🎉 Our **Multimodal Unlearning Survey** is **accepted as Findings at ACL 2026**. We will present this work at the **ACL 2026** in **San Diego, CA**.
 - **[2026-02-28]** 🌐 We release the **[Project Page](https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/)** for our **Multimodal Unlearning survey**.
 - **[2026-02-14]** 🚀 We launch the **Awesome Multimodal Unlearning** repository to track methods, datasets, and benchmarks. Check it out: [GitHub](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)  
 - **[2026-01-26]** 📄 Our survey on **Multimodal Unlearning** is released on TechRxiv. See the paper: [TechRxiv](http://dx.doi.org/10.36227/techrxiv.176945748.88280394/v1)
