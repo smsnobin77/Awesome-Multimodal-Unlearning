@@ -147,7 +147,7 @@ Multimodal unlearning enables selective removal of specific identities, attribut
   <span style="font-size: 10px;">Figure 4: Core application scenarios of multimodal unlearning.</span>
 </p>
 
-## ⚠️ Open Challenges in Multimodal Unlearning
+## 🧩 Open Challenges in Multimodal Unlearning
 
 Multimodal unlearning faces challenges in theory, generalization, evaluation, robustness, utility trade-offs, and benchmarking, limiting reliable and scalable deployment.
 
