@@ -154,7 +154,7 @@ Multimodal unlearning faces challenges in theory, generalization, evaluation, ro
 Further discussion is provided in **Appendix F**, covering modality-specific limitations, evaluation considerations, and emerging research directions.
 
 <p align="center">
-  <img src="assets/open_challenges.jpg" width="50%" />
+  <img src="assets/open_challenges.jpg" width="45%" />
   <br/>
   <span style="font-size: 10px;">Figure 5: Key open challenges in multimodal unlearning.</span>
 </p>
