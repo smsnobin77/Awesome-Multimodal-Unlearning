@@ -46,6 +46,7 @@ If our work supports your research or applications, we would appreciate a ⭐ an
 - [Benchmarks for Multimodal Unlearning](#-benchmarks-for-multimodal-unlearning)
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Applications of Multimodal Unlearning](#-applications-of-multimodal-unlearning)
+- [Open Challenges in Multimodal Unlearning](#-Open Challenges in Multimodal Unlearning)
 - [Curated Paper List](#-curated-paper-list)
   - [Vision-Language Models (VLMs)](#vision-language-models-vlms)
   - [Diffusion Models (DMs)](#diffusion-models-dms)
@@ -138,12 +139,24 @@ Evaluation uses metric suites that assess forgetting, utility retention, robustn
 
 ## 🧩 Applications of Multimodal Unlearning  
 
-Multimodal unlearning enables selective removal of specific identities, attributes, or concepts without full retraining while preserving overall capability and stability. Detailed use cases and representative studies are provided in **Appendix F**.
+Multimodal unlearning enables selective removal of specific identities, attributes, or concepts without full retraining while preserving overall capability and stability. Detailed use cases and representative studies are provided in **Appendix E**.
 
 <p align="center">
   <img src="assets/multimodal-unlearning-applications.png" width="60%" />
   <br/>
   <span style="font-size: 10px;">Figure 4: Core application scenarios of multimodal unlearning.</span>
+</p>
+
+## ⚠️ Open Challenges in Multimodal Unlearning
+
+Multimodal unlearning faces challenges in theory, generalization, evaluation, robustness, utility trade-offs, and benchmarking, limiting reliable and scalable deployment.
+
+Further discussion is provided in **Appendix F**, covering modality-specific limitations, evaluation considerations, and emerging research directions.
+
+<p align="center">
+  <img src="assets/open_challenges.jpg" width="60%" />
+  <br/>
+  <span style="font-size: 10px;">Figure 5: Key open challenges in multimodal unlearning.</span>
 </p>
 
 
