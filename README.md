@@ -26,14 +26,14 @@
 If our work supports your research or applications, we would appreciate a ⭐ and a citation using the BibTeX below.
 
 ```bibtex
-@article{sarwar2026mm-unlearning-survey,
-  title = {{Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks}},
-  author = {Sarwar, Nobin and Roy Dipta, Shubhashis and Liu, Zheyuan and Patil, Vaidehi},
-  year = {2026},
-  doi = {10.36227/techrxiv.176945748.88280394/v1},
-  url = {https://doi.org/10.36227/techrxiv.176945748.88280394/v1},
-  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
-  month = jan
+@inproceedings{sarwar2026mm-unlearning-survey,
+  title     = {{Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks}},
+  author    = {Sarwar, Nobin and Roy Dipta, Shubhashis and Liu, Zheyuan and Patil, Vaidehi},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026},
+  month     = jul,
+  publisher = {Association for Computational Linguistics},
+  url       = {https://doi.org/10.36227/techrxiv.176945748.88280394/v1}
 }
 ```
 
