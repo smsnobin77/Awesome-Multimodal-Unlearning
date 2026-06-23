@@ -26,13 +26,15 @@
 If our work supports your research or applications, we would appreciate a ⭐ and a citation using the BibTeX below.
 
 ```bibtex
-@inproceedings{sarwar2026mm-unlearning-survey,
-  title     = {Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks},
-  author    = {Sarwar, Nobin and Roy Dipta, Shubhashis and Liu, Zheyuan and Patil, Vaidehi},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+@inproceedings{sarwar-etal-2026-multimodal,
+  title     = {{Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks}},
+  author    = {Sarwar, Nobin and {Roy Dipta}, Shubhashis and Liu, Zheyuan and Patil, Vaidehi},
+  booktitle = {Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026},
   year      = {2026},
+  address   = {San Diego, California, USA},
   month     = jul,
   pages     = {27702--27730},
+  publisher = {Association for Computational Linguistics},
   url       = {https://aclanthology.org/2026.findings-acl.1379/}
 }
 ```
