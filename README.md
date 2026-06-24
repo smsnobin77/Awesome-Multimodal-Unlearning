@@ -4,7 +4,7 @@
 
 <div align="center">
 <a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/"><img src="https://img.shields.io/badge/Project%20Page-1f77b4?style=for-the-badge&logo=google-chrome&logoColor=white"></a>&nbsp;<!--
---><a href="https://aclanthology.org/2026.findings-acl.1379.pdf"><img src="https://img.shields.io/badge/Paper-ACL%20Findings%202026-4B6CB7?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>&nbsp;<!--
+--><a href="https://aclanthology.org/2026.findings-acl.1379/"><img src="https://img.shields.io/badge/Paper-ACL%20Findings%202026-4B6CB7?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>&nbsp;<!--
 --><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white"></a>
 </div>
 &nbsp;
