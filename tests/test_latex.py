@@ -40,3 +40,7 @@ def test_subsections_and_math_and_first_sentence():
 
 def test_slug():
     assert slug("FA@K") == "fa-k" and slug("CO2e") == "co2e" and slug("Top-k Acc") == "top-k-acc"
+
+
+def test_display_math_is_katex_safe():
+    assert display_math(r"\[ \operatorname{Top\mbox{-}k}(x) \nonumber \]") == [r"\operatorname{Top\text{-}k}(x)"]

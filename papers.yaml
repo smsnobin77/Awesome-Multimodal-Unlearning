@@ -2,15 +2,15 @@
   name: Homoglyph Bias
   title: Exploiting cultural biases via homoglyphs intext-to-image synthesis
   authors:
-  - Struppek, Lukas
-  - Hintersdorf, Dominik
-  - Friedrich, Felix
-  - Brack, Manuel
-  - Schramowski, Patrick
-  - Kersting, Kristian
+  - Lukas Struppek
+  - Dominik Hintersdorf
+  - Felix Friedrich
+  - Manuel Brack
+  - Patrick Schramowski
+  - Kristian Kersting
   year: 2024
   date: 2022-09
-  venue: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence
+  venue: IJCAI
   peer_reviewed: true
   kind: method
   stage: data-side
@@ -49,12 +49,12 @@
   name: CleanCLIP
   title: 'Cleanclip: Mitigating data poisoning attacks in multimodal contrastive learning'
   authors:
-  - Bansal, Hritik
-  - Singhi, Nishad
-  - Yang, Yu
-  - Yin, Fan
-  - Grover, Aditya
-  - Chang, Kai-Wei
+  - Hritik Bansal
+  - Nishad Singhi
+  - Yu Yang
+  - Fan Yin
+  - Aditya Grover
+  - Kai-Wei Chang
   year: 2023
   date: 2023-03
   venue: ICCV
@@ -105,12 +105,12 @@
   name: MetaCloak
   title: 'Metacloak: Preventing unauthorized subject-driven text-to-image diffusion-based synthesis via meta-learning'
   authors:
-  - Liu, Yixin
-  - Fan, Chenrui
-  - Dai, Yutong
-  - Chen, Xun
-  - Zhou, Pan
-  - Sun, Lichao
+  - Yixin Liu
+  - Chenrui Fan
+  - Yutong Dai
+  - Xun Chen
+  - Pan Zhou
+  - Lichao Sun
   year: 2024
   date: 2023-11
   venue: CVPR
@@ -162,11 +162,11 @@
   name: MEM
   title: 'Multimodal unlearnable examples: Protecting data against multimodal contrastive learning'
   authors:
-  - Liu, Xinwei
-  - Jia, Xiaojun
-  - Xun, Yuan
-  - Liang, Siyuan
-  - Cao, Xiaochun
+  - Xinwei Liu
+  - Xiaojun Jia
+  - Yuan Xun
+  - Siyuan Liang
+  - Xiaochun Cao
   year: 2024
   date: 2024-07
   venue: ACM MM
@@ -213,11 +213,11 @@
   name: UnSeg
   title: 'UnSeg: one universal unlearnable example generator is enough against all image segmentation'
   authors:
-  - Sun, Ye
-  - Zhang, Hao
-  - Zhang, Tiehua
-  - Ma, Xingjun
-  - Jiang, Yu-Gang
+  - Ye Sun
+  - Hao Zhang
+  - Tiehua Zhang
+  - Xingjun Ma
+  - Yu-Gang Jiang
   year: 2024
   date: 2024-10
   venue: NeurIPS
@@ -255,13 +255,13 @@
   name: UCs
   title: 'Unlearnable clusters: Towards label-agnostic unlearnable examples'
   authors:
-  - Zhang, Jiaming
-  - Ma, Xingjun
-  - Yi, Qi
-  - Sang, Jitao
-  - Jiang, Yu-Gang
-  - Wang, Yaowei
-  - Xu, Changsheng
+  - Jiaming Zhang
+  - Xingjun Ma
+  - Qi Yi
+  - Jitao Sang
+  - Yu-Gang Jiang
+  - Yaowei Wang
+  - Changsheng Xu
   year: 2023
   date: 2023-01
   venue: CVPR
@@ -312,13 +312,13 @@
   name: Controllable Unlearning
   title: Controllable Unlearning for Image-to-Image Generative Models via ε-Constrained Optimization
   authors:
-  - Feng, XiaoHua
-  - Li, Yuyuan
-  - Chen, Chaochao
-  - Zhang, Li
-  - Li, Longfei
-  - Zhou, Jun
-  - Zheng, Xiaolin
+  - XiaoHua Feng
+  - Yuyuan Li
+  - Chaochao Chen
+  - Li Zhang
+  - Longfei Li
+  - Jun Zhou
+  - Xiaolin Zheng
   year: 2025
   date: 2024-08
   venue: ICLR
@@ -356,10 +356,10 @@
   name: null
   title: Data Unlearning in Diffusion Models
   authors:
-  - Alberti, Silas
-  - Hasanaliyev, Kenan
-  - Shah, Manav
-  - Ermon, Stefano
+  - Silas Alberti
+  - Kenan Hasanaliyev
+  - Manav Shah
+  - Stefano Ermon
   year: 2025
   date: 2025-03
   venue: ICLR
@@ -402,10 +402,10 @@
   name: LoReUn
   title: 'Loreun: Data itself implicitly provides cues to improve machine unlearning'
   authors:
-  - Li, Xiang
-  - Shen, Qianli
-  - Wang, Haonan
-  - Kawaguchi, Kenji
+  - Xiang Li
+  - Qianli Shen
+  - Haonan Wang
+  - Kenji Kawaguchi
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -448,9 +448,9 @@
   name: null
   title: Multi-Modal Recommendation Unlearning for Legal, Licensing, and Modality Constraints
   authors:
-  - Sinha, Yash
-  - Mandal, Murari
-  - Kankanhalli, Mohan
+  - Yash Sinha
+  - Murari Mandal
+  - Mohan Kankanhalli
   year: 2025
   date: 2024-05
   venue: AAAI
@@ -500,8 +500,8 @@
   name: MUNBa
   title: 'Munba: Machine unlearning via nash bargaining'
   authors:
-  - Wu, Jing
-  - Harandi, Mehrtash
+  - Jing Wu
+  - Mehrtash Harandi
   year: 2025
   date: 2024-11
   venue: ICCV
@@ -551,15 +551,15 @@
   name: Boosting Alignment
   title: Boosting alignment for post-unlearning text-to-image generative models
   authors:
-  - Ko, Myeongseob
-  - Li, Henry
-  - Wang, Zhun
-  - Patsenker, Jonathan
-  - Wang, Jiachen Tianhao
-  - Li, Qinbin
-  - Jin, Ming
-  - Song, Dawn
-  - Jia, Ruoxi
+  - Myeongseob Ko
+  - Henry Li
+  - Zhun Wang
+  - Jonathan Patsenker
+  - Jiachen Tianhao Wang
+  - Qinbin Li
+  - Ming Jin
+  - Dawn Song
+  - Ruoxi Jia
   year: 2024
   date: 2024-12
   venue: NeurIPS
@@ -602,11 +602,11 @@
   name: null
   title: 'Do Not Mimic My Voice: Speaker Identity Unlearning for Zero-Shot Text-to-Speech'
   authors:
-  - Kim, Taesoo
-  - Kim, Jinju
-  - Kim, Dong Chan
-  - Ko, Jong Hwan
-  - Park, Gyeong-Moon
+  - Taesoo Kim
+  - Jinju Kim
+  - Dong Chan Kim
+  - Jong Hwan Ko
+  - Gyeong-Moon Park
   year: 2025
   date: 2025-07
   venue: ICML
@@ -657,10 +657,10 @@
   name: null
   title: 'No Encore: Unlearning as Opt-Out in Music Generation'
   authors:
-  - Kim, Jinju
-  - Kim, Taehan
-  - Waheed, Abdul
-  - Singh, Rita
+  - Jinju Kim
+  - Taehan Kim
+  - Abdul Waheed
+  - Rita Singh
   year: 2025
   date: 2025-09
   venue: arXiv
@@ -701,10 +701,10 @@
   name: null
   title: 'Quantum-Inspired Audio Unlearning: Towards Privacy-Preserving Voice Biometrics'
   authors:
-  - Pathak, Shreyansh
-  - Shreshtha, Sonu
-  - Singh, Richa
-  - Vatsa, Mayank
+  - Shreyansh Pathak
+  - Sonu Shreshtha
+  - Richa Singh
+  - Mayank Vatsa
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -754,7 +754,7 @@
   name: null
   title: Unlearning LLM-Based Speech Recognition Models
   authors:
-  - Liu, Zhe
+  - Zhe Liu
   year: 2025
   date: 2025-08
   venue: Interspeech
@@ -792,10 +792,10 @@
   name: NCU
   title: Unlearning the Noisy Correspondence Makes CLIP More Robust
   authors:
-  - Han, Haochen
-  - Wang, Alex Jinpeng
-  - Ye, Peijun
-  - Liu, Fangming
+  - Haochen Han
+  - Alex Jinpeng Wang
+  - Peijun Ye
+  - Fangming Liu
   year: 2025
   date: 2025-07
   venue: ICCV
@@ -844,10 +844,10 @@
   name: null
   title: 'Unleashing Uncertainty: Efficient Machine Unleanring for Generative AI'
   authors:
-  - Spartalis, Christoforos N
-  - Semertzidis, Theodoros
-  - Daras, Petros
-  - Gavves, Stratis
+  - Christoforos N Spartalis
+  - Theodoros Semertzidis
+  - Petros Daras
+  - Stratis Gavves
   year: 2025
   date: 2025-08
   venue: ICML
@@ -878,14 +878,14 @@
   name: null
   title: Direct unlearning optimization for robust and safe text-to-image models
   authors:
-  - Park, Yong-Hyun
-  - Yun, Sangdoo
-  - Kim, Jin-Hwa
-  - Kim, Junho
-  - Jang, Geonhui
-  - Jeong, Yonghyun
-  - Jo, Junghyo
-  - Lee, Gayoung
+  - Yong-Hyun Park
+  - Sangdoo Yun
+  - Jin-Hwa Kim
+  - Junho Kim
+  - Geonhui Jang
+  - Yonghyun Jeong
+  - Junghyo Jo
+  - Gayoung Lee
   year: 2024
   date: 2024-07
   venue: NeurIPS
@@ -937,14 +937,14 @@
   name: EFUF
   title: 'EFUF: Efficient Fine-Grained Unlearning Framework for Mitigating Hallucinations in Multimodal Large Language Models'
   authors:
-  - Xing, Shangyu
-  - Zhao, Fei
-  - Wu, Zhen
-  - An, Tuo
-  - Chen, Weihao
-  - Li, Chunhui
-  - Zhang, Jianbing
-  - Dai, Xinyu
+  - Shangyu Xing
+  - Fei Zhao
+  - Zhen Wu
+  - Tuo An
+  - Weihao Chen
+  - Chunhui Li
+  - Jianbing Zhang
+  - Xinyu Dai
   year: 2024
   date: 2024-02
   venue: EMNLP
@@ -989,8 +989,8 @@
   name: MultiDelete
   title: Multidelete for multimodal machine unlearning
   authors:
-  - Cheng, Jiali
-  - Amiri, Hadi
+  - Jiali Cheng
+  - Hadi Amiri
   year: 2024
   date: 2023-11
   venue: ECCV
@@ -1044,13 +1044,13 @@
   name: null
   title: 'Safegen: Mitigating unsafe content generation in text-to-image models'
   authors:
-  - Li, Xinfeng
-  - Yang, Yuchen
-  - Deng, Jiangyi
-  - Yan, Chen
-  - Chen, Yanjiao
-  - Ji, Xiaoyu
-  - Xu, Wenyuan
+  - Xinfeng Li
+  - Yuchen Yang
+  - Jiangyi Deng
+  - Chen Yan
+  - Yanjiao Chen
+  - Xiaoyu Ji
+  - Wenyuan Xu
   year: 2024
   date: 2024-04
   venue: arXiv
@@ -1093,14 +1093,14 @@
   name: SIU
   title: 'Single image unlearning: Efficient machine unlearning in multimodal large language models'
   authors:
-  - Li, Jiaqi
-  - Wei, Qianshan
-  - Zhang, Chuanyi
-  - Qi, Guilin
-  - Du, Miaozeng
-  - Chen, Yongrui
-  - Bi, Sheng
-  - Liu, Fan
+  - Jiaqi Li
+  - Qianshan Wei
+  - Chuanyi Zhang
+  - Guilin Qi
+  - Miaozeng Du
+  - Yongrui Chen
+  - Sheng Bi
+  - Fan Liu
   year: 2024
   date: 2024-05
   venue: NeurIPS
@@ -1153,13 +1153,13 @@
   name: Unlearn Backdoors
   title: 'Unlearning backdoor threats: Enhancing backdoor defense in multimodal contrastive learning via local token unlearning'
   authors:
-  - Liang, Siyuan
-  - Liu, Kuanrong
-  - Gong, Jiajun
-  - Liang, Jiawei
-  - Xun, Yuan
-  - Chang, Ee-Chien
-  - Cao, Xiaochun
+  - Siyuan Liang
+  - Kuanrong Liu
+  - Jiajun Gong
+  - Jiawei Liang
+  - Yuan Xun
+  - Ee-Chien Chang
+  - Xiaochun Cao
   year: 2024
   date: 2024-03
   venue: arXiv
@@ -1202,8 +1202,8 @@
   name: null
   title: Unlearning Concepts from Text-to-Video Diffusion Models
   authors:
-  - Liu, Shiqi
-  - Tan, Yihua
+  - Shiqi Liu
+  - Yihua Tan
   year: 2024
   date: 2024-07
   venue: arXiv
@@ -1249,12 +1249,12 @@
   name: null
   title: Ablating concepts in text-to-image diffusion models
   authors:
-  - Kumari, Nupur
-  - Zhang, Bingliang
-  - Wang, Sheng-Yu
-  - Shechtman, Eli
-  - Zhang, Richard
-  - Zhu, Jun-Yan
+  - Nupur Kumari
+  - Bingliang Zhang
+  - Sheng-Yu Wang
+  - Eli Shechtman
+  - Richard Zhang
+  - Jun-Yan Zhu
   year: 2023
   date: 2023-03
   venue: ICCV
@@ -1294,9 +1294,9 @@
   name: SFD
   title: 'Score Forgetting Distillation: A Swift, Data-Free Method for Machine Unlearning in Diffusion Models'
   authors:
-  - Chen, Tianqi
-  - Zhang, Shujian
-  - Zhou, Mingyuan
+  - Tianqi Chen
+  - Shujian Zhang
+  - Mingyuan Zhou
   year: 2025
   date: 2024-09
   venue: ICLR
@@ -1341,11 +1341,11 @@
   name: SKD-CAG
   title: 'Sealing The Backdoor: Unlearning Adversarial Text Triggers In Diffusion Models Using Knowledge Distillation'
   authors:
-  - Aravindan, Ashwath Vaithinathan
-  - Jha, Abha
-  - Salaway, Matthew
-  - Bhide, Atharva Sandeep
-  - Yaldiz, Duygu Nur
+  - Ashwath Vaithinathan Aravindan
+  - Abha Jha
+  - Matthew Salaway
+  - Atharva Sandeep Bhide
+  - Duygu Nur Yaldiz
   year: 2025
   date: 2025-08
   venue: arXiv
@@ -1390,12 +1390,12 @@
   name: SSD
   title: Towards safe self-distillation of internet-scale text-to-image diffusion models
   authors:
-  - Kim, Sanghyun
-  - Jung, Seohyeon
-  - Kim, Balhae
-  - Choi, Moonseok
-  - Shin, Jinwoo
-  - Lee, Juho
+  - Sanghyun Kim
+  - Seohyeon Jung
+  - Balhae Kim
+  - Moonseok Choi
+  - Jinwoo Shin
+  - Juho Lee
   year: 2023
   date: 2023-07
   venue: arXiv
@@ -1432,11 +1432,11 @@
   name: SAU
   title: Backdoor Defense in Diffusion Models via Spatial Attention Unlearning
   authors:
-  - Jha, Abha
-  - Aravindan, Ashwath Vaithinathan
-  - Salaway, Matthew
-  - Bhide, Atharva Sandeep
-  - Yaldiz, Duygu Nur
+  - Abha Jha
+  - Ashwath Vaithinathan Aravindan
+  - Matthew Salaway
+  - Atharva Sandeep Bhide
+  - Duygu Nur Yaldiz
   year: 2025
   date: 2025-04
   venue: arXiv
@@ -1480,12 +1480,12 @@
   name: KSCU
   title: Concept Unlearning by Modeling Key Steps of Diffusion Process
   authors:
-  - Zhang, Chaoshuo
-  - Lin, Chenhao
-  - Zhao, Zhengyu
-  - Yang, Le
-  - Wang, Qian
-  - Shen, Chao
+  - Chaoshuo Zhang
+  - Chenhao Lin
+  - Zhengyu Zhao
+  - Le Yang
+  - Qian Wang
+  - Chao Shen
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -1529,13 +1529,13 @@
   name: MMUnlearner
   title: 'MMUnlearner: Reformulating Multimodal Machine Unlearning in the Era of Multimodal Large Language Models'
   authors:
-  - Huo, Jiahao
-  - Yan, Yibo
-  - Zheng, Xu
-  - Lyu, Yuanhuiyi
-  - Zou, Xin
-  - Wei, Zhihua
-  - Hu, Xuming
+  - Jiahao Huo
+  - Yibo Yan
+  - Xu Zheng
+  - Yuanhuiyi Lyu
+  - Xin Zou
+  - Zhihua Wei
+  - Xuming Hu
   year: 2025
   date: 2025-02
   venue: Findings
@@ -1574,13 +1574,13 @@
   name: null
   title: 'Sculpting memory: Multi-concept forgetting in diffusion models via dynamic mask and concept-aware optimization'
   authors:
-  - Li, Gen
-  - Xiao, Yang
-  - Ji, Jie
-  - Deng, Kaiyuan
-  - Hui, Bo
-  - Guo, Linke
-  - Ma, Xiaolong
+  - Gen Li
+  - Yang Xiao
+  - Jie Ji
+  - Kaiyuan Deng
+  - Bo Hui
+  - Linke Guo
+  - Xiaolong Ma
   year: 2025
   date: 2025-04
   venue: ICCV
@@ -1627,14 +1627,14 @@
   name: Forget-Me-Not
   title: 'Forget-me-not: Learning to forget in text-to-image diffusion models'
   authors:
-  - Zhang, Gong
-  - Wang, Kai
-  - Xu, Xingqian
-  - Wang, Zhangyang
-  - Shi, Humphrey
+  - Gong Zhang
+  - Kai Wang
+  - Xingqian Xu
+  - Zhangyang Wang
+  - Humphrey Shi
   year: 2024
   date: 2023-03
-  venue: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition
+  venue: CVPR
   peer_reviewed: true
   kind: method
   stage: training-time
@@ -1675,12 +1675,12 @@
   name: SalUn
   title: 'Salun: Empowering machine unlearning via gradient-based weight saliency in both image classification and generation'
   authors:
-  - Fan, Chongyu
-  - Liu, Jiancheng
-  - Zhang, Yihua
-  - Wong, Eric
-  - Wei, Dennis
-  - Liu, Sijia
+  - Chongyu Fan
+  - Jiancheng Liu
+  - Yihua Zhang
+  - Eric Wong
+  - Dennis Wei
+  - Sijia Liu
   year: 2023
   date: 2023-10
   venue: ICLR
@@ -1735,12 +1735,12 @@
   name: Efficient Fine-Tuning
   title: Efficient fine-tuning and concept suppression for pruned diffusion models
   authors:
-  - Shirkavand, Reza
-  - Yu, Peiran
-  - Gao, Shangqian
-  - Somepalli, Gowthami
-  - Goldstein, Tom
-  - Huang, Heng
+  - Reza Shirkavand
+  - Peiran Yu
+  - Shangqian Gao
+  - Gowthami Somepalli
+  - Tom Goldstein
+  - Heng Huang
   year: 2025
   date: 2024-12
   venue: CVPR
@@ -1815,12 +1815,12 @@
   name: MANU
   title: Modality-aware neuron pruning for unlearning in multimodal large language models
   authors:
-  - Liu, Zheyuan
-  - Dou, Guangyao
-  - Yuan, Xiangchi
-  - Zhang, Chunhui
-  - Tan, Zhaoxuan
-  - Jiang, Meng
+  - Zheyuan Liu
+  - Guangyao Dou
+  - Xiangchi Yuan
+  - Chunhui Zhang
+  - Zhaoxuan Tan
+  - Meng Jiang
   year: 2025
   date: 2025-02
   venue: ACL
@@ -1858,9 +1858,9 @@
   name: FreezeAsGuard
   title: 'Freezeasguard: Mitigating illegal adaptation of diffusion models via selective tensor freezing'
   authors:
-  - Huang, Kai
-  - Wang, Haoming
-  - Gao, Wei
+  - Kai Huang
+  - Haoming Wang
+  - Wei Gao
   year: 2024
   date: 2024-05
   venue: arXiv
@@ -1901,9 +1901,9 @@
   name: SLUG
   title: Targeted Unlearning with Single Layer Unlearning Gradient
   authors:
-  - Cai, Zikui
-  - Tan, Yaoteng
-  - Asif, M Salman
+  - Zikui Cai
+  - Yaoteng Tan
+  - M Salman Asif
   year: 2025
   date: 2024-07
   venue: ICML
@@ -1953,9 +1953,9 @@
   name: Model Integrity
   title: Model integrity when unlearning with t2i diffusion models
   authors:
-  - Schioppa, Andrea
-  - Hoogeboom, Emiel
-  - Heek, Jonathan
+  - Andrea Schioppa
+  - Emiel Hoogeboom
+  - Jonathan Heek
   year: 2024
   date: 2024-11
   venue: arXiv
@@ -1997,9 +1997,9 @@
   name: CURE
   title: 'CURE: Concept Unlearning via Orthogonal Representation Editing in Diffusion Models'
   authors:
-  - Biswas, Shristi Das
-  - Roy, Arani
-  - Roy, Kaushik
+  - Shristi Das Biswas
+  - Arani Roy
+  - Kaushik Roy
   year: 2025
   date: 2025-05
   venue: NeurIPS
@@ -2052,11 +2052,11 @@
   name: Motion Unlearning
   title: Human Motion Unlearning
   authors:
-  - De Matteis, Edoardo
-  - Migliarini, Matteo
-  - Sampieri, Alessio
-  - Spinelli, Indro
-  - Galasso, Fabio
+  - Edoardo De Matteis
+  - Matteo Migliarini
+  - Alessio Sampieri
+  - Indro Spinelli
+  - Fabio Galasso
   year: 2025
   date: 2025-03
   venue: arXiv
@@ -2100,12 +2100,12 @@
   name: Safe-CLIP
   title: 'Safe-CLIP: Removing NSFW Concepts from Vision-and-Language Models'
   authors:
-  - Poppi, Samuele
-  - Poppi, Tobia
-  - Cocchi, Federico
-  - Cornia, Marcella
-  - Baraldi, Lorenzo
-  - Cucchiara, Rita
+  - Samuele Poppi
+  - Tobia Poppi
+  - Federico Cocchi
+  - Marcella Cornia
+  - Lorenzo Baraldi
+  - Rita Cucchiara
   year: 2024
   date: 2023-11
   venue: ECCV
@@ -2154,16 +2154,16 @@
   name: Video Unlearning
   title: Video Unlearning via Low-Rank Refusal Vector
   authors:
-  - Facchiano, Simone
-  - Saravalle, Stefano
-  - Migliarini, Matteo
-  - De Matteis, Edoardo
-  - Sampieri, Alessio
-  - Pilzer, Andrea
-  - Rodolà, Emanuele
-  - Spinelli, Indro
-  - Franco, Luca
-  - Galasso, Fabio
+  - Simone Facchiano
+  - Stefano Saravalle
+  - Matteo Migliarini
+  - Edoardo De Matteis
+  - Alessio Sampieri
+  - Andrea Pilzer
+  - Emanuele Rodolà
+  - Indro Spinelli
+  - Luca Franco
+  - Fabio Galasso
   year: 2025
   date: 2025-06
   venue: arXiv
@@ -2203,15 +2203,15 @@
   name: Diffusion Soup
   title: 'Diffusion Soup: Model Merging for Text-to-Image Diffusion Models'
   authors:
-  - Biggs, Benjamin
-  - Seshadri, Arjun
-  - Zou, Yang
-  - Jain, Achin
-  - Golatkar, Aditya
-  - Xie, Yusheng
-  - Achille, Alessandro
-  - Swaminathan, Ashwin
-  - Soatto, Stefano
+  - Benjamin Biggs
+  - Arjun Seshadri
+  - Yang Zou
+  - Achin Jain
+  - Aditya Golatkar
+  - Yusheng Xie
+  - Alessandro Achille
+  - Ashwin Swaminathan
+  - Stefano Soatto
   year: 2024
   date: 2024-06
   venue: ECCV
@@ -2293,12 +2293,12 @@
   name: Task Arithmetic
   title: Editing models with task arithmetic
   authors:
-  - Ilharco, Gabriel
-  - Ribeiro, Marco Tulio
-  - Wortsman, Mitchell
-  - Schmidt, Ludwig
-  - Hajishirzi, Hannaneh
-  - Farhadi, Ali
+  - Gabriel Ilharco
+  - Marco Tulio Ribeiro
+  - Mitchell Wortsman
+  - Ludwig Schmidt
+  - Hannaneh Hajishirzi
+  - Ali Farhadi
   year: 2023
   date: 2022-12
   venue: ICLR
@@ -2340,12 +2340,12 @@
   name: null
   title: Hiding and Recovering Knowledge in Text-to-Image Diffusion Models via Learnable Prompts
   authors:
-  - Bui, Anh Tuan
-  - Doan, Khanh
-  - Le, Trung
-  - Montague, Paul
-  - Abraham, Tamas
-  - Phung, Dinh
+  - Anh Tuan Bui
+  - Khanh Doan
+  - Trung Le
+  - Paul Montague
+  - Tamas Abraham
+  - Dinh Phung
   year: 2025
   date: 2024-03
   venue: ICLR
@@ -2389,15 +2389,15 @@
   name: CPR
   title: 'CPR: Retrieval augmented generation for copyright protection'
   authors:
-  - Golatkar, Aditya
-  - Achille, Alessandro
-  - Zancato, Luca
-  - Wang, Yu-Xiang
-  - Swaminathan, Ashwin
-  - Soatto, Stefano
+  - Aditya Golatkar
+  - Alessandro Achille
+  - Luca Zancato
+  - Yu-Xiang Wang
+  - Ashwin Swaminathan
+  - Stefano Soatto
   year: 2024
   date: 2024-03
-  venue: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition
+  venue: CVPR
   peer_reviewed: true
   kind: method
   stage: decoding-time
@@ -2437,13 +2437,13 @@
   name: SuppressEOT
   title: 'Get What You Want, Not What You Don''t: Image Content Suppression for Text-to-Image Diffusion Models'
   authors:
-  - Li, Senmao
-  - van de Weijer, Joost
-  - Hu, Taihang
-  - Khan, Fahad Shahbaz
-  - Hou, Qibin
-  - Wang, Yaxing
-  - Yang, Jian
+  - Senmao Li
+  - Joost van de Weijer
+  - Taihang Hu
+  - Fahad Shahbaz Khan
+  - Qibin Hou
+  - Yaxing Wang
+  - Jian Yang
   year: 2024
   date: 2024-02
   venue: ICLR
@@ -2480,12 +2480,12 @@
   name: Moderator
   title: 'Moderator: Moderating text-to-image diffusion models through fine-grained context-based policies'
   authors:
-  - Wang, Peiran
-  - Li, Qiyu
-  - Yu, Longxuan
-  - Wang, Ziyao
-  - Li, Ang
-  - Jin, Haojian
+  - Peiran Wang
+  - Qiyu Li
+  - Longxuan Yu
+  - Ziyao Wang
+  - Ang Li
+  - Haojian Jin
   year: 2024
   date: 2024-08
   venue: ACM CCS
@@ -2529,9 +2529,9 @@
   name: SteerDiff
   title: 'Steerdiff: Steering towards safe text-to-image diffusion models'
   authors:
-  - Zhang, Hongxiang
-  - He, Yifeng
-  - Chen, Hao
+  - Hongxiang Zhang
+  - Yifeng He
+  - Hao Chen
   year: 2024
   date: 2024-10
   venue: arXiv
@@ -2578,10 +2578,10 @@
   name: Detect-and-Guide
   title: 'Detect-and-Guide: Self-regulation of Diffusion Models for Safe Text-to-Image Generation via Guideline Token Optimization'
   authors:
-  - Li, Feifei
-  - Zhang, Mi
-  - Sun, Yiming
-  - Yang, Min
+  - Feifei Li
+  - Mi Zhang
+  - Yiming Sun
+  - Min Yang
   year: 2025
   date: 2025-03
   venue: CVPR
@@ -2625,11 +2625,11 @@
   name: DNG
   title: Dynamic Negative Guidance of Diffusion Models
   authors:
-  - Koulischer, Felix
-  - Deleu, Johannes
-  - Raya, Gabriel
-  - Demeester, Thomas
-  - Ambrogioni, Luca
+  - Felix Koulischer
+  - Johannes Deleu
+  - Gabriel Raya
+  - Thomas Demeester
+  - Luca Ambrogioni
   year: 2025
   date: 2024-10
   venue: ICLR
@@ -2665,11 +2665,11 @@
   name: SAFREE
   title: 'SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation'
   authors:
-  - Yoon, Jaehong
-  - Yu, Shoubin
-  - Patil, Vaidehi
-  - Yao, Huaxiu
-  - Bansal, Mohit
+  - Jaehong Yoon
+  - Shoubin Yu
+  - Vaidehi Patil
+  - Huaxiu Yao
+  - Mohit Bansal
   year: 2025
   date: 2024-10
   venue: ICLR
@@ -2718,10 +2718,10 @@
   name: null
   title: Steering guidance for personalized text-to-image diffusion models
   authors:
-  - Park, Sunghyun
-  - Choi, Seokeon
-  - Park, Hyoungwoo
-  - Yun, Sungrack
+  - Sunghyun Park
+  - Seokeon Choi
+  - Hyoungwoo Park
+  - Sungrack Yun
   year: 2025
   date: 2025-08
   venue: ICCV
@@ -2761,13 +2761,13 @@
   name: UnGuide
   title: 'UnGuide: Learning to Forget with LoRA-Guided Diffusion Models'
   authors:
-  - Polowczyk, Agnieszka
-  - Polowczyk, Alicja
-  - Malarz, Dawid
-  - Kasymov, Artur
-  - Mazur, Marcin
-  - Tabor, Jacek
-  - Spurek, PrzemysĹ
+  - Agnieszka Polowczyk
+  - Alicja Polowczyk
+  - Dawid Malarz
+  - Artur Kasymov
+  - Marcin Mazur
+  - Jacek Tabor
+  - PrzemysĹ Spurek
   - others
   year: 2025
   date: 2025-08
@@ -2814,15 +2814,15 @@
   name: null
   title: A comprehensive survey of machine unlearning techniques for large language models
   authors:
-  - Geng, Jiahui
-  - Li, Qing
-  - Woisetschlaeger, Herbert
-  - Chen, Zongxiong
-  - Cai, Fengyu
-  - Wang, Yuxia
-  - Nakov, Preslav
-  - Jacobsen, Hans-Arno
-  - Karray, Fakhri
+  - Jiahui Geng
+  - Qing Li
+  - Herbert Woisetschlaeger
+  - Zongxiong Chen
+  - Fengyu Cai
+  - Yuxia Wang
+  - Preslav Nakov
+  - Hans-Arno Jacobsen
+  - Fakhri Karray
   year: 2025
   date: 2025-03
   venue: arXiv
@@ -2855,15 +2855,15 @@
   name: null
   title: 'A survey on generative model unlearning: Fundamentals, taxonomy, evaluation, and future direction'
   authors:
-  - Feng, Xiaohua
-  - Zhang, Jiaming
-  - Yu, Fengyuan
-  - Wang, Chengye
-  - Zhang, Li
-  - Li, Kaixiang
-  - Li, Yuyuan
-  - Chen, Chaochao
-  - Yin, Jianwei
+  - Xiaohua Feng
+  - Jiaming Zhang
+  - Fengyuan Yu
+  - Chengye Wang
+  - Li Zhang
+  - Kaixiang Li
+  - Yuyuan Li
+  - Chaochao Chen
+  - Jianwei Yin
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -2901,11 +2901,11 @@
   name: null
   title: 'Adaptive Median Smoothing: Adversarial Defense for Unlearned Text-to-Image Diffusion Models at Inference Time'
   authors:
-  - Han, Xiaoxuan
-  - Yang, Songlin
-  - Wang, Wei
-  - Li, Yang
-  - Dong, Jing
+  - Xiaoxuan Han
+  - Songlin Yang
+  - Wei Wang
+  - Yang Li
+  - Jing Dong
   year: 2025
   date: 2024-01
   venue: ICML
@@ -2975,16 +2975,16 @@
   name: FIUBench
   title: Benchmarking vision language model unlearning via fictitious facial identity dataset
   authors:
-  - Ma, Yingzi
-  - Wang, Jiongxiao
-  - Wang, Fei
-  - Ma, Siyuan
-  - Li, Jiazhao
-  - Pan, Jinsheng
-  - Li, Xiujun
-  - Huang, Furong
-  - Sun, Lichao
-  - Li, Bo
+  - Yingzi Ma
+  - Jiongxiao Wang
+  - Fei Wang
+  - Siyuan Ma
+  - Jiazhao Li
+  - Jinsheng Pan
+  - Xiujun Li
+  - Furong Huang
+  - Lichao Sun
+  - Bo Li
   - others
   year: 2025
   date: 2024-11
@@ -3037,12 +3037,12 @@
   name: null
   title: 'Cliperase: Efficient unlearning of visual-textual associations in clip'
   authors:
-  - Yang, Tianyu
-  - Dai, Lisen
-  - Wang, Xiangqi
-  - Cheng, Minhao
-  - Tian, Yapeng
-  - Zhang, Xiangliang
+  - Tianyu Yang
+  - Lisen Dai
+  - Xiangqi Wang
+  - Minhao Cheng
+  - Yapeng Tian
+  - Xiangliang Zhang
   year: 2025
   date: 2024-10
   venue: ACL
@@ -3082,12 +3082,12 @@
   name: null
   title: 'DiffZOO: A Purely Query-Based Black-Box Attack for Red-teaming Text-to-Image Generative Model via Zeroth Order Optimization'
   authors:
-  - Dang, Pucheng
-  - Hu, Xing
-  - Li, Dong
-  - Zhang, Rui
-  - Guo, Qi
-  - Xu, Kaidi
+  - Pucheng Dang
+  - Xing Hu
+  - Dong Li
+  - Rui Zhang
+  - Qi Guo
+  - Kaidi Xu
   year: 2025
   date: 2024-08
   venue: Findings
@@ -3133,13 +3133,13 @@
   name: null
   title: 'Digital forgetting in large language models: A survey of unlearning methods'
   authors:
-  - Blanco-Justicia, Alberto
-  - Jebreel, Najeeb
-  - Manzanares-Salor, Benet
-  - Sánchez, David
-  - Domingo-Ferrer, Josep
-  - Collell, Guillem
-  - Eeik Tan, Kuan
+  - Alberto Blanco-Justicia
+  - Najeeb Jebreel
+  - Benet Manzanares-Salor
+  - David Sánchez
+  - Josep Domingo-Ferrer
+  - Guillem Collell
+  - Kuan Eeik Tan
   year: 2025
   date: 2024-04
   venue: Artificial Intelligence Review
@@ -3175,13 +3175,13 @@
   name: null
   title: Does Multimodal Large Language Model Truly Unlearn? Stealthy MLLM Unlearning Attack
   authors:
-  - Zhang, Xianren
-  - Liu, Hui
-  - Zhang, Delvin Ce
-  - Tang, Xianfeng
-  - He, Qi
-  - Lee, Dongwon
-  - Wang, Suhang
+  - Xianren Zhang
+  - Hui Liu
+  - Delvin Ce Zhang
+  - Xianfeng Tang
+  - Qi He
+  - Dongwon Lee
+  - Suhang Wang
   year: 2025
   date: 2025-06
   venue: arXiv
@@ -3222,13 +3222,13 @@
   name: null
   title: 'Efficient and adaptive recommendation unlearning: A guided filtering framework to erase outdated preferences'
   authors:
-  - Dang, Yizhou
-  - Liu, Yuting
-  - Yang, Enneng
-  - Guo, Guibing
-  - Jiang, Linying
-  - Zhao, Jianzhe
-  - Wang, Xingwei
+  - Yizhou Dang
+  - Yuting Liu
+  - Enneng Yang
+  - Guibing Guo
+  - Linying Jiang
+  - Jianzhe Zhao
+  - Xingwei Wang
   year: 2025
   date: null
   venue: ACM Transactions on Information Systems
@@ -3274,10 +3274,10 @@
   name: Holistic Unlearning
   title: 'Holistic unlearning benchmark: A multi-faceted evaluation for text-to-image diffusion model unlearning'
   authors:
-  - Moon, Saemi
-  - Lee, Minjong
-  - Park, Sangdon
-  - Kim, Dongwoo
+  - Saemi Moon
+  - Minjong Lee
+  - Sangdon Park
+  - Dongwoo Kim
   year: 2025
   date: 2024-10
   venue: ICCV
@@ -3324,10 +3324,10 @@
   name: null
   title: 'Image Can Bring Your Memory Back: A Novel Multi-Modal Guided Attack against Image Generation Model Unlearning'
   authors:
-  - Liu, Renyang
-  - Li, Guanlin
-  - Zhang, Tianwei
-  - Ng, See-Kiong
+  - Renyang Liu
+  - Guanlin Li
+  - Tianwei Zhang
+  - See-Kiong Ng
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -3438,11 +3438,11 @@
   name: null
   title: 'MedForget: Hierarchy-Aware Multimodal Unlearning Testbed for Medical AI'
   authors:
-  - Wu, Fengli
-  - Patil, Vaidehi
-  - Yoon, Jaehong
-  - Zhang, Yue
-  - Bansal, Mohit
+  - Fengli Wu
+  - Vaidehi Patil
+  - Jaehong Yoon
+  - Yue Zhang
+  - Mohit Bansal
   year: 2025
   date: 2025-12
   venue: arXiv
@@ -3486,11 +3486,11 @@
   name: null
   title: Memories of forgotten concepts
   authors:
-  - Rusanovsky, Matan
-  - Malnick, Shimon
-  - Jevnisek, Amir
-  - Fried, Ohad
-  - Avidan, Shai
+  - Matan Rusanovsky
+  - Shimon Malnick
+  - Amir Jevnisek
+  - Ohad Fried
+  - Shai Avidan
   year: 2025
   date: 2024-12
   venue: CVPR
@@ -3527,12 +3527,12 @@
   name: null
   title: 'Meta-unlearning on diffusion models: Preventing relearning unlearned concepts'
   authors:
-  - Gao, Hongcheng
-  - Pang, Tianyu
-  - Du, Chao
-  - Hu, Taihang
-  - Deng, Zhijie
-  - Lin, Min
+  - Hongcheng Gao
+  - Tianyu Pang
+  - Chao Du
+  - Taihang Hu
+  - Zhijie Deng
+  - Min Lin
   year: 2025
   date: 2024-10
   venue: ICCV
@@ -3571,13 +3571,13 @@
   name: null
   title: 'MUC: Machine Unlearning for Contrastive Learning with Black-box Evaluation'
   authors:
-  - Wang, Yihan
-  - Lu, Yiwei
-  - Zhang, Guojun
-  - Boenisch, Franziska
-  - Dziedzic, Adam
-  - Yu, Yaoliang
-  - Gao, Xiao-Shan
+  - Yihan Wang
+  - Yiwei Lu
+  - Guojun Zhang
+  - Franziska Boenisch
+  - Adam Dziedzic
+  - Yaoliang Yu
+  - Xiao-Shan Gao
   year: 2025
   date: 2024-06
   venue: TMLR
@@ -3621,12 +3621,12 @@
   name: null
   title: On large language model continual unlearning
   authors:
-  - Gao, Chongyang
-  - Wang, Lixu
-  - Ding, Kaize
-  - Weng, Chenkai
-  - Wang, Xiao
-  - Zhu, Qi
+  - Chongyang Gao
+  - Lixu Wang
+  - Kaize Ding
+  - Chenkai Weng
+  - Xiao Wang
+  - Qi Zhu
   year: 2025
   date: 2024-07
   venue: ICLR
@@ -3670,16 +3670,16 @@
   name: PEBench
   title: 'Pebench: A fictitious dataset to benchmark machine unlearning for multimodal large language models'
   authors:
-  - Xu, Zhaopan
-  - Zhou, Pengfei
-  - Tang, Weidong
-  - Ai, Jiaxin
-  - Zhao, Wangbo
-  - Wang, Kai
-  - Peng, Xiaojiang
-  - Shao, Wenqi
-  - Yao, Hongxun
-  - Zhang, Kaipeng
+  - Zhaopan Xu
+  - Pengfei Zhou
+  - Weidong Tang
+  - Jiaxin Ai
+  - Wangbo Zhao
+  - Kai Wang
+  - Xiaojiang Peng
+  - Wenqi Shao
+  - Hongxun Yao
+  - Kaipeng Zhang
   year: 2025
   date: 2025-03
   venue: arXiv
@@ -3726,13 +3726,13 @@
   name: null
   title: 'Precise, fast, and low-cost concept erasure in value space: Orthogonal complement matters'
   authors:
-  - Wang, Yuan
-  - Li, Ouxiang
-  - Mu, Tingting
-  - Hao, Yanbin
-  - Liu, Kuien
-  - Wang, Xiang
-  - He, Xiangnan
+  - Yuan Wang
+  - Ouxiang Li
+  - Tingting Mu
+  - Yanbin Hao
+  - Kuien Liu
+  - Xiang Wang
+  - Xiangnan He
   year: 2025
   date: 2024-12
   venue: CVPR
@@ -3774,10 +3774,10 @@
   name: null
   title: 'Prompting Forgetting: Unlearning in GANs via Textual Guidance'
   authors:
-  - Nagasubramaniam, Piyush
-  - Karamchandani, Neeraj
-  - Wu, Chen
-  - Zhu, Sencun
+  - Piyush Nagasubramaniam
+  - Neeraj Karamchandani
+  - Chen Wu
+  - Sencun Zhu
   year: 2025
   date: 2025-04
   venue: arXiv
@@ -3823,16 +3823,16 @@
   name: MLLMU-Bench
   title: Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench
   authors:
-  - Liu, Zheyuan
-  - Dou, Guangyao
-  - Jia, Mengzhao
-  - Tan, Zhaoxuan
-  - Zeng, Qingkai
-  - Yuan, Yongle
-  - Jiang, Meng
+  - Zheyuan Liu
+  - Guangyao Dou
+  - Mengzhao Jia
+  - Zhaoxuan Tan
+  - Qingkai Zeng
+  - Yongle Yuan
+  - Meng Jiang
   year: 2025
   date: 2024-10
-  venue: Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics
+  venue: NAACL
   peer_reviewed: true
   kind: benchmark
   stage: null
@@ -3877,11 +3877,11 @@
   name: null
   title: 'PULSE: Practical Evaluation Scenarios for Large Multimodal Model Unlearning'
   authors:
-  - Kawakami, Tatsuki
-  - Egashira, Kazuki
-  - Miyai, Atsuyuki
-  - Irie, Go
-  - Aizawa, Kiyoharu
+  - Tatsuki Kawakami
+  - Kazuki Egashira
+  - Atsuyuki Miyai
+  - Go Irie
+  - Kiyoharu Aizawa
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -3995,16 +3995,16 @@
   name: null
   title: Rethinking machine unlearning for large language models
   authors:
-  - Liu, Sijia
-  - Yao, Yuanshun
-  - Jia, Jinghan
-  - Casper, Stephen
-  - Baracaldo, Nathalie
-  - Hase, Peter
-  - Yao, Yuguang
-  - Liu, Chris Yuhao
-  - Xu, Xiaojun
-  - Li, Hang
+  - Sijia Liu
+  - Yuanshun Yao
+  - Jinghan Jia
+  - Stephen Casper
+  - Nathalie Baracaldo
+  - Peter Hase
+  - Yuguang Yao
+  - Chris Yuhao Liu
+  - Xiaojun Xu
+  - Hang Li
   - others
   year: 2025
   date: 2024-02
@@ -4078,8 +4078,8 @@
   name: null
   title: 'SAeUron: Interpretable Concept Unlearning in Diffusion Models with Sparse Autoencoders'
   authors:
-  - Cywiński, Bartosz
-  - Deja, Kamil
+  - Bartosz Cywiński
+  - Kamil Deja
   year: 2025
   date: 2025-01
   venue: ICML
@@ -4128,15 +4128,15 @@
   name: SafeEraser
   title: 'Safeeraser: Enhancing safety in multimodal large language models through multimodal machine unlearning'
   authors:
-  - Chen, Junkai
-  - Deng, Zhijie
-  - Zheng, Kening
-  - Yan, Yibo
-  - Liu, Shuliang
-  - Wu, PeiJun
-  - Jiang, Peijie
-  - Liu, Jia
-  - Hu, Xuming
+  - Junkai Chen
+  - Zhijie Deng
+  - Kening Zheng
+  - Yibo Yan
+  - Shuliang Liu
+  - PeiJun Wu
+  - Peijie Jiang
+  - Jia Liu
+  - Xuming Hu
   year: 2025
   date: 2025-02
   venue: arXiv
@@ -4184,12 +4184,12 @@
   name: null
   title: 'Safety mirage: How spurious correlations undermine vlm safety fine-tuning'
   authors:
-  - Chen, Yiwei
-  - Yao, Yuguang
-  - Zhang, Yihua
-  - Shen, Bingquan
-  - Liu, Gaowen
-  - Liu, Sijia
+  - Yiwei Chen
+  - Yuguang Yao
+  - Yihua Zhang
+  - Bingquan Shen
+  - Gaowen Liu
+  - Sijia Liu
   year: 2025
   date: 2025-03
   venue: arXiv
@@ -4240,12 +4240,12 @@
   name: null
   title: 'SEMU: Singular Value Decomposition for Efficient Machine Unlearning'
   authors:
-  - Sendera, Marcin
-  - Struski, Łukasz
-  - Książek, Kamil
-  - Musiol, Kryspin
-  - Tabor, Jacek
-  - Rymarczyk, Dawid
+  - Marcin Sendera
+  - Łukasz Struski
+  - Kamil Książek
+  - Kryspin Musiol
+  - Jacek Tabor
+  - Dawid Rymarczyk
   year: 2025
   date: 2025-02
   venue: ICML
@@ -4290,14 +4290,14 @@
   name: Six-CD
   title: 'Six-CD: Benchmarking Concept Removals for Text-to-image Diffusion Models'
   authors:
-  - Ren, Jie
-  - Chen, Kangrui
-  - Cui, Yingqian
-  - Zeng, Shenglai
-  - Liu, Hui
-  - Xing, Yue
-  - Tang, Jiliang
-  - Lyu, Lingjuan
+  - Jie Ren
+  - Kangrui Chen
+  - Yingqian Cui
+  - Shenglai Zeng
+  - Hui Liu
+  - Yue Xing
+  - Jiliang Tang
+  - Lingjuan Lyu
   year: 2025
   date: 2024-06
   venue: CVPR
@@ -4340,8 +4340,8 @@
   name: null
   title: Speech Unlearning
   authors:
-  - Cheng, Jiali
-  - Amiri, Hadi
+  - Jiali Cheng
+  - Hadi Amiri
   year: 2025
   date: 2025-06
   venue: arXiv
@@ -4387,13 +4387,13 @@
   name: null
   title: 'SUA: Stealthy Multimodal Large Language Model Unlearning Attack'
   authors:
-  - Zhang, Xianren
-  - Liu, Hui
-  - Zhang, Delvin Ce
-  - Tang, Xianfeng
-  - He, Qi
-  - Lee, Dongwon
-  - Wang, Suhang
+  - Xianren Zhang
+  - Hui Liu
+  - Delvin Ce Zhang
+  - Xianfeng Tang
+  - Qi He
+  - Dongwon Lee
+  - Suhang Wang
   year: 2025
   date: 2025-06
   venue: EMNLP
@@ -4435,10 +4435,10 @@
   name: null
   title: 'The Dual Power of Interpretable Token Embeddings: Jailbreaking Attacks and Defenses for Diffusion Model Unlearning'
   authors:
-  - Chen, Siyi
-  - Zhang, Yimeng
-  - Liu, Sijia
-  - Qu, Qing
+  - Siyi Chen
+  - Yimeng Zhang
+  - Sijia Liu
+  - Qing Qu
   year: 2025
   date: 2025-04
   venue: arXiv
@@ -4484,14 +4484,14 @@
   name: null
   title: Towards Resilient Safety-driven Unlearning for Diffusion Models against Downstream Fine-tuning
   authors:
-  - Li, Boheng
-  - Gu, Renjie
-  - Wang, Junjie
-  - Qi, Leyi
-  - Li, Yiming
-  - Wang, Run
-  - Qin, Zhan
-  - Zhang, Tianwei
+  - Boheng Li
+  - Renjie Gu
+  - Junjie Wang
+  - Leyi Qi
+  - Yiming Li
+  - Run Wang
+  - Zhan Qin
+  - Tianwei Zhang
   year: 2025
   date: 2025-07
   venue: arXiv
@@ -4541,12 +4541,12 @@
   name: UMU-Bench
   title: 'UMU-Bench: Closing the Modality Gap in Multimodal Unlearning Evaluation'
   authors:
-  - Wang, Chengye
-  - Li, Yuyuan
-  - Feng, XiaoHua
-  - Chen, Chaochao
-  - Zheng, Xiaolin
-  - Yin, Jianwei
+  - Chengye Wang
+  - Yuyuan Li
+  - XiaoHua Feng
+  - Chaochao Chen
+  - Xiaolin Zheng
+  - Jianwei Yin
   year: 2025
   date: 2025-12
   venue: NeurIPS
@@ -4585,13 +4585,13 @@
   name: null
   title: 'Unconsciously Forget: Mitigating Memorization; Without Knowing What is being Memorized'
   authors:
-  - Jin, Er
-  - Zhang, Yang
-  - Mou, Yongli
-  - Dong, Yanfei
-  - Decker, Stefan
-  - Kawaguchi, Kenji
-  - Stegmaier, Johannes
+  - Er Jin
+  - Yang Zhang
+  - Yongli Mou
+  - Yanfei Dong
+  - Stefan Decker
+  - Kenji Kawaguchi
+  - Johannes Stegmaier
   year: 2025
   date: 2025-12
   venue: arXiv
@@ -4632,15 +4632,15 @@
   name: null
   title: Unlearning concepts in diffusion model via concept domain correction and concept preserving gradient
   authors:
-  - Wu, Yongliang
-  - Zhou, Shiji
-  - Yang, Mingzhuo
-  - Wang, Lianzhe
-  - Chang, Heng
-  - Zhu, Wenbo
-  - Hu, Xinting
-  - Zhou, Xiao
-  - Yang, Xu
+  - Yongliang Wu
+  - Shiji Zhou
+  - Mingzhuo Yang
+  - Lianzhe Wang
+  - Heng Chang
+  - Wenbo Zhu
+  - Xinting Hu
+  - Xiao Zhou
+  - Xu Yang
   year: 2025
   date: 2024-05
   venue: AAAI
@@ -4680,14 +4680,14 @@
   name: null
   title: 'VideoEraser: Concept Erasure in Text-to-Video Diffusion Models'
   authors:
-  - Xu, Naen
-  - Zhang, Jinghuai
-  - Li, Changjiang
-  - Chen, Zhi
-  - Zhou, Chunyi
-  - Li, Qingming
-  - Du, Tianyu
-  - Ji, Shouling
+  - Naen Xu
+  - Jinghuai Zhang
+  - Changjiang Li
+  - Zhi Chen
+  - Chunyi Zhou
+  - Qingming Li
+  - Tianyu Du
+  - Shouling Ji
   year: 2025
   date: 2025-08
   venue: EMNLP
@@ -4730,11 +4730,11 @@
   name: null
   title: 'Vlsbench: Unveiling visual leakage in multimodal safety'
   authors:
-  - Hu, Xuhao
-  - Liu, Dongrui
-  - Li, Hao
-  - Huang, Xuan-Jing
-  - Shao, Jing
+  - Xuhao Hu
+  - Dongrui Liu
+  - Hao Li
+  - Xuan-Jing Huang
+  - Jing Shao
   year: 2025
   date: 2024-11
   venue: ACL
@@ -4776,8 +4776,8 @@
   name: null
   title: Zero-shot class unlearning in clip with synthetic samples
   authors:
-  - Kravets, Alexey
-  - Namboodiri, Vinay P
+  - Alexey Kravets
+  - Vinay P Namboodiri
   year: 2025
   date: 2024-07
   venue: WACV
@@ -4820,8 +4820,8 @@
   name: null
   title: Zero-shot CLIP class forgetting via text-image space adaptation
   authors:
-  - Kravets, Alexey
-  - Namboodiri, Vinay P
+  - Alexey Kravets
+  - Vinay P Namboodiri
   year: 2025
   date: 2025-01
   venue: TMLR
@@ -4863,10 +4863,10 @@
   name: UnSLU-BENCH
   title: “Alexa, can you forget me?” Machine Unlearning Benchmark in Spoken Language Understanding
   authors:
-  - Koudounas, Alkis
-  - Savelli, Claudio
-  - Giobergia, Flavio
-  - Baralis, Elena
+  - Alkis Koudounas
+  - Claudio Savelli
+  - Flavio Giobergia
+  - Elena Baralis
   year: 2025
   date: 2025-05
   venue: arXiv
@@ -4911,16 +4911,16 @@
   name: CPDM
   title: A Dataset and Benchmark for Copyright Protection from Text-to-Image Diffusion Models
   authors:
-  - Ma, Rui
-  - Zhou, Qiang
-  - Xiao, Bangjun
-  - Jin, Yizhu
-  - Zhou, Daquan
-  - Li, Xiuyu
-  - Singh, Aishani
-  - Qu, Yi
-  - Keutzer, Kurt
-  - Xie, Xiaodong
+  - Rui Ma
+  - Qiang Zhou
+  - Bangjun Xiao
+  - Yizhu Jin
+  - Daquan Zhou
+  - Xiuyu Li
+  - Aishani Singh
+  - Yi Qu
+  - Kurt Keutzer
+  - Xiaodong Xie
   - others
   year: 2024
   date: 2024-03
@@ -4968,11 +4968,11 @@
   name: null
   title: Automatic Jailbreaking of the Text-to-Image Generative AI Systems
   authors:
-  - Kim, Minseon
-  - Lee, Hyomin
-  - Gong, Boqing
-  - Zhang, Huishuai
-  - Hwang, Sung Ju
+  - Minseon Kim
+  - Hyomin Lee
+  - Boqing Gong
+  - Huishuai Zhang
+  - Sung Ju Hwang
   year: 2024
   date: 2024-05
   venue: ICML
@@ -5018,15 +5018,15 @@
   name: null
   title: 'Badclip: Dual-embedding guided backdoor attack on multimodal contrastive learning'
   authors:
-  - Liang, Siyuan
-  - Zhu, Mingli
-  - Liu, Aishan
-  - Wu, Baoyuan
-  - Cao, Xiaochun
-  - Chang, Ee-Chien
+  - Siyuan Liang
+  - Mingli Zhu
+  - Aishan Liu
+  - Baoyuan Wu
+  - Xiaochun Cao
+  - Ee-Chien Chang
   year: 2024
   date: 2023-11
-  venue: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition
+  venue: CVPR
   peer_reviewed: true
   kind: attack
   stage: null
@@ -5071,14 +5071,14 @@
   name: null
   title: Can Textual Unlearning Solve Cross-Modality Safety Alignment?
   authors:
-  - Chakraborty, Trishna
-  - Shayegani, Erfan
-  - Cai, Zikui
-  - Abu-Ghazaleh, Nael
-  - Asif, M Salman
-  - Dong, Yue
-  - Roy-Chowdhury, Amit
-  - Song, Chengyu
+  - Trishna Chakraborty
+  - Erfan Shayegani
+  - Zikui Cai
+  - Nael Abu-Ghazaleh
+  - M Salman Asif
+  - Yue Dong
+  - Amit Roy-Chowdhury
+  - Chengyu Song
   year: 2024
   date: 2024-06
   venue: Findings
@@ -5120,15 +5120,15 @@
   name: CLEAR
   title: 'Clear: Character unlearning in textual and visual modalities'
   authors:
-  - Dontsov, Alexey
-  - Korzh, Dmitrii
-  - Zhavoronkin, Alexey
-  - Mikheev, Boris
-  - Bobkov, Denis
-  - Alanov, Aibek
-  - Rogov, Oleg Y
-  - Oseledets, Ivan
-  - Tutubalina, Elena
+  - Alexey Dontsov
+  - Dmitrii Korzh
+  - Alexey Zhavoronkin
+  - Boris Mikheev
+  - Denis Bobkov
+  - Aibek Alanov
+  - Oleg Y Rogov
+  - Ivan Oseledets
+  - Elena Tutubalina
   year: 2024
   date: 2024-10
   venue: arXiv
@@ -5179,12 +5179,12 @@
   name: null
   title: 'CLIP the Bias: How Useful is Balancing Data in Multimodal Learning?'
   authors:
-  - Alabdulmohsin, Ibrahim
-  - Wang, Xiao
-  - Steiner, Andreas Peter
-  - Goyal, Priya
-  - D'Amour, Alexander
-  - Zhai, Xiaohua
+  - Ibrahim Alabdulmohsin
+  - Xiao Wang
+  - Andreas Peter Steiner
+  - Priya Goyal
+  - Alexander D'Amour
+  - Xiaohua Zhai
   year: 2024
   date: 2024-03
   venue: ICLR
@@ -5231,11 +5231,11 @@
   name: null
   title: 'Efficient backdoor defense in multimodal contrastive learning: A token-level unlearning method for mitigating threats'
   authors:
-  - Liu, Kuanrong
-  - Liang, Siyuan
-  - Liang, Jiawei
-  - Dai, Pengwen
-  - Cao, Xiaochun
+  - Kuanrong Liu
+  - Siyuan Liang
+  - Jiawei Liang
+  - Pengwen Dai
+  - Xiaochun Cao
   year: 2024
   date: 2024-09
   venue: arXiv
@@ -5284,11 +5284,11 @@
   name: null
   title: 'Enhancing User-Centric Privacy Protection: An Interactive Framework through Diffusion Models and Machine Unlearning'
   authors:
-  - Huang, Huaxi
-  - Yuan, Xin
-  - Liao, Qiyu
-  - Wang, Dadong
-  - Liu, Tongliang
+  - Huaxi Huang
+  - Xin Yuan
+  - Qiyu Liao
+  - Dadong Wang
+  - Tongliang Liu
   year: 2024
   date: 2024-09
   venue: arXiv
@@ -5330,10 +5330,10 @@
   name: null
   title: Large language model unlearning via embedding-corrupted prompts
   authors:
-  - Liu, Chris
-  - Wang, Yaxuan
-  - Flanigan, Jeffrey
-  - Liu, Yang
+  - Chris Liu
+  - Yaxuan Wang
+  - Jeffrey Flanigan
+  - Yang Liu
   year: 2024
   date: 2024-06
   venue: NeurIPS
@@ -5376,12 +5376,12 @@
   name: null
   title: 'Learning the unlearned: Mitigating feature suppression in contrastive learning'
   authors:
-  - Zhang, Jihai
-  - Lan, Xiang
-  - Qu, Xiaoye
-  - Cheng, Yu
-  - Feng, Mengling
-  - Hooi, Bryan
+  - Jihai Zhang
+  - Xiang Lan
+  - Xiaoye Qu
+  - Yu Cheng
+  - Mengling Feng
+  - Bryan Hooi
   year: 2024
   date: 2024-02
   venue: ECCV
@@ -5462,13 +5462,13 @@
   name: null
   title: Leveraging catastrophic forgetting to develop safe diffusion models against malicious finetuning
   authors:
-  - Pan, Jiadong
-  - Gao, Hongcheng
-  - Wu, Zongyu
-  - Hu, Taihang
-  - Su, Li
-  - Huang, Qingming
-  - Li, Liang
+  - Jiadong Pan
+  - Hongcheng Gao
+  - Zongyu Wu
+  - Taihang Hu
+  - Li Su
+  - Qingming Huang
+  - Liang Li
   year: 2024
   date: null
   venue: NeurIPS
@@ -5509,11 +5509,11 @@
   name: null
   title: 'Mace: Mass concept erasure in diffusion models'
   authors:
-  - Lu, Shilin
-  - Wang, Zilan
-  - Li, Leyang
-  - Liu, Yanzhu
-  - Kong, Adams Wai-Kin
+  - Shilin Lu
+  - Zilan Wang
+  - Leyang Li
+  - Yanzhu Liu
+  - Adams Wai-Kin Kong
   year: 2024
   date: 2024-03
   venue: CVPR
@@ -5552,10 +5552,10 @@
   name: null
   title: Machine unlearning for image-to-image generative models
   authors:
-  - Li, Guihong
-  - Hsu, Hsiang
-  - Chen, Chun-Fu
-  - Marculescu, Radu
+  - Guihong Li
+  - Hsiang Hsu
+  - Chun-Fu Chen
+  - Radu Marculescu
   year: 2024
   date: 2024-02
   venue: ICLR
@@ -5593,11 +5593,11 @@
   name: null
   title: 'Machine unlearning in generative ai: A survey'
   authors:
-  - Liu, Zheyuan
-  - Dou, Guangyao
-  - Tan, Zhaoxuan
-  - Tian, Yijun
-  - Jiang, Meng
+  - Zheyuan Liu
+  - Guangyao Dou
+  - Zhaoxuan Tan
+  - Yijun Tian
+  - Meng Jiang
   year: 2024
   date: 2024-07
   venue: arXiv
@@ -5630,8 +5630,8 @@
   name: MU-Bench
   title: 'Mu-bench: A multitask multimodal benchmark for machine unlearning'
   authors:
-  - Cheng, Jiali
-  - Amiri, Hadi
+  - Jiali Cheng
+  - Hadi Amiri
   year: 2024
   date: 2024-06
   venue: arXiv
@@ -5724,13 +5724,13 @@
   name: null
   title: Pre-trained encoders in self-supervised learning improve secure and privacy-preserving supervised learning
   authors:
-  - Liu, Hongbin
-  - Qu, Wenjie
-  - Jia, Jinyuan
-  - Gong, Neil Zhenqiang
+  - Hongbin Liu
+  - Wenjie Qu
+  - Jinyuan Jia
+  - Neil Zhenqiang Gong
   year: 2024
   date: 2022-12
-  venue: 2024 IEEE Security and Privacy Workshops (SPW)
+  venue: IEEE SPW
   peer_reviewed: true
   kind: analysis
   stage: null
@@ -5768,11 +5768,11 @@
   name: null
   title: 'Probing unlearned diffusion models: A transferable adversarial attack perspective'
   authors:
-  - Han, Xiaoxuan
-  - Yang, Songlin
-  - Wang, Wei
-  - Li, Yang
-  - Dong, Jing
+  - Xiaoxuan Han
+  - Songlin Yang
+  - Wei Wang
+  - Yang Li
+  - Jing Dong
   year: 2024
   date: 2024-04
   venue: arXiv
@@ -5820,11 +5820,11 @@
   name: null
   title: Unified concept editing in diffusion models
   authors:
-  - Gandikota, Rohit
-  - Orgad, Hadas
-  - Belinkov, Yonatan
-  - Materzyńska, Joanna
-  - Bau, David
+  - Rohit Gandikota
+  - Hadas Orgad
+  - Yonatan Belinkov
+  - Joanna Materzyńska
+  - David Bau
   year: 2024
   date: 2023-08
   venue: WACV
@@ -5857,13 +5857,13 @@
   name: UnlearnCanvas
   title: 'Unlearncanvas: A stylized image dataset to benchmark machine unlearning for diffusion models'
   authors:
-  - Zhang, Yihua
-  - Zhang, Yimeng
-  - Yao, Yuguang
-  - Jia, Jinghan
-  - Liu, Jiancheng
-  - Liu, Xiaoming
-  - Liu, Sijia
+  - Yihua Zhang
+  - Yimeng Zhang
+  - Yuguang Yao
+  - Jinghan Jia
+  - Jiancheng Liu
+  - Xiaoming Liu
+  - Sijia Liu
   year: 2024
   date: 2024-02
   venue: arXiv
@@ -5910,11 +5910,11 @@
   name: null
   title: Unlearning or concealment? a critical analysis and evaluation metrics for unlearning in diffusion models
   authors:
-  - Sharma, Aakash Sen
-  - Sarkar, Niladri
-  - Chundawat, Vikram
-  - Mali, Ankur A
-  - Mandal, Murari
+  - Aakash Sen Sharma
+  - Niladri Sarkar
+  - Vikram Chundawat
+  - Ankur A Mali
+  - Murari Mandal
   year: 2024
   date: 2024-09
   venue: arXiv
@@ -5956,12 +5956,12 @@
   name: UnLOK-VQA
   title: 'Unlearning Sensitive Information in Multimodal LLMs: Benchmark and Attack-Defense Evaluation'
   authors:
-  - Patil, Vaidehi
-  - Sung, Yi-Lin
-  - Hase, Peter
-  - Peng, Jie
-  - Chen, Tianlong
-  - Bansal, Mohit
+  - Vaidehi Patil
+  - Yi-Lin Sung
+  - Peter Hase
+  - Jie Peng
+  - Tianlong Chen
+  - Mohit Bansal
   year: 2024
   date: 2025-05
   venue: TMLR
@@ -6008,11 +6008,11 @@
   name: null
   title: 'Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models'
   authors:
-  - Suriyakumar, Vinith M
-  - Alur, Rohan
-  - Sekhari, Ayush
-  - Raghavan, Manish
-  - Wilson, Ashia C
+  - Vinith M Suriyakumar
+  - Rohan Alur
+  - Ayush Sekhari
+  - Manish Raghavan
+  - Ashia C Wilson
   year: 2024
   date: 2024-10
   venue: arXiv
@@ -6051,10 +6051,10 @@
   name: null
   title: Visual In-Context Learning for Large Vision-Language Models
   authors:
-  - Zhou, Yucheng
-  - Li, Xiang
-  - Wang, Qianning
-  - Shen, Jianbing
+  - Yucheng Zhou
+  - Xiang Li
+  - Qianning Wang
+  - Jianbing Shen
   year: 2024
   date: 2024-02
   venue: Findings
@@ -6089,10 +6089,10 @@
   name: null
   title: Erasing concepts from diffusion models
   authors:
-  - Gandikota, Rohit
-  - Materzynska, Joanna
-  - Fiotto-Kaufman, Jaden
-  - Bau, David
+  - Rohit Gandikota
+  - Joanna Materzynska
+  - Jaden Fiotto-Kaufman
+  - David Bau
   year: 2023
   date: 2023-03
   venue: ICCV
@@ -6131,12 +6131,12 @@
   name: null
   title: 'Knowledge unlearning for llms: Tasks, methods, and challenges'
   authors:
-  - Si, Nianwen
-  - Zhang, Hao
-  - Chang, Heyu
-  - Zhang, Wenlin
-  - Qu, Dan
-  - Zhang, Weiqiang
+  - Nianwen Si
+  - Hao Zhang
+  - Heyu Chang
+  - Wenlin Zhang
+  - Dan Qu
+  - Weiqiang Zhang
   year: 2023
   date: 2023-11
   venue: arXiv
@@ -6174,14 +6174,14 @@
   name: null
   title: Model sparsity can simplify machine unlearning
   authors:
-  - Jia, Jinghan
-  - Liu, Jiancheng
-  - Ram, Parikshit
-  - Yao, Yuguang
-  - Liu, Gaowen
-  - Liu, Yang
-  - Sharma, Pranay
-  - Liu, Sijia
+  - Jinghan Jia
+  - Jiancheng Liu
+  - Parikshit Ram
+  - Yuguang Yao
+  - Gaowen Liu
+  - Yang Liu
+  - Pranay Sharma
+  - Sijia Liu
   year: 2023
   date: 2023-04
   venue: NeurIPS
@@ -6221,8 +6221,8 @@
   name: null
   title: Training data attribution for diffusion models
   authors:
-  - Dai, Zheng
-  - Gifford, David K
+  - Zheng Dai
+  - David K Gifford
   year: 2023
   date: 2023-06
   venue: arXiv
@@ -6267,9 +6267,9 @@
   name: null
   title: 'Descent-to-delete: Gradient-based methods for machine unlearning'
   authors:
-  - Neel, Seth
-  - Roth, Aaron
-  - Sharifi-Malvajerdi, Saeed
+  - Seth Neel
+  - Aaron Roth
+  - Saeed Sharifi-Malvajerdi
   year: 2021
   date: 2020-07
   venue: Algorithmic Learning Theory
@@ -6301,14 +6301,14 @@
   name: null
   title: Machine unlearning
   authors:
-  - Bourtoule, Lucas
-  - Chandrasekaran, Varun
-  - Choquette-Choo, Christopher A
-  - Jia, Hengrui
-  - Travers, Adelin
-  - Zhang, Baiwu
-  - Lie, David
-  - Papernot, Nicolas
+  - Lucas Bourtoule
+  - Varun Chandrasekaran
+  - Christopher A Choquette-Choo
+  - Hengrui Jia
+  - Adelin Travers
+  - Baiwu Zhang
+  - David Lie
+  - Nicolas Papernot
   year: 2021
   date: 2019-12
   venue: IEEE S&P
@@ -6347,10 +6347,10 @@
   name: null
   title: 'Remember what you want to forget: Algorithms for machine unlearning'
   authors:
-  - Sekhari, Ayush
-  - Acharya, Jayadev
-  - Kamath, Gautam
-  - Suresh, Ananda Theertha
+  - Ayush Sekhari
+  - Jayadev Acharya
+  - Gautam Kamath
+  - Ananda Theertha Suresh
   year: 2021
   date: 2021-03
   venue: NeurIPS
@@ -6383,10 +6383,10 @@
   name: null
   title: Certified Data Removal from Machine Learning Models
   authors:
-  - Guo, Chuan
-  - Goldstein, Tom
-  - Hannun, Awni
-  - Van Der Maaten, Laurens
+  - Chuan Guo
+  - Tom Goldstein
+  - Awni Hannun
+  - Laurens Van Der Maaten
   year: 2020
   date: 2019-11
   venue: ICML
@@ -6416,13 +6416,13 @@
   name: null
   title: 'Making ai forget you: Data deletion in machine learning'
   authors:
-  - Ginart, Antonio
-  - Guan, Melody
-  - Valiant, Gregory
-  - Zou, James Y
+  - Antonio Ginart
+  - Melody Guan
+  - Gregory Valiant
+  - James Y Zou
   year: 2019
   date: 2019-07
-  venue: Advances in neural information processing systems
+  venue: NeurIPS
   peer_reviewed: true
   kind: analysis
   stage: null
@@ -6452,11 +6452,11 @@
   name: null
   title: Towards making systems forget with machine unlearning
   authors:
-  - Cao, Yinzhi
-  - Yang, Junfeng
+  - Yinzhi Cao
+  - Junfeng Yang
   year: 2015
   date: null
-  venue: 2015 IEEE symposium on security and privacy
+  venue: IEEE S&P
   peer_reviewed: true
   kind: analysis
   stage: null

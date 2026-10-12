@@ -89,7 +89,7 @@ def subsections(text: str) -> list[tuple[str, str]]:
 
 
 def display_math(text: str) -> list[str]:
-    return [norm_ws(m.replace("\\nonumber", "")) for m in re.findall(r"\\\[(.*?)\\\]", text, re.S)]
+    return [norm_ws(m.replace("\\nonumber", "").replace("\\mbox{", "\\text{")) for m in re.findall(r"\\\[(.*?)\\\]", text, re.S)]
 
 
 def first_sentence(latex: str) -> str:

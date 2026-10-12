@@ -1167,7 +1167,7 @@ dimensions:
     name: FA@K
     description: For VLMs with zero-shot prediction, FA@k measures whether the true label of a forget example appears among
       the top-k model predictions.
-    formula: \mathrm{FA}@k = \frac{1}{\lvert D_f\rvert} \sum_{(x,y)\in D_f} \mathbf{1}\!\left\{\, y \in \operatorname{Top\mbox{-}k}\!\big(f(x)\big)
+    formula: \mathrm{FA}@k = \frac{1}{\lvert D_f\rvert} \sum_{(x,y)\in D_f} \mathbf{1}\!\left\{\, y \in \operatorname{Top\text{-}k}\!\big(f(x)\big)
       \,\right\}.
     keys:
     - caitargeted2025
@@ -1309,7 +1309,7 @@ dimensions:
     name: Top-k Acc
     description: 'Retained utility on non-forgotten data is commonly measured by Top-k classification accuracy on remaining
       classes: where y_i denotes the ground-truth label and 𝐩̂_i the predicted class scores.'
-    formula: \mathrm{Top\mbox{-}k\ Acc} = \frac{1}{N}\sum_{i=1}^{N}\mathbf{1}\!\left[\,y_i \in \mathrm{Top\mbox{-}k}\big(\hat{\mathbf{p}}_i\big)\,\right],
+    formula: \mathrm{Top\text{-}k\ Acc} = \frac{1}{N}\sum_{i=1}^{N}\mathbf{1}\!\left[\,y_i \in \mathrm{Top\text{-}k}\big(\hat{\mathbf{p}}_i\big)\,\right],
     keys:
     - bansal2023cleanclip
     - struppek2024exploiting

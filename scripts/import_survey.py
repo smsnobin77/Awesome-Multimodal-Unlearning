@@ -27,20 +27,26 @@ VENUES = [(r"Computer Vision and Pattern Recognition|\bCVPR", "CVPR"), (r"Intern
           (r"European Conference on Computer Vision|\bECCV", "ECCV"), (r"Neural Information Processing|NeurIPS", "NeurIPS"),
           (r"Learning Representations|\bICLR", "ICLR"), (r"International Conference on Machine Learning|\bICML", "ICML"),
           (r"Findings of the Association", "Findings"), (r"Annual Meeting of the Association|\bACL\b", "ACL"),
-          (r"Empirical Methods|EMNLP", "EMNLP"), (r"North American Chapter|NAACL", "NAACL"), (r"AAAI", "AAAI"),
+          (r"Empirical Methods|EMNLP", "EMNLP"), (r"North American Chapter|Nations of the Americas Chapter|NAACL", "NAACL"),
+          (r"Security and Privacy Workshops", "IEEE SPW"), (r"AAAI", "AAAI"),
           (r"Interspeech|INTERSPEECH", "Interspeech"), (r"Acoustics, Speech and Signal Processing|ICASSP", "ICASSP"),
           (r"ACM International Conference on Multimedia|ACM MM", "ACM MM"), (r"Winter Conference on Applications|WACV", "WACV"),
           (r"Transactions on Machine Learning Research|TMLR", "TMLR"), (r"Pattern Analysis and Machine Intelligence", "TPAMI"),
           (r"Security Symposium", "USENIX Security"), (r"Symposium on Security and Privacy", "IEEE S&P"),
-          (r"Computer and Communications Security", "ACM CCS"), (r"SIGIR", "SIGIR"), (r"\bWWW\b|Web Conference", "WWW")]
+          (r"Computer and Communications Security", "ACM CCS"), (r"Joint Conference on Artificial Intelligence|IJCAI", "IJCAI"), (r"SIGIR", "SIGIR"), (r"\bWWW\b|Web Conference", "WWW")]
 
 
 def unique(xs):
     return list(dict.fromkeys(xs))
 
 
+def author_name(name: str) -> str:
+    last, comma, first = name.partition(",")
+    return plain(f"{first} {last}" if comma else name)
+
+
 def short_venue(v: str) -> str:
-    return next((short for pat, short in VENUES if re.search(pat, v)), v)
+    return next((short for pat, short in VENUES if re.search(pat, v, re.I)), v)
 
 
 def arxiv_date(aid: str | None) -> str | None:
@@ -134,7 +140,7 @@ def bib_entry(key, e, kind, fam, stage, names, tags, row, ab) -> dict:
     paper = f.get("url") or (f"https://doi.org/{f['doi']}" if f.get("doi") else None)
     return {
         "key": key, "name": names.get(key), "title": title,
-        "authors": [plain(a) for a in re.split(r"\s+and\s+", f.get("author", "")) if a.strip()],
+        "authors": [author_name(a) for a in re.split(r"\s+and\s+", f.get("author", "")) if a.strip()],
         "year": int(re.sub(r"\D", "", f.get("year", "0"))[:4] or 0), "date": (row or {}).get("date") or arxiv_date(aid),
         "venue": "arXiv" if preprint else short_venue(venue), "peer_reviewed": not preprint, "kind": kind,
         "stage": stage[family] if family else None, "family": family, "tags": paper_tags,
