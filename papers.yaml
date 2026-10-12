@@ -24,7 +24,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: Models for text-to-image synthesis, such as DALL-E 2 and Stable Diffusion, have recently drawn a lot of interest
     from academia and the general public. These models are capable of producing high-quality images that depict a variety
     of concepts and styles when conditioned on textual descriptions. However, these models adopt cultural characteristics
@@ -770,7 +771,8 @@
     model:
     - audio
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
   abstract: Recent advances in Large Language Models (LLMs) have been extended to the field of Automatic Speech Recognition
     (ASR), leveraging the exceptional generative capabilities of LLMs for speech transcription generation. However, concerns
     about privacy risks have emerged since both LLMs and large ASR models may unintentionally memorize training examples.
@@ -862,7 +864,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: null
   bibtex: |-
     @inproceedings{spartalis2025unleashing,
@@ -2276,7 +2279,8 @@
     model:
     - clip
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: null
   bibtex: |-
     @inproceedings{kim2024negmerge,
@@ -2462,7 +2466,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: null
   bibtex: |-
     @inproceedings{li2024get,
@@ -2919,7 +2924,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
   abstract: null
   bibtex: |-
     @inproceedings{han2025adaptive,
@@ -3238,7 +3244,8 @@
     - preference
   added: {}
   in_survey: true
-  links: {}
+  links:
+    paper: https://doi.org/10.1145/3706633
   abstract: 'Recommendation unlearning is an emerging task to erase the influences of user-specified data from a trained recommendation
     model. Most existing research follows the paradigm of partitioning the original dataset into multi-fold and then retraining
     corresponding sub-models while those influences are totally removed. Despite the effectiveness, two key problems remain
@@ -4310,7 +4317,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: 'Text-to-image (T2I) diffusion models have shown exceptional capabilities in generating images that closely correspond
     to textual prompts. However, the advancement of T2I diffusion models presents significant risks, as the models could be
     exploited for malicious purposes, such as generating images with violence or nudity, or creating unauthorized portraits
@@ -4553,7 +4561,8 @@
     model:
     - vlm
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
   abstract: Although Multimodal Large Language Models (MLLMs) have advanced numerous fields, their training on extensive multimodal
     datasets introduces significant privacy concerns, prompting the necessity for effective unlearning methods. However, current
     multimodal unlearning approaches often directly adapt techniques from unimodal contexts, largely overlooking the critical
@@ -4831,7 +4840,8 @@
     model:
     - clip
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
   abstract: Efficient class forgetting has attracted significant interest due to the high computational cost of retraining
     models from scratch whenever classes need to be forgotten. This need arises from data privacy regulations, the necessity
     to remove outdated information, and the possibility to enhance model robustness and security. In this paper we address
@@ -5095,7 +5105,8 @@
     model:
     - vlm
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: 'Trishna Chakraborty, Erfan Shayegani, Zikui Cai, Nael B. Abu-Ghazaleh, M. Salman Asif, Yue Dong, Amit Roy-Chowdhury,
     Chengyu Song. Findings of the Association for Computational Linguistics: EMNLP 2024. 2024.'
   bibtex: |-
@@ -5474,7 +5485,8 @@
     model:
     - image-diffusion
   in_survey: true
-  links: {}
+  links:
+    paper: https://doi.org/10.52202/079017-3658
   abstract: Diffusion models (DMs) have demonstrated remarkable proficiency in producing images based on textual prompts.
     Numerous methods have been proposed to ensure these models generate safe images. Early methods attempt to incorporate
     safety filters into models to mitigate the risk of generating harmful images but such exter-nal filters do not inherently
@@ -6063,7 +6075,8 @@
     model:
     - vlm
   in_survey: true
-  links: {}
+  links:
+    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
   abstract: null
   bibtex: |-
     @inproceedings{zhou2024visual,
@@ -6451,7 +6464,8 @@
   tags: {}
   added: {}
   in_survey: true
-  links: {}
+  links:
+    paper: https://doi.org/10.1109/sp.2015.35
   abstract: Today's systems produce a rapidly exploding amount of data, and the data further derives more data, forming a
     complex data propagation network that we call the data's lineage. There are many reasons that users want systems to forget
     certain data including its lineage. From a privacy perspective, users who become concerned with new privacy risks of a
