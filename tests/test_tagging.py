@@ -1,8 +1,11 @@
-from latex import live, norm_ws, strip_cites
+from pathlib import Path
+
+from latex import live, norm_ws, paper_text
 from planner_rules import (BENCHMARK_TARGETS, MODALITY_MODELS, SETTING_TARGETS, STAGE_RULES, all_quotes)
 from survey_parts import STAGES, parse_benchmarks, parse_datasets
 from tagging import MODEL_WORDS, TARGET_WORDS, arxiv_id, classify, keyword_tags, match_rows, readme_rows
 
+ROOT = Path(__file__).resolve().parents[1]
 SETS = dict(methods={"m"}, benchmarks={"b", "m"}, surveys={"s"}, attacks={"a"}, datasets={"d", "b"})
 
 
@@ -38,10 +41,14 @@ def test_arxiv_id_from_fields():
     assert arxiv_id({"url": "https://openreview.net/forum?id=x"}) is None
 
 
-def test_every_planner_quote_is_verbatim_in_the_paper(sections):
-    text = norm_ws(strip_cites(" ".join(live(f) for f in sorted(sections.glob("*.tex")))))
+def test_every_planner_quote_is_verbatim_in_the_paper():
+    text = (ROOT / "data" / "paper_text.txt").read_text()
     missing = [q for q in all_quotes() if norm_ws(q) not in text]
     assert not missing, missing
+
+
+def test_paper_snapshot_matches_the_latex(sections):
+    assert (ROOT / "data" / "paper_text.txt").read_text() == paper_text(sections), "run: uv run --group import scripts/snapshot_paper.py"
 
 
 def test_rules_cover_every_stage_setting_modality_and_benchmark(sections):

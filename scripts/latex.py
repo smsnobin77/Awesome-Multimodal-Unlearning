@@ -96,3 +96,7 @@ def first_sentence(latex: str) -> str:
     text = plain(strip_cites(re.sub(r"\\\[.*?\\\]", " ", latex, flags=re.S)))
     m = re.match(r"(.+?[.!?])(\s|$)", text)
     return m.group(1) if m else text
+
+
+def paper_text(sections_dir: Path) -> str:
+    return norm_ws(strip_cites(" ".join(live(f) for f in sorted(Path(sections_dir).glob("*.tex"))))) + "\n"
