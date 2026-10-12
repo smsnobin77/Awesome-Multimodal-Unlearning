@@ -1,0 +1,73 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { facetValues, gapMatrix, paperMatches, planCard, stageCounts, stageFit } from "../../docs/explorer/planner.js";
+import { defaultState } from "../../docs/explorer/state.js";
+import { DATA } from "./data.mjs";
+
+const { survey, papers } = DATA;
+const state = (patch = {}) => ({ ...defaultState(), ...patch });
+
+test("stage fit follows the survey rules", () => {
+  assert.equal(stageFit(survey, "decoding-time", "keep-weights").fit, "fits");
+  assert.equal(stageFit(survey, "training-time", "keep-weights").fit, "no");
+  assert.equal(stageFit(survey, "training-free", "keep-weights").fit, "partly");
+  assert.equal(stageFit(survey, "training-time", "none").fit, "fits");
+});
+
+test("default counts cover every placed paper", () => {
+  const counts = stageCounts(survey, papers, state());
+  assert.equal(Object.values(counts).reduce((a, b) => a + b, 0), papers.filter((p) => p.stage).length);
+});
+
+test("no retraining removes training-time methods but keeps benchmarks", () => {
+  const s = state({ constraint: "no-retraining" });
+  assert.ok(!papers.some((p) => p.stage === "training-time" && paperMatches(p, survey, s)));
+  assert.ok(papers.some((p) => p.kind === "benchmark" && paperMatches(p, survey, s)));
+});
+
+test("plan for identity and audio", () => {
+  const ids = planCard(survey, state({ target: "identity" }));
+  assert.ok(ids.datasets.some((d) => d.name === "CelebA"));
+  assert.ok(ids.benchmarks.some((b) => b.name === "CLEAR"));
+  const audio = planCard(survey, state({ model: "audio" }));
+  assert.ok(audio.metrics.forget.some((m) => m.id === "sim"));
+  assert.ok(!audio.metrics.retain.some((m) => m.id === "fid"));
+});
+
+test("empty plan does not throw", () => {
+  const s = state({ target: "voice", model: "image-diffusion", constraint: "keep-weights" });
+  const plan = planCard(survey, s);
+  assert.equal(plan.datasets.length, 0);
+  assert.doesNotThrow(() => stageCounts(survey, papers, s));
+});
+
+test("gap matrix has every stage and family", () => {
+  const g = gapMatrix(survey, papers);
+  assert.equal(g.rows.length, 5);
+  assert.equal(g.rows.flatMap((r) => r.families).length, 12);
+  assert.ok(g.rows.every((r) => g.models.every((m) => Number.isInteger(r.cells[m]))));
+});
+
+test("a selected faded stage still lists its papers", () => {
+  const s = state({ constraint: "no-retraining", stage: "training-time" });
+  const counts = stageCounts(survey, papers, s);
+  assert.equal(papers.filter((p) => paperMatches(p, survey, s)).length, counts["training-time"]);
+  assert.ok(counts["training-time"] > 0);
+});
+
+test("gap cells count what a click on them lists", () => {
+  const s = state({ target: "voice" });
+  const g = gapMatrix(survey, papers, s);
+  for (const row of g.rows) {
+    for (const m of g.models) {
+      const listed = papers.filter((p) => paperMatches(p, survey, { ...s, stage: null, filters: { stage: [row.id], model: [m] } })).length;
+      assert.equal(row.cells[m], listed, `${row.id} x ${m}`);
+    }
+  }
+});
+
+test("risk covers open challenges and reactivation attacks", () => {
+  const p = papers.find((x) => (x.tags.attack || []).length && (x.tags.challenge || []).length) || papers.find((x) => (x.tags.attack || []).length);
+  assert.ok(p, "some paper carries an attack tag");
+  assert.deepEqual(facetValues(p, "risk"), [...(p.tags.challenge || []), ...p.tags.attack]);
+});

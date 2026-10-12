@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimodal Unlearning Explorer</title>
+  <meta name="description" content="Find multimodal unlearning methods, datasets, benchmarks, and metrics from the survey, organized by where they act in the model pipeline.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.18.7/katex.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32-v2.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.18.7/katex.min.js"></script>
+  <script src="data.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="./">Multimodal Unlearning Explorer</a>
+    <nav class="top-links" aria-label="Survey links">
+      <a href="https://aclanthology.org/2026.findings-acl.1379/">Paper (ACL 2026)</a>
+      <a href="https://arxiv.org/abs/2607.07907">arXiv</a>
+      <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning">GitHub</a>
+      <a href="../">Project page</a>
+      <button type="button" class="ghost" data-theme-toggle>Dark</button>
+      <button type="button" class="primary" data-open-suggest>Suggest a paper</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="plan" aria-labelledby="plan-title">
+      <h1 id="plan-title" class="sentence">Forget <select id="target" aria-label="What must be forgotten"></select>
+        from <select id="model" aria-label="Which model"></select>
+        without <select id="constraint" aria-label="What you cannot do"></select></h1>
+      <ol class="pipeline" id="pipeline" aria-label="Where methods act in the model pipeline"></ol>
+      <div id="stage-panel" class="stage-panel" hidden></div>
+      <div id="plan-card" class="plan-card" hidden aria-live="polite"></div>
+    </section>
+
+    <div class="chips" id="chips" aria-label="Active filters"></div>
+
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button role="tab" id="tab-papers" aria-controls="view-papers" data-tab="papers">Papers</button>
+      <button role="tab" id="tab-datasets" aria-controls="view-datasets" data-tab="datasets">Datasets<span class="tab-long"> and benchmarks</span></button>
+      <button role="tab" id="tab-evaluation" aria-controls="view-evaluation" data-tab="evaluation">Evaluation</button>
+      <button role="tab" id="tab-gaps" aria-controls="view-gaps" data-tab="gaps">Gap map</button>
+    </nav>
+
+    <section id="view-papers" class="view" role="tabpanel" aria-labelledby="tab-papers">
+      <div class="papers-layout">
+        <aside class="filters" id="filters" aria-label="Filters"></aside>
+        <div class="results">
+          <div class="search-row">
+            <label class="visually-hidden" for="search">Search papers</label>
+            <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search titles, abstracts, and method names (press / to focus)">
+            <button type="button" class="ghost filters-toggle" data-toggle-filters aria-expanded="false" aria-controls="filters">Filters</button>
+          </div>
+          <p class="status" id="search-status" aria-live="polite"></p>
+          <div class="results-bar">
+            <p id="result-count" aria-live="polite"></p>
+            <label for="sort">Sort</label>
+            <select id="sort">
+              <option value="relevance">Best match</option>
+              <option value="newest">Newest first</option>
+              <option value="survey">Survey order</option>
+            </select>
+            <button type="button" class="ghost" data-export>Download BibTeX</button>
+          </div>
+          <ol id="paper-list" class="paper-list"></ol>
+        </div>
+      </div>
+    </section>
+    <section id="view-datasets" class="view" role="tabpanel" aria-labelledby="tab-datasets" hidden></section>
+    <section id="view-evaluation" class="view" role="tabpanel" aria-labelledby="tab-evaluation" hidden></section>
+    <section id="view-gaps" class="view" role="tabpanel" aria-labelledby="tab-gaps" hidden></section>
+  </main>
+
+  <aside class="drawer" id="drawer" aria-label="Paper details" hidden>
+    <div class="drawer-bar"><button type="button" class="ghost" data-close-drawer>Close</button></div>
+    <div id="drawer-body"></div>
+  </aside>
+
+  <dialog id="suggest-dialog" aria-labelledby="suggest-title">
+    <form method="dialog" id="suggest-form">
+      <h2 id="suggest-title">Suggest a paper</h2>
+      <p>This opens a short form on GitHub with your answers filled in. You can review it before you submit.</p>
+      <label>Paper title<input name="paper-title" required></label>
+      <label>Link<input name="link" type="url" placeholder="https://arxiv.org/abs/..." required></label>
+      <label>Where does it fit?<select name="section" id="suggest-section"></select></label>
+      <label>What does it add? (optional)<textarea name="reason" rows="3"></textarea></label>
+      <div class="dialog-actions">
+        <button type="button" class="ghost" data-close-suggest>Cancel</button>
+        <button type="submit" class="primary">Continue on GitHub</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="foot">
+    <p>Built from the survey's LaTeX sources. Tags in a dashed box were added by the maintainers and are not stated in the survey.</p>
+  </footer>
+  <noscript><p class="foot">This explorer needs JavaScript. The full list is in the <a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning#-curated-paper-list">README</a>.</p></noscript>
+</body>
+</html>

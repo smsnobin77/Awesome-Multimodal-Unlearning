@@ -11,5 +11,11 @@
 - Keep entries **concise and consistent**
 - Avoid duplicates
 
-## Format
-- **YYYY-MM** Paper Title `[![badge](BADGE_LINK)](PAPER_LINK)`
+## How to Add a Paper
+1. Add an entry to `papers.yaml`. Required fields: `key`, `title`, `year`, `kind`, and `links`. For a method, also set `stage` and `family`. The allowed ids are in `survey.yaml`.
+2. Put the tags you choose under `added`, for example `added: {model: [vlm], target: [identity]}`. The `tags` field is reserved for what the survey itself states.
+3. Run `uv run scripts/build.py`. It updates the README list and the explorer data.
+4. Optional: run `uv run --group embed scripts/embed.py` so semantic search covers the new paper.
+5. Open a pull request. CI checks that the generated files are current and runs the tests.
+
+You can also [suggest a paper](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/issues/new?template=add-paper.yml), and we will add it.
