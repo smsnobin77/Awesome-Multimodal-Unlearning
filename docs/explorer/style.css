@@ -165,6 +165,8 @@ mark { background: color-mix(in srgb, var(--training-free) 24%, transparent); co
 .cell.b5 { --seq: var(--seq-5); --cell-ink: var(--cell-ink-5); }
 .cell.zero button { background: repeating-linear-gradient(45deg, var(--rule-strong) 0 1px, transparent 1px 7px); color: var(--ink-2); }
 .gap-note { max-width: 70ch; color: var(--ink-2); }
+.metric.is-target { outline: 2px solid var(--focus); outline-offset: 6px; }
+tr.is-target td { background: color-mix(in srgb, var(--focus) 14%, transparent); }
 
 dialog { width: calc(100% - 32px); max-width: 520px; padding: 24px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-strong); }
 dialog h2 { margin-top: 0; }

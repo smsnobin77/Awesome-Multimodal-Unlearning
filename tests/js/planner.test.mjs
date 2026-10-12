@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { gapMatrix, paperMatches, planCard, stageCounts, stageFit } from "../../docs/explorer/planner.js";
+import { facetValues, gapMatrix, paperMatches, planCard, stageCounts, stageFit } from "../../docs/explorer/planner.js";
 import { defaultState } from "../../docs/explorer/state.js";
 import { DATA } from "./data.mjs";
 
@@ -64,4 +64,10 @@ test("gap cells count what a click on them lists", () => {
       assert.equal(row.cells[m], listed, `${row.id} x ${m}`);
     }
   }
+});
+
+test("risk covers open challenges and reactivation attacks", () => {
+  const p = papers.find((x) => (x.tags.attack || []).length && (x.tags.challenge || []).length) || papers.find((x) => (x.tags.attack || []).length);
+  assert.ok(p, "some paper carries an attack tag");
+  assert.deepEqual(facetValues(p, "risk"), [...(p.tags.challenge || []), ...p.tags.attack]);
 });

@@ -110,7 +110,7 @@ def survey_tags(survey: dict) -> dict:
         for m in dim["metrics"]:
             for k in m["keys"]:
                 tag(k, "metric", m["id"])
-    for group, items in (("application", survey["applications"]), ("challenge", survey["challenges"])):
+    for group, items in (("application", survey["applications"]), ("challenge", survey["challenges"]), ("attack", survey["attacks"])):
         for item in items:
             for k in item["keys"]:
                 tag(k, group, item["id"])

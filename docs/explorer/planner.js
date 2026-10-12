@@ -10,6 +10,7 @@ export function facetValues(p, facet) {
     case "year": return [String(p.year)];
     case "review": return [p.peer_reviewed ? "peer-reviewed" : "preprint"];
     case "source": return [p.in_survey ? "in-survey" : "list-only"];
+    case "risk": return [...tagsOf(p, "challenge"), ...tagsOf(p, "attack")];
     default: return tagsOf(p, facet);
   }
 }

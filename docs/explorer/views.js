@@ -3,7 +3,7 @@ import { similarPapers } from "./search.js";
 import { FACETS } from "./state.js";
 
 const FACET_TITLES = { stage: "Stage", family: "Method family", model: "Model", target: "What is forgotten",
-  application: "Application", kind: "Type", year: "Year", review: "Status", source: "Source" };
+  application: "Application", risk: "Risk or open challenge", kind: "Type", year: "Year", review: "Status", source: "Source" };
 const SIDES = { forget: "Forgetting", retain: "Retained utility", robustness: "Robustness", cost: "Cost" };
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -159,7 +159,7 @@ export function renderDatasets(ctx) {
     const rows = ds.filter((d) => d.setting === setting.name);
     if (!rows.length) continue;
     body += `<tr class="group-row"><td colspan="4">${esc(setting.name)}</td></tr>` + rows.map((d) =>
-      `<tr><td>${esc(d.name)}</td><td>${esc(d.modality)}</td><td>${esc(d.size)}</td><td>${citeButtons(ctx, d.used_in) || "None in this list"}</td></tr>`).join("");
+      `<tr id="ds-${esc(d.id)}"><td>${esc(d.name)}</td><td>${esc(d.modality)}</td><td>${esc(d.size)}</td><td>${citeButtons(ctx, d.used_in) || "None in this list"}</td></tr>`).join("");
   }
   host.innerHTML = `<div class="view-intro"><h2>Datasets and benchmarks</h2>
       <p class="muted">${filtered ? "Filtered by the sentence above. " : ""}From the survey's dataset tables and benchmark table.</p></div>
@@ -185,7 +185,7 @@ export function renderEvaluation(ctx) {
       if (!ms.length) return "";
       return `<section><h3>${esc(d.name)}<span class="side">${SIDES[d.side]}</span></h3><div class="metric-grid">${ms.map((m) => {
         const cites = citeButtons(ctx, m.keys);
-        return `<article class="metric"><h4>${esc(m.name)}</h4><p>${esc(m.description)}</p>
+        return `<article class="metric" id="metric-${esc(m.id)}"><h4>${esc(m.name)}</h4><p>${esc(m.description)}</p>
           ${m.formula ? `<div class="formula" data-tex="${esc(m.formula)}"></div>` : ""}
           <p class="muted">${cites ? `Reported in: ${cites}` : "No paper in this list is cited for it."}</p></article>`;
       }).join("")}</div></section>`;

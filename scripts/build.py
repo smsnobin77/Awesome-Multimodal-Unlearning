@@ -18,7 +18,7 @@ REPO = "smsnobin77/Awesome-Multimodal-Unlearning"
 EXPLORER_URL = "https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/explorer/"
 START, END = "<!-- papers:start -->", "<!-- papers:end -->"
 KINDS = {"method", "benchmark", "attack", "analysis", "survey"}
-TAG_GROUPS = {"target", "metric", "dataset", "application", "challenge"}
+TAG_GROUPS = {"target", "metric", "dataset", "application", "challenge", "attack"}
 MODEL_LABEL = {"vlm": "VLM", "clip": "CLIP", "image-diffusion": "Diffusion", "video": "Video", "audio": "Audio"}
 ARXIV_BADGE = "https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white"
 PAPER_BADGE = "https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white"
@@ -37,6 +37,7 @@ def _ids(survey: dict) -> dict[str, set[str]]:
         "metric": {m["id"] for d in survey["dimensions"] for m in d["metrics"]},
         "dataset": {d["id"] for d in survey["datasets"]}, "application": {a["id"] for a in survey["applications"]},
         "challenge": {c["id"] for c in survey["challenges"]},
+        "attack": {a["id"] for a in survey["attacks"]},
     }
 
 

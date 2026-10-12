@@ -2942,6 +2942,8 @@
   tags:
     application:
     - security
+    attack:
+    - inference-defenses
     challenge:
     - adversarial-robustness
     - inference-time
@@ -3123,6 +3125,8 @@
   stage: null
   family: null
   tags:
+    attack:
+    - reactivation
     challenge:
     - adversarial-robustness
     dataset:
@@ -3217,6 +3221,8 @@
   stage: null
   family: null
   tags:
+    attack:
+    - reactivation
     metric:
     - bleu
     - clip-score
@@ -3362,7 +3368,9 @@
   kind: attack
   stage: null
   family: null
-  tags: {}
+  tags:
+    attack:
+    - reactivation
   added:
     model:
     - image-diffusion
@@ -4480,6 +4488,8 @@
   stage: null
   family: null
   tags:
+    attack:
+    - inference-defenses
     dataset:
     - nudenet
     - wikiart
@@ -5014,6 +5024,8 @@
   stage: null
   family: null
   tags:
+    attack:
+    - reactivation
     dataset:
     - viot
     target:
@@ -5817,6 +5829,8 @@
   stage: null
   family: null
   tags:
+    attack:
+    - reactivation
     challenge:
     - adversarial-robustness
     dataset:

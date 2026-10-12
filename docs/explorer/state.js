@@ -1,7 +1,7 @@
 import { facetValues } from "./planner.js";
 
 export const TABS = ["papers", "datasets", "evaluation", "gaps"];
-export const FACETS = ["stage", "family", "model", "target", "application", "kind", "year", "review", "source"];
+export const FACETS = ["stage", "family", "model", "target", "application", "risk", "kind", "year", "review", "source"];
 const SORTS = ["relevance", "newest", "survey"];
 
 export function defaultState() {
@@ -41,4 +41,22 @@ export function toHash(s) {
   if (s.paper) p.set("paper", s.paper);
   const qs = p.toString();
   return `#${s.tab}${qs ? `?${qs}` : ""}`;
+}
+
+export function activeChips(s, labels) {
+  const name = (group, v) => labels[group]?.[v] ?? v;
+  const chips = [];
+  if (s.target !== "any") chips.push({ text: `Forget: ${name("target", s.target)}`, patch: { target: "any" } });
+  if (s.model !== "any") chips.push({ text: `Model: ${name("model", s.model)}`, patch: { model: "any" } });
+  if (s.constraint !== "none") chips.push({ text: `Without: ${name("constraint", s.constraint)}`, patch: { constraint: "none" } });
+  if (s.stage) chips.push({ text: `Stage: ${name("stage", s.stage)}`, patch: { stage: null } });
+  for (const [facet, values] of Object.entries(s.filters)) {
+    for (const v of values) {
+      const filters = { ...s.filters, [facet]: values.filter((x) => x !== v) };
+      if (!filters[facet].length) delete filters[facet];
+      chips.push({ text: name(facet, v), patch: { filters } });
+    }
+  }
+  if (s.query) chips.push({ text: `Search: "${s.query}"`, patch: { query: "" } });
+  return chips;
 }

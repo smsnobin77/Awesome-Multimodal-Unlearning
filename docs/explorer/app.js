@@ -1,6 +1,6 @@
 import { buildIndex, decodeEmbeddings, hybridSearch, parseQuery } from "./search.js";
 import { paperMatches, planCard, searchTags, stageCounts, stageFit } from "./planner.js";
-import { parseHash, toHash } from "./state.js";
+import { activeChips, parseHash, toHash } from "./state.js";
 import { embedQuery, loadEmbeddings, semanticState } from "./semantic.js";
 import { esc, renderDatasets, renderDrawer, renderEvaluation, renderGaps, renderMath, renderPapers } from "./views.js";
 
@@ -19,6 +19,8 @@ const labels = {
   application: byId(survey.applications), challenge: byId(survey.challenges),
   metric: Object.fromEntries(survey.dimensions.flatMap((d) => d.metrics.map((m) => [m.id, m.name]))),
   dataset: byId(survey.datasets),
+  constraint: byId(survey.planner.constraints, (c) => noun(c.label)),
+  risk: { ...byId(survey.attacks), ...byId(survey.challenges) },
   kind: { method: "Method", benchmark: "Benchmark", attack: "Attack", analysis: "Other work", survey: "Survey" },
   review: { "peer-reviewed": "Peer reviewed", preprint: "Preprint" },
   source: { "in-survey": "In the survey", "list-only": "Only in the list" },
@@ -112,33 +114,30 @@ function renderPlanCard() {
   const plan = planCard(survey, s);
   const list = (items, fmt, empty) => (items.length ? `<ul>${items.map(fmt).join("")}</ul>` : `<p class="empty">${empty}</p>`);
   host.innerHTML = `<h2>What to read and test</h2><div class="plan-grid">
-    <section><h3>Datasets (${plan.datasets.length})</h3>${list(plan.datasets.slice(0, 8), (d) => `<li>${esc(d.name)} <span class="muted">${esc(d.modality)}, ${esc(d.size)}</span></li>`,
+    <section><h3>Datasets (${plan.datasets.length})</h3>${list(plan.datasets.slice(0, 8), (d) => `<li><button type="button" class="link" data-goto="datasets" data-anchor="ds-${esc(d.id)}">${esc(d.name)}</button> <span class="muted">${esc(d.modality)}, ${esc(d.size)}</span></li>`,
       "The survey lists no dataset for this combination.")}${plan.datasets.length > 8 ? `<button type="button" class="link" data-goto="datasets">See all ${plan.datasets.length}</button>` : ""}</section>
     <section><h3>Benchmarks (${plan.benchmarks.length})</h3>${list(plan.benchmarks, (b) => `<li><button type="button" class="link" data-open="${esc(b.key)}">${esc(b.name)}</button></li>`,
       "No benchmark in the survey covers this combination yet.")}</section>
-    <section><h3>Metrics to report</h3>${Object.entries(SIDES).map(([side, title]) => `<p><strong>${title}:</strong> ${plan.metrics[side].map((m) => esc(m.name)).join(", ") || "none listed"}</p>`).join("")}</section>
-    <section><h3>Risks to check</h3>${list([...plan.attacks, ...plan.challenges], (c) => `<li>${esc(c.name)}</li>`, "")}</section></div>`;
+    <section><h3>Metrics to report</h3>${Object.entries(SIDES).map(([side, title]) => `<p><strong>${title}:</strong> ${plan.metrics[side].map((m) => `<button type="button" class="link" data-goto="evaluation" data-anchor="metric-${esc(m.id)}">${esc(m.name)}</button>`).join(", ") || "none listed"}</p>`).join("")}</section>
+    <section><h3>Risks to check</h3>${list([...plan.attacks, ...plan.challenges], (c) => `<li><button type="button" class="link" data-risk="${esc(c.id)}">${esc(c.name)}</button></li>`, "")}</section></div>`;
   $$("[data-open]", host).forEach((b) => b.addEventListener("click", () => openPaper(b.dataset.open)));
-  $("[data-goto]", host)?.addEventListener("click", () => update({ tab: "datasets" }));
+  $$("[data-goto]", host).forEach((b) => b.addEventListener("click", () => {
+    ctx.anchor = b.dataset.anchor || null;
+    if (b.dataset.goto === "datasets") ctx.datasetModality = "all";
+    update({ tab: b.dataset.goto });
+  }));
+  $$("[data-risk]", host).forEach((b) => b.addEventListener("click", () => update({ tab: "papers", filters: { ...ctx.state.filters, risk: [b.dataset.risk] } })));
 }
 
 function renderChips() {
-  const s = ctx.state;
-  const chips = [];
-  if (s.stage) chips.push([`Stage: ${labels.stage[s.stage]}`, () => update({ stage: null })]);
-  for (const [facet, values] of Object.entries(s.filters)) {
-    for (const v of values) {
-      chips.push([labels[facet]?.[v] ?? v, () => {
-        const filters = { ...s.filters, [facet]: values.filter((x) => x !== v) };
-        if (!filters[facet].length) delete filters[facet];
-        update({ filters });
-      }]);
-    }
-  }
-  if (s.query) chips.push([`Search: "${s.query}"`, () => { $("#search").value = ""; update({ query: "" }); }]);
+  const chips = activeChips(ctx.state, labels);
   const host = $("#chips");
-  host.innerHTML = chips.map(([text], i) => `<button type="button" class="chip" data-i="${i}" aria-label="Remove ${esc(text)}">${esc(text)} ×</button>`).join("");
-  $$("[data-i]", host).forEach((b) => b.addEventListener("click", chips[Number(b.dataset.i)][1]));
+  host.innerHTML = chips.map((c, i) => `<button type="button" class="chip" data-i="${i}" aria-label="Remove ${esc(c.text)}">${esc(c.text)} ×</button>`).join("");
+  $$("[data-i]", host).forEach((b) => b.addEventListener("click", () => {
+    const { patch } = chips[Number(b.dataset.i)];
+    if ("query" in patch) $("#search").value = "";
+    update(patch);
+  }));
 }
 
 function renderTabs() {
@@ -160,6 +159,12 @@ function render() {
   renderTabs();
   ({ papers: renderPapers, datasets: renderDatasets, evaluation: renderEvaluation, gaps: renderGaps })[ctx.state.tab](ctx);
   renderDrawer(ctx);
+  if (ctx.anchor) {
+    const el = document.getElementById(ctx.anchor);
+    ctx.anchor = null;
+    el?.classList.add("is-target");
+    el?.scrollIntoView({ block: "center" });
+  }
 }
 
 function openPaper(key) {
