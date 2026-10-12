@@ -51,3 +51,25 @@ def test_rules_cover_every_stage_setting_modality_and_benchmark(sections):
     assert {d["setting"] for d in ds} <= set(SETTING_TARGETS)
     assert {d["modality"] for d in ds} <= set(MODALITY_MODELS)
     assert {b["key"] for b in parse_benchmarks(live(sections / "benchmark_table.tex"))} == set(BENCHMARK_TARGETS)
+
+
+def test_readme_rows_take_the_paper_link_not_the_badge():
+    badge = "https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white"
+    readme = ("### Diffusion Models (DMs)\n\n"
+              f"| 2023&#8209;03 | Ablating Concepts | [![arXiv]({badge})](https://arxiv.org/pdf/2303.13516.pdf) |\n")
+    row = readme_rows(readme)[0]
+    assert row["url"] == "https://arxiv.org/pdf/2303.13516.pdf" and row["arxiv"] == "2303.13516"
+
+
+def test_prefer_readme_title_keeps_casing_only_for_the_same_title():
+    from tagging import prefer_readme_title
+    assert prefer_readme_title("Salun: empowering machine unlearning", "SalUn: Empowering Machine Unlearning") == "SalUn: Empowering Machine Unlearning"
+    assert prefer_readme_title("Salun: empowering machine unlearning", "A different paper") == "Salun: empowering machine unlearning"
+
+
+def test_a_no_verdict_never_quotes_a_sentence_that_supports_fitting():
+    supports_fit = ["not weights", "without retraining", "remains fixed", "unchanged", "closed-form"]
+    for stage, rules in STAGE_RULES.items():
+        for constraint, rule in rules.items():
+            if rule["fit"] == "no":
+                assert not any(s in rule["why"] for s in supports_fit), (stage, constraint, rule["why"])

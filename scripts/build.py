@@ -55,6 +55,18 @@ def validate(papers: list[dict], survey: dict) -> list[str]:
             errors.append(f"{where}: kind must be one of {sorted(KINDS)}")
         if not isinstance(p.get("year"), int):
             errors.append(f"{where}: year must be a number")
+        for flag in ("in_survey", "peer_reviewed"):
+            if not isinstance(p.get(flag), bool):
+                errors.append(f"{where}: {flag} must be true or false")
+        for name, url in (p.get("links") or {}).items():
+            if name == "doi":
+                continue
+            if not str(url).startswith("https://"):
+                errors.append(f"{where}: link '{name}' must start with https://")
+            elif "img.shields.io" in url:
+                errors.append(f"{where}: link '{name}' points to a badge image, not the paper")
+        if p.get("stage") is not None and p["stage"] not in ids["stage"]:
+            errors.append(f"{where}: unknown stage '{p['stage']}'")
         fam = p.get("family")
         if p.get("kind") == "method" and p.get("in_survey") and not fam:
             errors.append(f"{where}: a method from the survey needs a 'family'")

@@ -1,6 +1,6 @@
 - key: struppek2024exploiting
   name: Homoglyph Bias
-  title: Exploiting cultural biases via homoglyphs intext-to-image synthesis
+  title: Exploiting Cultural Biases via Homoglyphs in Text-to-Image Synthesis
   authors:
   - Lukas Struppek
   - Dominik Hintersdorf
@@ -25,7 +25,8 @@
     - image-diffusion
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2209.08891
+    arxiv: https://arxiv.org/abs/2209.08891
   abstract: Models for text-to-image synthesis, such as DALL-E 2 and Stable Diffusion, have recently drawn a lot of interest
     from academia and the general public. These models are capable of producing high-quality images that depict a variety
     of concepts and styles when conditioned on textual descriptions. However, these models adopt cultural characteristics
@@ -47,7 +48,7 @@
     }
 - key: bansal2023cleanclip
   name: CleanCLIP
-  title: 'Cleanclip: Mitigating data poisoning attacks in multimodal contrastive learning'
+  title: 'CleanCLIP: Mitigating Data Poisoning Attacks in Multimodal Contrastive Learning'
   authors:
   - Hritik Bansal
   - Nishad Singhi
@@ -103,7 +104,7 @@
     }
 - key: liu2024metacloak
   name: MetaCloak
-  title: 'Metacloak: Preventing unauthorized subject-driven text-to-image diffusion-based synthesis via meta-learning'
+  title: 'MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based Synthesis via Meta-learning'
   authors:
   - Yixin Liu
   - Chenrui Fan
@@ -160,7 +161,7 @@
     }
 - key: liu2024multimodal
   name: MEM
-  title: 'Multimodal unlearnable examples: Protecting data against multimodal contrastive learning'
+  title: 'Multimodal Unlearnable Examples: Protecting Data against Multimodal Contrastive Learning'
   authors:
   - Xinwei Liu
   - Xiaojun Jia
@@ -211,7 +212,7 @@
     }
 - key: sun2024unseg
   name: UnSeg
-  title: 'UnSeg: one universal unlearnable example generator is enough against all image segmentation'
+  title: 'UnSeg: One Universal Unlearnable Example Generator is Enough against All Image Segmentation'
   authors:
   - Ye Sun
   - Hao Zhang
@@ -253,7 +254,7 @@
     }
 - key: zhang2023unlearnable
   name: UCs
-  title: 'Unlearnable clusters: Towards label-agnostic unlearnable examples'
+  title: 'Unlearnable Clusters: Towards Label-agnostic Unlearnable Examples'
   authors:
   - Jiaming Zhang
   - Xingjun Ma
@@ -400,7 +401,7 @@
     }
 - key: li2025loreun
   name: LoReUn
-  title: 'Loreun: Data itself implicitly provides cues to improve machine unlearning'
+  title: 'LoReUn: Data Itself Implicitly Provides Cues to Improve Machine Unlearning'
   authors:
   - Xiang Li
   - Qianli Shen
@@ -498,7 +499,7 @@
     }
 - key: wu2025munba
   name: MUNBa
-  title: 'Munba: Machine unlearning via nash bargaining'
+  title: 'MUNBa: Machine Unlearning via Nash Bargaining'
   authors:
   - Jing Wu
   - Mehrtash Harandi
@@ -549,7 +550,7 @@
     }
 - key: ko2024boosting
   name: Boosting Alignment
-  title: Boosting alignment for post-unlearning text-to-image generative models
+  title: Boosting Alignment for Post-Unlearning Text-to-Image Generative Models
   authors:
   - Myeongseob Ko
   - Henry Li
@@ -609,7 +610,7 @@
   - Gyeong-Moon Park
   year: 2025
   date: 2025-07
-  venue: ICML
+  venue: ICML Workshop
   peer_reviewed: true
   kind: method
   stage: training-time
@@ -772,7 +773,7 @@
     - audio
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
+    paper: https://www.isca-archive.org/interspeech_2025/liu25b_interspeech.pdf
   abstract: Recent advances in Large Language Models (LLMs) have been extended to the field of Automatic Speech Recognition
     (ASR), leveraging the exceptional generative capabilities of LLMs for speech transcription generation. However, concerns
     about privacy risks have emerged since both LLMs and large ASR models may unintentionally memorize training examples.
@@ -842,7 +843,7 @@
     }
 - key: spartalis2025unleashing
   name: null
-  title: 'Unleashing Uncertainty: Efficient Machine Unleanring for Generative AI'
+  title: 'Unleashing Uncertainty: Efficient Machine Unlearning for Generative AI'
   authors:
   - Christoforos N Spartalis
   - Theodoros Semertzidis
@@ -850,7 +851,7 @@
   - Stratis Gavves
   year: 2025
   date: 2025-08
-  venue: ICML
+  venue: ICML Workshop
   peer_reviewed: true
   kind: method
   stage: training-time
@@ -865,8 +866,14 @@
     - image-diffusion
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
-  abstract: null
+    paper: https://arxiv.org/pdf/2508.20773
+    arxiv: https://arxiv.org/abs/2508.20773
+  abstract: We introduce SAFEMax, a novel method for Machine Unlearning in diffusion models. Grounded in information-theoretic
+    principles, SAFEMax maximizes the entropy in generated images, causing the model to generate Gaussian noise when conditioned
+    on impermissible classes by ultimately halting its denoising process. Also, our method controls the balance between forgetting
+    and retention by selectively focusing on the early diffusion steps, where class-specific information is prominent. Our
+    results demonstrate the effectiveness of SAFEMax and highlight its substantial efficiency gains over state-of-the-art
+    methods.
   bibtex: |-
     @inproceedings{spartalis2025unleashing,
       title={Unleashing Uncertainty: Efficient Machine Unleanring for Generative AI},
@@ -876,7 +883,7 @@
     }
 - key: park2024direct
   name: null
-  title: Direct unlearning optimization for robust and safe text-to-image models
+  title: Direct Unlearning Optimization for Robust and Safe Text-to-Image Models
   authors:
   - Yong-Hyun Park
   - Sangdoo Yun
@@ -987,7 +994,7 @@
     }
 - key: cheng2024multidelete
   name: MultiDelete
-  title: Multidelete for multimodal machine unlearning
+  title: MultiDelete for Multimodal Machine Unlearning
   authors:
   - Jiali Cheng
   - Hadi Amiri
@@ -1091,7 +1098,7 @@
     }
 - key: li2024single
   name: SIU
-  title: 'Single image unlearning: Efficient machine unlearning in multimodal large language models'
+  title: 'Single Image Unlearning: Efficient Machine Unlearning in Multimodal Large Language Models'
   authors:
   - Jiaqi Li
   - Qianshan Wei
@@ -1151,7 +1158,7 @@
     }
 - key: liang2024unlearning
   name: Unlearn Backdoors
-  title: 'Unlearning backdoor threats: Enhancing backdoor defense in multimodal contrastive learning via local token unlearning'
+  title: 'Unlearning Backdoor Threats: Enhancing Backdoor Defense in Multimodal Contrastive Learning via Local Token Unlearning'
   authors:
   - Siyuan Liang
   - Kuanrong Liu
@@ -1247,7 +1254,7 @@
     }
 - key: kumari2023ablating
   name: null
-  title: Ablating concepts in text-to-image diffusion models
+  title: Ablating Concepts in Text-to-Image Diffusion Models
   authors:
   - Nupur Kumari
   - Bingliang Zhang
@@ -1388,7 +1395,7 @@
     }
 - key: kim2023towards
   name: SSD
-  title: Towards safe self-distillation of internet-scale text-to-image diffusion models
+  title: Towards Safe Self-Distillation of Internet-Scale Text-to-Image Diffusion Models
   authors:
   - Sanghyun Kim
   - Seohyeon Jung
@@ -1572,7 +1579,7 @@
     }
 - key: li2025sculpting
   name: null
-  title: 'Sculpting memory: Multi-concept forgetting in diffusion models via dynamic mask and concept-aware optimization'
+  title: 'Sculpting Memory: Multi-Concept Forgetting in Diffusion Models via Dynamic Mask and Concept-Aware Optimization'
   authors:
   - Gen Li
   - Yang Xiao
@@ -1625,7 +1632,7 @@
     }
 - key: zhang2024forget
   name: Forget-Me-Not
-  title: 'Forget-me-not: Learning to forget in text-to-image diffusion models'
+  title: 'Forget-Me-Not: Learning to Forget in Text-to-Image Diffusion Models'
   authors:
   - Gong Zhang
   - Kai Wang
@@ -1673,7 +1680,7 @@
     }
 - key: fan2023salun
   name: SalUn
-  title: 'Salun: Empowering machine unlearning via gradient-based weight saliency in both image classification and generation'
+  title: 'SalUn: Empowering Machine Unlearning via Gradient-Based Weight Saliency in Both Image Classification and Generation'
   authors:
   - Chongyu Fan
   - Jiancheng Liu
@@ -1733,7 +1740,7 @@
     }
 - key: shirkavand2025efficient
   name: Efficient Fine-Tuning
-  title: Efficient fine-tuning and concept suppression for pruned diffusion models
+  title: Efficient Fine-Tuning and Concept Suppression for Pruned Diffusion Models
   authors:
   - Reza Shirkavand
   - Peiran Yu
@@ -1779,7 +1786,7 @@
     }
 - key: mason-williams2025machine
   name: Audio Unlearning
-  title: 'Machine Unlearning in Audio: Bridging The Modality Gap Via the Prune and Regrow Paradigm'
+  title: 'Machine Unlearning in Audio: Bridging the Modality Gap via the Prune and Regrow Paradigm'
   authors:
   - Israel Mason-Williams
   - Jing Han
@@ -1813,7 +1820,7 @@
     }
 - key: liu2025modality
   name: MANU
-  title: Modality-aware neuron pruning for unlearning in multimodal large language models
+  title: Modality-Aware Neuron Pruning for Unlearning in Multimodal Large Language Models
   authors:
   - Zheyuan Liu
   - Guangyao Dou
@@ -1856,7 +1863,7 @@
     }
 - key: huang2024freezeasguard
   name: FreezeAsGuard
-  title: 'Freezeasguard: Mitigating illegal adaptation of diffusion models via selective tensor freezing'
+  title: 'FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing'
   authors:
   - Kai Huang
   - Haoming Wang
@@ -1951,7 +1958,7 @@
     }
 - key: schioppa2024model
   name: Model Integrity
-  title: Model integrity when unlearning with t2i diffusion models
+  title: Model Integrity when Unlearning with T2I Diffusion Models
   authors:
   - Andrea Schioppa
   - Emiel Hoogeboom
@@ -2280,8 +2287,17 @@
     - clip
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
-  abstract: null
+    paper: https://arxiv.org/pdf/2410.05583
+    arxiv: https://arxiv.org/abs/2410.05583
+  abstract: Machine unlearning aims to selectively remove specific knowledge from a trained model. Existing approaches, such
+    as Task Arithmetic, fine-tune the model on the forget set to create a task vector (i.e., a direction in weight space)
+    for subtraction from the original model's weight. However, their effectiveness is highly sensitive to hyperparameter selection,
+    requiring extensive validation to identify the optimal vector from many fine-tuned candidates. In this paper, we propose
+    a novel method that utilizes all fine-tuned models trained with varying hyperparameters instead of a single selection.
+    Specifically, we aggregate the computed task vectors by retaining only the elements with consistent shared signs. The
+    merged task vector is then negated to induce unlearning on the original model. Evaluations on zero-shot and standard image
+    recognition tasks across twelve datasets and four backbone architectures show that our approach outperforms state-of-the-art
+    methods while requiring similar or fewer computational resources. Code is available at https://github.com/naver-ai/negmerge.
   bibtex: |-
     @inproceedings{kim2024negmerge,
         title={NegMerge: Consensual Weight Negation for Strong Machine Unlearning},
@@ -2291,7 +2307,7 @@
     }
 - key: ilharcoediting2023
   name: Task Arithmetic
-  title: Editing models with task arithmetic
+  title: Editing Models with Task Arithmetic
   authors:
   - Gabriel Ilharco
   - Marco Tulio Ribeiro
@@ -2348,7 +2364,7 @@
   - Dinh Phung
   year: 2025
   date: 2024-03
-  venue: ICLR
+  venue: ICLR Workshop
   peer_reviewed: true
   kind: method
   stage: decoding-time
@@ -2387,7 +2403,7 @@
     }
 - key: golatkar2024cpr
   name: CPR
-  title: 'CPR: Retrieval augmented generation for copyright protection'
+  title: 'CPR: Retrieval Augmented Generation for Copyright Protection'
   authors:
   - Aditya Golatkar
   - Alessandro Achille
@@ -2435,7 +2451,7 @@
     }
 - key: li2024get
   name: SuppressEOT
-  title: 'Get What You Want, Not What You Don''t: Image Content Suppression for Text-to-Image Diffusion Models'
+  title: 'Get What You Want, Not What You Don’t: Image Content Suppression for Text-to-Image Diffusion Models'
   authors:
   - Senmao Li
   - Joost van de Weijer
@@ -2467,8 +2483,18 @@
     - image-diffusion
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
-  abstract: null
+    paper: https://arxiv.org/pdf/2402.05375
+    arxiv: https://arxiv.org/abs/2402.05375
+  abstract: The success of recent text-to-image diffusion models is largely due to their capacity to be guided by a complex
+    text prompt, which enables users to precisely describe the desired content. However, these models struggle to effectively
+    suppress the generation of undesired content, which is explicitly requested to be omitted from the generated image in
+    the prompt. In this paper, we analyze how to manipulate the text embeddings and remove unwanted content from them. We
+    introduce two contributions, which we refer to as $\textit{soft-weighted regularization}$ and $\textit{inference-time
+    text embedding optimization}$. The first regularizes the text embedding matrix and effectively suppresses the undesired
+    content. The second method aims to further suppress the unwanted content generation of the prompt, and encourages the
+    generation of desired content. We evaluate our method quantitatively and qualitatively on extensive experiments, validating
+    its effectiveness. Furthermore, our method is generalizability to both the pixel-space diffusion models (i.e. DeepFloyd-IF)
+    and the latent-space diffusion models (i.e. Stable Diffusion).
   bibtex: |-
     @inproceedings{li2024get,
       title={Get What You Want, Not What You Don't: Image Content Suppression for Text-to-Image Diffusion Models},
@@ -2478,7 +2504,7 @@
     }
 - key: wang2024moderator
   name: Moderator
-  title: 'Moderator: Moderating text-to-image diffusion models through fine-grained context-based policies'
+  title: 'Moderator: Moderating Text-to-Image Diffusion Models through Fine-grained Context-based Policies'
   authors:
   - Peiran Wang
   - Qiyu Li
@@ -2527,7 +2553,7 @@
     }
 - key: zhang2024steerdiff
   name: SteerDiff
-  title: 'Steerdiff: Steering towards safe text-to-image diffusion models'
+  title: 'SteerDiff: Steering towards Safe Text-to-Image Diffusion Models'
   authors:
   - Hongxiang Zhang
   - Yifeng He
@@ -2716,7 +2742,7 @@
     }
 - key: park2025steering
   name: null
-  title: Steering guidance for personalized text-to-image diffusion models
+  title: Steering Guidance for Personalized Text-to-Image Diffusion Models
   authors:
   - Sunghyun Park
   - Seokeon Choi
@@ -2925,7 +2951,7 @@
     - image-diffusion
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
+    paper: https://openreview.net/pdf?id=PdBEggnDIl
   abstract: null
   bibtex: |-
     @inproceedings{han2025adaptive,
@@ -2940,7 +2966,7 @@
   authors: []
   year: 2025
   date: 2025-07
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -2953,7 +2979,8 @@
     - knowledge
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2507.07137
+    arxiv: https://arxiv.org/abs/2507.07137
   abstract: Machine unlearning (MU) is a promising cost-effective method to cleanse undesired information (generated concepts,
     biases, or patterns) from foundational diffusion models. While MU is orders of magnitude less costly than retraining a
     diffusion model without the undesired information, it can be challenging and labor-intensive to prove that the information
@@ -2969,11 +2996,11 @@
     @misc{list-automating-evaluation-of-diffusion-model-unlearn,
       title = {Automating Evaluation of Diffusion Model Unlearning with (Vision-) Language Model World Knowledge},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2507.07137}
     }
 - key: ma2024benchmarking
   name: FIUBench
-  title: Benchmarking vision language model unlearning via fictitious facial identity dataset
+  title: Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset
   authors:
   - Yingzi Ma
   - Jiongxiao Wang
@@ -3035,7 +3062,7 @@
     }
 - key: yang2024cliperase
   name: null
-  title: 'Cliperase: Efficient unlearning of visual-textual associations in clip'
+  title: 'CLIPErase: Efficient Unlearning of Visual-Textual Associations in CLIP'
   authors:
   - Tianyu Yang
   - Lisen Dai
@@ -3272,7 +3299,7 @@
     }
 - key: moon2024holistic
   name: Holistic Unlearning
-  title: 'Holistic unlearning benchmark: A multi-faceted evaluation for text-to-image diffusion model unlearning'
+  title: 'Holistic Unlearning Benchmark: A Multi-Faceted Evaluation for Text-to-Image Diffusion Model Unlearning'
   authors:
   - Saemi Moon
   - Minjong Lee
@@ -3369,7 +3396,7 @@
   authors: []
   year: 2025
   date: 2025-06
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -3380,7 +3407,8 @@
     - audio
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2506.18312
+    arxiv: https://arxiv.org/abs/2506.18312
   abstract: This paper explores the use of unlearning methods for training data attribution (TDA) in music generative models
     trained on large-scale datasets. TDA aims to identify which specific training data points contributed the most to the
     generation of a particular output from a specific model. This is crucial in the context of AI-generated music, where proper
@@ -3396,7 +3424,7 @@
     @misc{list-large-scale-training-data-attribution-for-music,
       title = {Large-Scale Training Data Attribution for Music Generative Models via Unlearning},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2506.18312}
     }
 - key: list-lifting-data-tracing-machine-unlearning-to-knowl
   name: null
@@ -3404,7 +3432,7 @@
   authors: []
   year: 2025
   date: 2025-06
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -3417,7 +3445,8 @@
     - knowledge
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2506.11253
+    arxiv: https://arxiv.org/abs/2506.11253
   abstract: 'Machine unlearning removes certain training data points and their influence from AI models (e.g., when a data
     owner revokes their consent to allow models to learn from the data). In this position paper, we propose to lift data-tracing
     machine unlearning to knowledge-tracing for foundation models (FMs). We support this position based on practical needs
@@ -3432,7 +3461,7 @@
     @misc{list-lifting-data-tracing-machine-unlearning-to-knowl,
       title = {Lifting Data-Tracing Machine Unlearning to Knowledge-Tracing for Foundation Models},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2506.11253}
     }
 - key: wu2025medforget
   name: null
@@ -3525,7 +3554,7 @@
     }
 - key: gao2024meta
   name: null
-  title: 'Meta-unlearning on diffusion models: Preventing relearning unlearned concepts'
+  title: 'Meta-Unlearning on Diffusion Models: Preventing Relearning Unlearned Concepts'
   authors:
   - Hongcheng Gao
   - Tianyu Pang
@@ -3668,7 +3697,7 @@
     }
 - key: xu2025pebench
   name: PEBench
-  title: 'Pebench: A fictitious dataset to benchmark machine unlearning for multimodal large language models'
+  title: 'PEBench: A Fictitious Dataset to Benchmark Machine Unlearning for Multimodal Large Language Models'
   authors:
   - Zhaopan Xu
   - Pengfei Zhou
@@ -3923,7 +3952,7 @@
   authors: []
   year: 2025
   date: 2025-06
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -3934,7 +3963,8 @@
     - vlm
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2506.05198
+    arxiv: https://arxiv.org/abs/2506.05198
   abstract: Understanding what and how neural networks memorize during training is crucial, both from the perspective of unintentional
     memorization of potentially sensitive information and from the standpoint of effective knowledge acquisition for real-world,
     knowledge-intensive tasks. While previous studies primarily investigate memorization within a single modality, such as
@@ -3952,7 +3982,7 @@
     @misc{list-quantifying-cross-modality-memorization-in-visio,
       title = {Quantifying Cross-Modality Memorization in Vision-Language Models},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2506.05198}
     }
 - key: list-rethinking-bottlenecks-in-safety-fine-tuning-of
   name: null
@@ -3960,7 +3990,7 @@
   authors: []
   year: 2025
   date: 2025-01
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -3971,7 +4001,8 @@
     - vlm
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2501.18533
+    arxiv: https://arxiv.org/abs/2501.18533
   abstract: 'Large Vision-Language Models (VLMs) have achieved remarkable performance across a wide range of tasks. However,
     their deployment in safety-critical domains poses significant challenges. Existing safety fine-tuning methods, which focus
     on textual or multimodal content, fall short in addressing challenging cases or disrupt the balance between helpfulness
@@ -3989,7 +4020,7 @@
     @misc{list-rethinking-bottlenecks-in-safety-fine-tuning-of,
       title = {Rethinking Bottlenecks in Safety Fine-Tuning of Vision Language Models},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2501.18533}
     }
 - key: liu2025rethinking
   name: null
@@ -4046,7 +4077,7 @@
   authors: []
   year: 2025
   date: 2025-06
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -4057,7 +4088,8 @@
     - vlm
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2506.02541
+    arxiv: https://arxiv.org/abs/2506.02541
   abstract: 'Large Vision-Language Models (LVLMs) can recognize individuals in images and disclose sensitive personal information
     about them, raising critical privacy concerns. Machine unlearning aims to remove such knowledge from the model. However,
     existing methods rarely prescribe what the model should output in place of the forgotten content, leading to Unlearning
@@ -4072,7 +4104,7 @@
     @misc{list-rethinking-post-unlearning-behavior-of-large-vis,
       title = {Rethinking Post-Unlearning Behavior of Large Vision-Language Models},
       year = {2025},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2506.02541}
     }
 - key: cywinski2025saeuron
   name: null
@@ -4126,7 +4158,7 @@
     \ on Machine Learning},\n  year={2025} \n}"
 - key: chen2025safeeraser
   name: SafeEraser
-  title: 'Safeeraser: Enhancing safety in multimodal large language models through multimodal machine unlearning'
+  title: 'SafeEraser: Enhancing Safety in Multimodal Large Language Models through Multimodal Machine Unlearning'
   authors:
   - Junkai Chen
   - Zhijie Deng
@@ -4318,7 +4350,8 @@
     - image-diffusion
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2406.14855
+    arxiv: https://arxiv.org/abs/2406.14855
   abstract: 'Text-to-image (T2I) diffusion models have shown exceptional capabilities in generating images that closely correspond
     to textual prompts. However, the advancement of T2I diffusion models presents significant risks, as the models could be
     exploited for malicious purposes, such as generating images with violence or nudity, or creating unauthorized portraits
@@ -4562,7 +4595,7 @@
     - vlm
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
+    paper: https://openreview.net/pdf?id=M476xkfNXe
   abstract: Although Multimodal Large Language Models (MLLMs) have advanced numerous fields, their training on extensive multimodal
     datasets introduces significant privacy concerns, prompting the necessity for effective unlearning methods. However, current
     multimodal unlearning approaches often directly adapt techniques from unimodal contexts, largely overlooking the critical
@@ -4630,7 +4663,7 @@
     }
 - key: wu2025unlearning
   name: null
-  title: Unlearning concepts in diffusion model via concept domain correction and concept preserving gradient
+  title: Unlearning Concepts in Diffusion Model via Concept Domain Correction and Concept Preserving Gradient
   authors:
   - Yongliang Wu
   - Shiji Zhou
@@ -4774,7 +4807,7 @@
     }
 - key: kravets2025zero
   name: null
-  title: Zero-shot class unlearning in clip with synthetic samples
+  title: Zero-Shot Class Unlearning in CLIP with Synthetic Samples
   authors:
   - Alexey Kravets
   - Vinay P Namboodiri
@@ -4818,7 +4851,7 @@
     }
 - key: kravets2025clip
   name: null
-  title: Zero-shot CLIP class forgetting via text-image space adaptation
+  title: Zero-shot CLIP Class Forgetting via Text-image Space Adaptation
   authors:
   - Alexey Kravets
   - Vinay P Namboodiri
@@ -4841,7 +4874,7 @@
     - clip
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/paper-555555?style=flat-square&logo=readthedocs&logoColor=white
+    paper: https://openreview.net/pdf?id=V2SD2uVKEE
   abstract: Efficient class forgetting has attracted significant interest due to the high computational cost of retraining
     models from scratch whenever classes need to be forgotten. This need arises from data privacy regulations, the necessity
     to remove outdated information, and the possibility to enhance model robustness and security. In this paper we address
@@ -4861,7 +4894,7 @@
     }
 - key: koudounas2025alexa
   name: UnSLU-BENCH
-  title: “Alexa, can you forget me?” Machine Unlearning Benchmark in Spoken Language Understanding
+  title: Alexa, can you forget me? Machine Unlearning Benchmark in Spoken Language Understanding
   authors:
   - Alkis Koudounas
   - Claudio Savelli
@@ -4975,7 +5008,7 @@
   - Sung Ju Hwang
   year: 2024
   date: 2024-05
-  venue: ICML
+  venue: ICML Workshop
   peer_reviewed: true
   kind: attack
   stage: null
@@ -5016,7 +5049,7 @@
     }
 - key: liang2024badclip
   name: null
-  title: 'Badclip: Dual-embedding guided backdoor attack on multimodal contrastive learning'
+  title: 'BadCLIP: Dual-Embedding Guided Backdoor Attack on Multimodal Contrastive Learning'
   authors:
   - Siyuan Liang
   - Mingli Zhu
@@ -5106,7 +5139,8 @@
     - vlm
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2406.02575
+    arxiv: https://arxiv.org/abs/2406.02575
   abstract: 'Trishna Chakraborty, Erfan Shayegani, Zikui Cai, Nael B. Abu-Ghazaleh, M. Salman Asif, Yue Dong, Amit Roy-Chowdhury,
     Chengyu Song. Findings of the Association for Computational Linguistics: EMNLP 2024. 2024.'
   bibtex: |-
@@ -5118,7 +5152,7 @@
     }
 - key: dontsov2024clear
   name: CLEAR
-  title: 'Clear: Character unlearning in textual and visual modalities'
+  title: 'CLEAR: Character Unlearning in Textual and Visual Modalities'
   authors:
   - Alexey Dontsov
   - Dmitrii Korzh
@@ -5229,7 +5263,7 @@
     }
 - key: liu2024efficient
   name: null
-  title: 'Efficient backdoor defense in multimodal contrastive learning: A token-level unlearning method for mitigating threats'
+  title: 'Efficient Backdoor Defense in Multimodal Contrastive Learning: A Token-Level Unlearning Method for Mitigating Threats'
   authors:
   - Kuanrong Liu
   - Siyuan Liang
@@ -5374,7 +5408,7 @@
     }
 - key: zhang2024learning
   name: null
-  title: 'Learning the unlearned: Mitigating feature suppression in contrastive learning'
+  title: 'Learning the Unlearned: Mitigating Feature Suppression in Contrastive Learning'
   authors:
   - Jihai Zhang
   - Xiang Lan
@@ -5431,7 +5465,7 @@
   authors: []
   year: 2024
   date: 2024-12
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -5442,7 +5476,8 @@
     - image-diffusion
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2412.00761
+    arxiv: https://arxiv.org/abs/2412.00761
   abstract: Machine unlearning is gaining increasing attention as a way to remove adversarial data poisoning attacks from
     already trained models and to comply with privacy and AI regulations. The objective is to unlearn the effect of undesired
     data from a trained model while maintaining performance on the remaining data. This paper introduces HyperForget, a novel
@@ -5456,7 +5491,7 @@
     @misc{list-learning-to-forget-using-hypernetworks,
       title = {Learning to Forget using Hypernetworks},
       year = {2024},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2412.00761}
     }
 - key: pan2024leveraging
   name: null
@@ -5550,7 +5585,7 @@
     }
 - key: li2024machine
   name: null
-  title: Machine unlearning for image-to-image generative models
+  title: Machine Unlearning for Image-to-Image Generative Models
   authors:
   - Guihong Li
   - Hsiang Hsu
@@ -5628,7 +5663,7 @@
     }
 - key: cheng2024mu
   name: MU-Bench
-  title: 'Mu-bench: A multitask multimodal benchmark for machine unlearning'
+  title: 'MU-Bench: A Multitask Multimodal Benchmark for Machine Unlearning'
   authors:
   - Jiali Cheng
   - Hadi Amiri
@@ -5690,7 +5725,7 @@
   authors: []
   year: 2024
   date: 2024-08
-  venue: ''
+  venue: arXiv
   peer_reviewed: false
   kind: method
   stage: null
@@ -5702,7 +5737,8 @@
     - image-diffusion
   in_survey: false
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
+    paper: https://arxiv.org/pdf/2408.00376
+    arxiv: https://arxiv.org/abs/2408.00376
   abstract: 'Generative AI (GenAI), which aims to synthesize realistic and diverse data samples from latent variables or other
     data modalities, has achieved remarkable results in various domains, such as natural language, images, audio, and graphs.
     However, they also pose challenges and risks to data privacy, security, and ethics. Machine unlearning is the process
@@ -5718,11 +5754,11 @@
     @misc{list-on-the-limitations-and-prospects-of-machine-unle,
       title = {On the Limitations and Prospects of Machine Unlearning for Generative AI},
       year = {2024},
-      url = {https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white}
+      url = {https://arxiv.org/pdf/2408.00376}
     }
 - key: liu2024pre
   name: null
-  title: Pre-trained encoders in self-supervised learning improve secure and privacy-preserving supervised learning
+  title: Pre-trained Encoders in Self-Supervised Learning Improve Secure and Privacy-preserving Supervised Learning
   authors:
   - Hongbin Liu
   - Wenjie Qu
@@ -5730,7 +5766,7 @@
   - Neil Zhenqiang Gong
   year: 2024
   date: 2022-12
-  venue: IEEE SPW
+  venue: IEEE S&P Workshop
   peer_reviewed: true
   kind: analysis
   stage: null
@@ -5766,7 +5802,7 @@
     }
 - key: han2024probing
   name: null
-  title: 'Probing unlearned diffusion models: A transferable adversarial attack perspective'
+  title: 'Probing Unlearned Diffusion Models: A Transferable Adversarial Attack Perspective'
   authors:
   - Xiaoxuan Han
   - Songlin Yang
@@ -5908,7 +5944,7 @@
     }
 - key: sharma2024unlearning
   name: null
-  title: Unlearning or concealment? a critical analysis and evaluation metrics for unlearning in diffusion models
+  title: Unlearning or Concealment? A Critical Analysis and Evaluation Metrics for Unlearning in Diffusion Models
   authors:
   - Aakash Sen Sharma
   - Niladri Sarkar
@@ -6076,8 +6112,17 @@
     - vlm
   in_survey: true
   links:
-    paper: https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white
-  abstract: null
+    paper: https://arxiv.org/pdf/2402.11574
+    arxiv: https://arxiv.org/abs/2402.11574
+  abstract: In Large Visual Language Models (LVLMs), the efficacy of In-Context Learning (ICL) remains limited by challenges
+    in cross-modal interactions and representation disparities. To overcome these challenges, we introduce a novel Visual
+    In-Context Learning (VICL) method comprising Visual Demonstration Retrieval, Intent-Oriented Image Summarization, and
+    Intent-Oriented Demonstration Composition. Our approach retrieves images via ''Retrieval &amp; Rerank'' paradigm, summarises
+    images with task intent and task-specific visual parsing, and composes language-based demonstrations that reduce token
+    count and alleviate cross-modal interaction problem. Experimental evaluations on five visual reasoning datasets demonstrate
+    the effectiveness of our method. Moreover, our extensive experiments leverage information flow analysis to elucidate the
+    effectiveness of our method, and investigate the impact of length and position of demonstrations for LVLM. The use of
+    in-context unlearning further shows promise in resetting specific model knowledge without retraining.
   bibtex: |-
     @inproceedings{zhou2024visual,
       title={Visual In-Context Learning for Large Vision-Language Models},
@@ -6219,7 +6264,7 @@
     }
 - key: dai2023training
   name: null
-  title: Training data attribution for diffusion models
+  title: Training Data Attribution for Diffusion Models
   authors:
   - Zheng Dai
   - David K Gifford

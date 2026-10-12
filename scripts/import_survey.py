@@ -28,7 +28,7 @@ VENUES = [(r"Computer Vision and Pattern Recognition|\bCVPR", "CVPR"), (r"Intern
           (r"Learning Representations|\bICLR", "ICLR"), (r"International Conference on Machine Learning|\bICML", "ICML"),
           (r"Findings of the Association", "Findings"), (r"Annual Meeting of the Association|\bACL\b", "ACL"),
           (r"Empirical Methods|EMNLP", "EMNLP"), (r"North American Chapter|Nations of the Americas Chapter|NAACL", "NAACL"),
-          (r"Security and Privacy Workshops", "IEEE SPW"), (r"AAAI", "AAAI"),
+          (r"Security and Privacy Workshops", "IEEE S&P"), (r"AAAI", "AAAI"),
           (r"Interspeech|INTERSPEECH", "Interspeech"), (r"Acoustics, Speech and Signal Processing|ICASSP", "ICASSP"),
           (r"ACM International Conference on Multimedia|ACM MM", "ACM MM"), (r"Winter Conference on Applications|WACV", "WACV"),
           (r"Transactions on Machine Learning Research|TMLR", "TMLR"), (r"Pattern Analysis and Machine Intelligence", "TPAMI"),
@@ -46,7 +46,8 @@ def author_name(name: str) -> str:
 
 
 def short_venue(v: str) -> str:
-    return next((short for pat, short in VENUES if re.search(pat, v, re.I)), v)
+    short = next((s for pat, s in VENUES if re.search(pat, v, re.I)), v)
+    return f"{short} Workshop" if re.search(r"workshop", v, re.I) and short != v else short
 
 
 def arxiv_date(aid: str | None) -> str | None:

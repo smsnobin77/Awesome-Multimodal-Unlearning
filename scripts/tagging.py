@@ -63,7 +63,7 @@ def readme_rows(readme: str) -> list[dict]:
     for line in readme.split("\n"):
         if line.startswith("### "):
             section = {"### Vision-Language Models (VLMs)": "vlm", "### Diffusion Models (DMs)": "dm"}.get(line.strip())
-        elif section and (m := re.match(r"^\| (\d{4})&#8209;(\d\d) \| (.+?) \| .*?\]\((http[^)]+)\)", line)):
+        elif section and (m := re.match(r"^\| (\d{4})&#8209;(\d\d) \| (.+?) \| .*\]\((https?://[^)]+)\)", line)):
             url = m.group(4)
             aid = re.search(r"arxiv\.org/(?:pdf|abs)/(\d{4}\.\d{4,5})", url)
             rows.append({"date": f"{m.group(1)}-{m.group(2)}", "title": m.group(3).strip(), "url": url,
@@ -91,3 +91,7 @@ def match_rows(rows: list[dict], titles: dict[str, str], arxiv_ids: dict[str, st
         elif not key:
             unmatched.append(row)
     return matched, unmatched
+
+
+def prefer_readme_title(bib_title: str, row_title: str) -> str:
+    return row_title if _tokens(bib_title) == _tokens(row_title) else bib_title

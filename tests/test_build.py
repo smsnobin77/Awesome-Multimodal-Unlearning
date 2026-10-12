@@ -58,3 +58,23 @@ def test_readme_list_links_resolve():
 def test_missing_embeddings_only_warn(tmp_path):
     papers, _ = build.load()
     assert build.embedding_warnings(papers, tmp_path / "none.json")
+
+
+def test_validate_rejects_unsafe_values():
+    papers, survey = build.load()
+    bad = copy.deepcopy(papers)
+    other = next(p for p in bad if not p.get("family"))
+    other["stage"] = 'x)"><img src=x onerror=alert(1)>'
+    bad[0]["links"] = {"paper": "javascript:alert(1)"}
+    bad[1]["links"] = {"paper": "https://img.shields.io/badge/arXiv-B31B1B"}
+    bad[2]["in_survey"] = "yes"
+    errors = build.validate(bad, survey)
+    assert any(other["key"] in e and "stage" in e for e in errors)
+    assert any(bad[0]["key"] in e and "https" in e for e in errors)
+    assert any(bad[1]["key"] in e and "badge" in e for e in errors)
+    assert any(bad[2]["key"] in e and "in_survey" in e for e in errors)
+
+
+def test_no_paper_links_to_a_badge_image():
+    papers, _ = build.load()
+    assert not [p["key"] for p in papers if any("img.shields.io" in v for v in p["links"].values())]

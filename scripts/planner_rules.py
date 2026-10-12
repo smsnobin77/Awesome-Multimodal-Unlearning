@@ -46,8 +46,8 @@ STAGE_RULES = {
     "data-side": {
         "no-retraining": {"fit": "no", "reason": "It changes what future training sees.",
                           "why": "reduce the learnability of targeted clusters"},
-        "keep-weights": {"fit": "no", "reason": "It acts before or during training, not on a deployed model.",
-                         "why": "edits inputs, not weights"}},
+        "keep-weights": {"fit": "no", "reason": "It changes the training data, so it cannot edit a model that is already trained.",
+                         "why": "introduce perturbations that prevent models from learning from protected samples"}},
     "training-time": {
         "no-retraining": {"fit": "no", "reason": "It updates the model by optimization.",
                           "why": "updates parameters so that responses on the forget set degrade"},
