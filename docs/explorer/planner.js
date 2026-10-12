@@ -22,7 +22,7 @@ export function stageFit(survey, stageId, constraint) {
 export function paperMatches(p, survey, state) {
   if (state.target !== "any" && !tagsOf(p, "target").includes(state.target)) return false;
   if (state.model !== "any" && !tagsOf(p, "model").includes(state.model)) return false;
-  if (p.stage && stageFit(survey, p.stage, state.constraint).fit === "no") return false;
+  if (p.stage && p.stage !== state.stage && stageFit(survey, p.stage, state.constraint).fit === "no") return false;
   if (state.stage && p.stage !== state.stage) return false;
   for (const [facet, values] of Object.entries(state.filters || {})) {
     if (values.length && !values.some((v) => facetValues(p, facet).includes(v))) return false;
@@ -55,8 +55,9 @@ export function planCard(survey, state) {
   };
 }
 
-export function gapMatrix(survey, papers) {
+export function gapMatrix(survey, papers, state = null) {
   const models = survey.planner.models.map((m) => m.id);
+  if (state) papers = papers.filter((p) => paperMatches(p, survey, { ...state, stage: null, filters: {} }));
   const cells = (match) => Object.fromEntries(models.map((m) => [m, papers.filter((p) => match(p) && tagsOf(p, "model").includes(m)).length]));
   return {
     models,

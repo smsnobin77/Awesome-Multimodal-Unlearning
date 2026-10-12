@@ -19,7 +19,7 @@ const labels = {
   application: byId(survey.applications), challenge: byId(survey.challenges),
   metric: Object.fromEntries(survey.dimensions.flatMap((d) => d.metrics.map((m) => [m.id, m.name]))),
   dataset: byId(survey.datasets),
-  kind: { method: "Method", benchmark: "Benchmark", attack: "Attack", analysis: "Analysis", survey: "Survey" },
+  kind: { method: "Method", benchmark: "Benchmark", attack: "Attack", analysis: "Other work", survey: "Survey" },
   review: { "peer-reviewed": "Peer reviewed", preprint: "Preprint" },
   source: { "in-survey": "In the survey", "list-only": "Only in the list" },
 };
@@ -79,7 +79,7 @@ function renderPipeline() {
       <span class="stage-name">All stages</span><span class="stage-n">${total} ${total === 1 ? "paper" : "papers"}</span></button></li>` + survey.stages.map((s) => {
     const fit = stageFit(survey, s.id, ctx.state.constraint);
     const n = counts[s.id];
-    return `<li class="stage fit-${fit.fit}" style="--stage: var(--${s.id})"><button type="button" data-stage="${s.id}" aria-pressed="${ctx.state.stage === s.id}"
+    return `<li class="stage fit-${esc(fit.fit)}" style="--stage: var(--${esc(s.id)})"><button type="button" data-stage="${esc(s.id)}" aria-pressed="${ctx.state.stage === s.id}"
       ${fit.why ? `title="The survey says: ${esc(fit.why)}"` : ""}><span class="stage-name">${esc(s.name)}</span>
       <span class="stage-n">${n} ${n === 1 ? "paper" : "papers"}</span><span class="stage-why">${fit.fit === "fits" ? "" : esc(fit.reason)}</span></button></li>`;
   }).join("");

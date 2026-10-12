@@ -73,7 +73,7 @@ function paperItem(ctx, p) {
   const L = ctx.labels;
   const name = p.name && !p.title.toLowerCase().startsWith(p.name.toLowerCase()) ? `${esc(p.name)}: ` : "";
   const who = p.authors.length ? `${esc(p.authors[0].split(" ").pop())}${p.authors.length > 1 ? " et al." : ""}, ` : "";
-  const where = p.stage ? `<span class="stage-chip" style="--stage: var(--${p.stage})">${esc(L.stage[p.stage])}</span>` : `<span>${esc(L.kind[p.kind])}</span>`;
+  const where = p.stage ? `<span class="stage-chip" style="--stage: var(--${esc(p.stage)})">${esc(L.stage[p.stage])}</span>` : `<span>${esc(L.kind[p.kind])}</span>`;
   const fam = p.family ? `<span>${esc(L.family[p.family])}</span>` : "";
   const models = (p.added?.model || []).map((m) => `<span class="tag-added" title="Added, not from the survey">${esc(L.model[m])}</span>`).join("");
   return `<li class="paper" tabindex="0" data-key="${esc(p.key)}" aria-selected="${ctx.state.paper === p.key}">
@@ -104,7 +104,7 @@ export function renderDrawer(ctx) {
   if (!p) { drawer.hidden = true; return; }
   const L = ctx.labels;
   const authors = p.authors.length > 6 ? `${p.authors.slice(0, 6).join(", ")}, and ${p.authors.length - 6} more` : p.authors.join(", ");
-  const links = [["paper", "Paper"], ["arxiv", "arXiv"]].filter(([k]) => p.links[k] && !(k === "arxiv" && p.links.arxiv === p.links.paper))
+  const links = [["paper", "Paper"], ["arxiv", "arXiv"]].filter(([k]) => /^https:\/\//.test(p.links[k] || "") && !(k === "arxiv" && p.links.arxiv === p.links.paper))
     .map(([k, t]) => `<a href="${esc(p.links[k])}" target="_blank" rel="noopener">${t}</a>`).join("");
   const rows = p.family ? [["Method family", `${esc(L.stage[p.stage])}, ${esc(L.family[p.family])}`]] : [];
   for (const [group, title] of [["target", "What it forgets"], ["application", "Application"], ["metric", "Metrics it reports"],
@@ -196,15 +196,15 @@ export function renderEvaluation(ctx) {
 
 export function renderGaps(ctx) {
   const host = $("#view-gaps");
-  const g = gapMatrix(ctx.survey, ctx.papers);
+  const g = gapMatrix(ctx.survey, ctx.papers, ctx.state);
   const expanded = (ctx.gapExpanded ??= new Set());
   const cell = (row, kind, m) => {
     const n = row.cells[m];
     const cls = n ? `b${Math.min(5, Math.floor(Math.log2(n)))}` : "zero";
-    return `<td class="cell ${cls}"><button type="button" data-kind="${kind}" data-id="${row.id}" data-model="${m}"
+    return `<td class="cell ${cls}"><button type="button" data-kind="${kind}" data-id="${esc(row.id)}" data-model="${esc(m)}"
       aria-label="${esc(row.name)}, ${esc(ctx.labels.model[m])}: ${n} papers">${n}</button></td>`;
   };
-  const rows = g.rows.map((r) => `<tr><th scope="row"><button type="button" class="link" data-expand="${r.id}" aria-expanded="${expanded.has(r.id)}">${esc(r.name)}</button></th>${g.models.map((m) => cell(r, "stage", m)).join("")}</tr>` +
+  const rows = g.rows.map((r) => `<tr><th scope="row"><button type="button" class="link" data-expand="${esc(r.id)}" aria-expanded="${expanded.has(r.id)}">${esc(r.name)}</button></th>${g.models.map((m) => cell(r, "stage", m)).join("")}</tr>` +
     (expanded.has(r.id) ? r.families.map((f) => `<tr class="family-row"><th scope="row">${esc(f.name)}</th>${g.models.map((m) => cell(f, "family", m)).join("")}</tr>`).join("") : "")).join("");
   host.innerHTML = `<div class="view-intro"><h2>Gap map</h2><p class="muted">Papers per pipeline stage and model type. Select a stage name to see its families.
       Select a cell to list its papers. Hatched cells have no paper yet. Model types are partly added by the maintainers, not stated in the survey.</p></div>

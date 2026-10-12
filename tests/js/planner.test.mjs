@@ -47,3 +47,21 @@ test("gap matrix has every stage and family", () => {
   assert.equal(g.rows.flatMap((r) => r.families).length, 12);
   assert.ok(g.rows.every((r) => g.models.every((m) => Number.isInteger(r.cells[m]))));
 });
+
+test("a selected faded stage still lists its papers", () => {
+  const s = state({ constraint: "no-retraining", stage: "training-time" });
+  const counts = stageCounts(survey, papers, s);
+  assert.equal(papers.filter((p) => paperMatches(p, survey, s)).length, counts["training-time"]);
+  assert.ok(counts["training-time"] > 0);
+});
+
+test("gap cells count what a click on them lists", () => {
+  const s = state({ target: "voice" });
+  const g = gapMatrix(survey, papers, s);
+  for (const row of g.rows) {
+    for (const m of g.models) {
+      const listed = papers.filter((p) => paperMatches(p, survey, { ...s, stage: null, filters: { stage: [row.id], model: [m] } })).length;
+      assert.equal(row.cells[m], listed, `${row.id} x ${m}`);
+    }
+  }
+});
