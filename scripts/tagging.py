@@ -25,7 +25,11 @@ TARGET_WORDS = [
 ]
 UNLEARNING_WORDS = re.compile(r"unlearn|forget|eras|remov|delet|backdoor|poison|jailbreak|safe|privacy|private|protect|"
                               r"cloak|concept|attack|memoriz|attribution|steer|guidance|copyright|nsfw|harm|bias|moderat")
-KIND_OVERRIDES: dict[str, str] = {}
+KIND_OVERRIDES: dict[str, str] = {
+    "voigt2017eu": "background", "goldman2020introduction": "background", "dwork2006calibrating": "background",
+    "shokri2017membership": "background", "carlini2022membership": "background", "wang2025membership": "background",
+    "liang2024badclip": "attack", "zhang2025sua": "attack", "zhou2024visual": "analysis",
+}
 
 
 def classify(key: str, title: str, *, methods, benchmarks, surveys, attacks, datasets) -> str:

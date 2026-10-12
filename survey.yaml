@@ -1,0 +1,1821 @@
+title: 'Multimodal Unlearning Across Vision, Language, Video, and Audio: Survey of Methods, Datasets, and Benchmarks'
+stages:
+- id: data-side
+  name: Data-side
+  families:
+  - data-path
+  - data-hygiene
+- id: training-time
+  name: Training-time
+  families:
+  - direct-gradient
+  - constrained
+  - mask-driven
+  - distillation
+- id: architecture
+  name: Architecture-constrained
+  families:
+  - architecture-editing
+  - layer-scoped
+- id: training-free
+  name: Training-free
+  families:
+  - weight-space
+  - representation-projection
+- id: decoding-time
+  name: Decoding-time
+  families:
+  - guidance-path
+  - conditioning-path
+families:
+- id: data-path
+  stage: data-side
+  name: Data-path perturbation
+  methods:
+  - name: UCs
+    key: zhang2023unlearnable
+  - name: MEM
+    key: liu2024multimodal
+  - name: UnSeg
+    key: sun2024unseg
+  - name: MetaCloak
+    key: liu2024metacloak
+  mechanism: Data-path perturbation unlearning edits inputs, not weights, to reduce the learnability of targeted clusters,
+    pairs, or subjects while preserving utility on the remaining corpus.
+  formula: \|p_{\mathrm{img}}(x)\| \le \epsilon_{\mathrm{img}},\quad \|p_{\mathrm{txt}}(t)\| \le \epsilon_{\mathrm{txt}},\quad
+    p \in \Pi_{T},
+  keys:
+  - zhang2023unlearnable
+  - liu2024multimodal
+  - sun2024unseg
+  - liu2024metacloak
+- id: data-hygiene
+  stage: data-side
+  name: Data hygiene and prompt normalization
+  methods:
+  - name: CleanCLIP
+    key: bansal2023cleanclip
+  - name: Homoglyph Bias
+    key: struppek2024exploiting
+  mechanism: Data hygiene reduces backdoor and trigger effects by curating or down-weighting suspicious image-text pairs,
+    while prompt normalization canonicalizes visually or lexically similar tokens prior to optimization.
+  formula: w(x,t)\in[0,1], \qquad t \mapsto N(t),
+  keys:
+  - bansal2023cleanclip
+  - struppek2024exploiting
+- id: direct-gradient
+  stage: training-time
+  name: Direct gradient
+  methods:
+  - name: MultiDelete
+    key: cheng2024multidelete
+  - name: Unlearn Backdoors
+    key: liang2024unlearning
+  - name: SIU
+    key: li2024single
+  - name: EFUF
+    key: xing2024efuf
+  - name: NCU
+    key: han2025unlearning
+  mechanism: Direct gradient methods formulate unlearning as targeted risk minimization over a retain set and a forget set.
+  formula: \begin{aligned} J(\theta) =\;& \mathbb{E}_{(x_r,y_r)\in R}\,\mathcal{L}_u(f_\theta(x_r),y_r) \\ &+ \alpha\,\mathbb{E}_{(x_f,y_f)\in
+    F}\,\mathcal{L}_f(f_\theta(x_f),y_f) \\ &+ \beta\,\mathbb{E}_{x_f\in F}\,D_a(f_\theta,x_f;a) \\ &+ \gamma\,\Omega(\theta,\theta_0),
+    \end{aligned}
+  keys:
+  - bansal2023cleanclip
+  - cheng2024multidelete
+  - park2024direct
+  - kumari2023ablating
+  - li2024safegen
+  - liu2024unlearning
+  - spartalis2025unleashing
+  - kim2025not
+  - liu2025unlearning
+  - pathak2025quantum
+  - kim2025no
+- id: constrained
+  stage: training-time
+  name: Constrained updates
+  methods:
+  - name: Boosting Alignment
+    key: ko2024boosting
+  - name: MUNBa
+    key: wu2025munba
+  - name: Controllable Unlearning
+    key: fengcontrollable2025
+  - name: LoReUn
+    key: li2025loreun
+  mechanism: Constrained update methods retain the locate-then-unlearn workflow but make the trade-off between forgetting
+    and retention explicit.
+  formula: \begin{aligned} \min_{\theta}\quad & \underbrace{\mathcal{J}_R(\theta)}_{\text{retain risk}} \;+\; \underbrace{\Omega(\theta,\theta_0)}_{\text{stability}}
+    \\[2pt] \text{s.t.}\quad & \underbrace{\mathcal{C}_f(\theta)}_{\text{forget efficacy}} \le 0,\qquad \underbrace{\mathcal{C}_i(\theta)}_{\text{integrity}}
+    \le 0 \end{aligned}
+  keys:
+  - schioppa2024model
+  - wu2025munba
+  - fengcontrollable2025
+  - ko2024boosting
+  - alberti2025data
+  - sinha2025multi
+  - li2025loreun
+- id: mask-driven
+  stage: training-time
+  name: Mask-driven selective unlearning
+  methods:
+  - name: SalUn
+    key: fan2023salun
+  - name: Forget-Me-Not
+    key: zhang2024forget
+  - name: MMUnlearner
+    key: huo2025mmunlearner
+  - name: SAU
+    key: jha2025backdoor
+  - name: KSCU
+    key: zhang2025concept
+  mechanism: Mask-driven methods follow the locate-then-unlearn workflow but constrain updates to a localized support identified
+    through saliency, attention, or architectural structure.
+  formula: null
+  keys:
+  - fan2023salun
+  - huo2025mmunlearner
+  - zhang2024forget
+  - jha2025backdoor
+  - zhang2025concept
+  - li2025sculpting
+- id: distillation
+  stage: training-time
+  name: Distillation-based
+  methods:
+  - name: SSD
+    key: kim2023towards
+  - name: SFD
+    key: chen2025score
+  - name: SKD-CAG
+    key: aravindan2025sealing
+  mechanism: Distillation-based unlearning follows the locate-then-unlearn paradigm by transferring behavior through a teacher-student
+    setup, where the student is guided toward a safe target while retaining competence on non-forgotten prompts.
+  formula: null
+  keys:
+  - kim2023towards
+  - chen2025score
+  - aravindan2025sealing
+- id: architecture-editing
+  stage: architecture
+  name: Architecture editing
+  methods:
+  - name: FreezeAsGuard
+    key: huang2024freezeasguard
+  - name: Efficient Fine-Tuning
+    key: shirkavand2025efficient
+  - name: MANU
+    key: liu2025modality
+  - name: Audio Unlearning
+    key: mason-williams2025machine
+  mechanism: Architecture editing methods follow the locate-then-unlearn paradigm by modifying network structure through pruning,
+    freezing, or controlled regrowth.
+  formula: null
+  keys:
+  - liu2025modality
+  - shirkavand2025efficient
+  - huang2024freezeasguard
+  - mason-williams2025machine
+- id: layer-scoped
+  stage: architecture
+  name: Layer-scoped constrained updates
+  methods:
+  - name: Model Integrity
+    key: schioppa2024model
+  - name: SLUG
+    key: caitargeted2025
+  mechanism: Layer-scoped constrained updates follow locate-then-unlearn by first identifying where the target concept concentrates,
+    then restricting edits to that support to limit collateral damage.
+  formula: null
+  keys:
+  - caitargeted2025
+  - schioppa2024model
+- id: weight-space
+  stage: training-free
+  name: Weight-space linear unlearning
+  methods:
+  - name: Task Arithmetic
+    key: ilharcoediting2023
+  - name: NegMerge
+    key: kim2024negmerge
+  - name: Diffusion Soup
+    key: biggs2024diffusion
+  - name: Video Unlearning
+    key: facchiano2025video
+  mechanism: Weight-space Linear Unlearning (WLU) follows the locate-then-unlearn paradigm but replaces iterative optimization
+    with closed-form edits in parameter space.
+  formula: null
+  keys:
+  - ilharcoediting2023
+  - kim2024negmerge
+  - facchiano2025video
+  - biggs2024diffusion
+- id: representation-projection
+  stage: training-free
+  name: Representation projection
+  methods:
+  - name: Safe-CLIP
+    key: poppi2023removing
+  - name: CURE
+    key: biswas2025cure
+  - name: Motion Unlearning
+    key: de2025human
+  mechanism: Representation Projection Unlearning (RPU) follows the locate-then-unlearn paradigm but replaces iterative optimization
+    with closed-form edits in representation space.
+  formula: h' \;=\; (I - U U^{\top})\,h, \qquad W' \;=\; W\,(I - U U^{\top}),
+  keys:
+  - biswas2025cure
+  - poppi2023removing
+  - de2025human
+- id: guidance-path
+  stage: decoding-time
+  name: Guidance-path control
+  methods:
+  - name: UnGuide
+    key: polowczyk2025unguide
+  - name: SAFREE
+    key: yoon2025safree
+  - name: DNG
+    key: koulischer2025dynamic
+  - name: Detect-and-Guide
+    key: li2025detect
+  mechanism: Guidance-path control performs locate-then-unlearn at decoding time by modifying the sampler rather than the
+    model parameters.
+  formula: \hat{\epsilon}_t = \epsilon_\theta(x_t,c) + a_t\bigl[\epsilon_{\mathrm{alt}}(x_t,c)-\epsilon_\theta(x_t,c)\bigr]
+    - b_t\, M_t\, d_t,
+  keys:
+  - koulischer2025dynamic
+  - polowczyk2025unguide
+  - park2025steering
+  - li2025detect
+  - yoon2025safree
+- id: conditioning-path
+  stage: decoding-time
+  name: Conditioning-path control
+  methods:
+  - name: SteerDiff
+    key: zhang2024steerdiff
+  - name: CPR
+    key: golatkar2024cpr
+  - name: Moderator
+    key: wang2024moderator
+  - name: SuppressEOT
+    key: li2024get
+  mechanism: Conditioning-path control performs locate-then-unlearn by modifying the conditioning signal that guides generation,
+    while leaving model parameters unchanged.
+  formula: c' \;=\; (1 - \alpha)\,c \;+\; \alpha\, T(c, R, \text{policy}),
+  keys:
+  - zhang2024steerdiff
+  - li2024get
+  - wang2024moderator
+  - golatkar2024cpr
+  - bui2025hiding
+settings:
+- name: Identity Unlearning
+  targets: &id001
+  - identity
+- name: Affect and Video Unlearning
+  targets: &id003
+  - class
+- name: Personalization Setup
+  targets: &id004
+  - identity
+- name: Copyright Unlearning
+  targets: &id006
+  - style
+- name: Knowledge QA and Instruction Probes
+  targets: &id008
+  - knowledge
+- name: Segmentation and I2I Unlearning
+  targets: &id009
+  - class
+- name: Recommender Unlearning
+  targets: &id010
+  - preference
+- name: Speech Unlearning
+  targets: &id011
+  - voice
+- name: Safety Robustness Unlearning
+  targets: &id013
+  - nsfw
+- name: Web-Scale Data Hygiene via Unlearning
+  targets: &id014
+  - backdoor
+- name: Class Unlearning
+  targets: &id015
+  - class
+datasets:
+- id: celeba
+  name: CelebA
+  key: liu2015deep
+  setting: Identity Unlearning
+  modality: Image
+  size: 202,599 images
+  used_in:
+  - dai2023training
+  - dontsov2024clear
+  - huang2024enhancing
+  - caitargeted2025
+  - zhang2024learning
+  - liu2025protecting
+  targets: *id001
+  models: &id002
+  - clip
+  - vlm
+  - image-diffusion
+- id: celeba-hq
+  name: CelebA-HQ
+  key: karras2018progressive
+  setting: Identity Unlearning
+  modality: Image
+  size: 30K high-quality images from CelebA
+  used_in:
+  - huang2024enhancing
+  - alberti2025data
+  - nagasubramaniam2025prompting
+  targets: *id001
+  models: *id002
+- id: flickr-faces-hq
+  name: Flickr-Faces HQ
+  key: karras2019style
+  setting: Identity Unlearning
+  modality: Image
+  size: 70K face images
+  used_in:
+  - nagasubramaniam2025prompting
+  targets: *id001
+  models: *id002
+- id: casia-webface
+  name: CASIA-WebFace
+  key: yi2014learning
+  setting: Identity Unlearning
+  modality: Image
+  size: 494K face images
+  used_in:
+  - dontsov2024clear
+  targets: *id001
+  models: *id002
+- id: fairface
+  name: FairFace
+  key: karkkainen2021fairface
+  setting: Identity Unlearning
+  modality: Image
+  size: 108,501 face images
+  used_in:
+  - alabdulmohsinclip2024
+  targets: *id001
+  models: *id002
+- id: millioncelebs
+  name: MillionCelebs
+  key: zhang2020global
+  setting: Identity Unlearning
+  modality: Image
+  size: 18.8M images of 636K identities
+  used_in:
+  - dontsov2024clear
+  targets: *id001
+  models: *id002
+- id: vggface2
+  name: VGGFace2
+  key: cao2018vggface2
+  setting: Identity Unlearning
+  modality: Image
+  size: 3.3M face images
+  used_in:
+  - liu2024metacloak
+  - li2025towards
+  targets: *id001
+  models: *id002
+- id: pinsfaces
+  name: PinsFaces
+  key: pinsfacerecognition2020
+  setting: Identity Unlearning
+  modality: Image
+  size: 17.5K cropped face photos
+  used_in:
+  - kravets2025zero
+  - kravets2025clip
+  targets: *id001
+  models: *id002
+- id: voxceleb1
+  name: VoxCeleb1
+  key: nagrani2017voxceleb
+  setting: Identity Unlearning
+  modality: Audio
+  size: 150K utterances from 1.3k speakers
+  used_in:
+  - cheng2025speech
+  targets:
+  - voice
+  models: &id007
+  - audio
+- id: emoset
+  name: EmoSet
+  key: yang2023emoset
+  setting: Affect and Video Unlearning
+  modality: Image
+  size: 3.3M images, 118K human-labeled with emotion and attributes.
+  used_in:
+  - zhou2024visual
+  targets: *id003
+  models: *id002
+- id: unbiasedemo
+  name: UnBiasedEmo
+  key: panda2018contemplating
+  setting: Affect and Video Unlearning
+  modality: Image
+  size: 3K affective images (6 emotion classes)
+  used_in:
+  - zhou2024visual
+  targets: *id003
+  models: *id002
+- id: ucf101
+  name: UCF101
+  key: soomro2012ucf101
+  setting: Affect and Video Unlearning
+  modality: Video
+  size: 13K videos across 101 action classes
+  used_in:
+  - cheng2024mu
+  targets: *id003
+  models:
+  - video
+- id: dreambooth
+  name: DreamBooth
+  key: ruiz2023dreambooth
+  setting: Personalization Setup
+  modality: Image
+  size: 30 subjects, 4-6 images each
+  used_in:
+  - liu2024metacloak
+  - li2025towards
+  targets: *id004
+  models: *id002
+- id: diffusiondb
+  name: DiffusionDB
+  key: wang2023diffusiondb
+  setting: Personalization Setup
+  modality: Image-Text
+  size: 14M images, 1.8M prompts
+  used_in:
+  - pan2024leveraging
+  - li2025towards
+  targets: *id004
+  models: &id005
+  - clip
+  - vlm
+  - image-diffusion
+- id: dreambench
+  name: DreamBench++
+  key: pengdreambench2025
+  setting: Personalization Setup
+  modality: Image-Text
+  size: 150 images with 1,350 prompts
+  used_in:
+  - li2025towards
+  targets: *id004
+  models: *id005
+- id: cpdm
+  name: CPDM
+  key: ma2024dataset
+  setting: Copyright Unlearning
+  modality: Image
+  size: 2.1K anchors and 18.9K paired generated images
+  used_in:
+  - moon2024holistic
+  - liu2025rethinking
+  - jin2025unconsciously
+  - ren2025six
+  targets: *id006
+  models: *id002
+- id: viot
+  name: VioT
+  key: kim2024automatic
+  setting: Copyright Unlearning
+  modality: Image
+  size: 100 images total across 5 copyrighted categories
+  used_in:
+  - kim2024automatic
+  targets: *id006
+  models: *id002
+- id: musiccaps
+  name: MusicCaps
+  key: agostinelli2023musiclm
+  setting: Copyright Unlearning
+  modality: Audio
+  size: 5.5K captioned clips
+  used_in:
+  - kim2025no
+  targets: *id006
+  models: *id007
+- id: vqa
+  name: VQA
+  key: antol2015vqa
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 255K images, 764K questions, 10M human answers
+  used_in:
+  - ma2024benchmarking
+  - dontsov2024clear
+  - chen2025safety
+  targets: *id008
+  models: *id005
+- id: vqav2
+  name: VQAv2
+  key: goyal2017making
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 265K images with 1.1M questions
+  used_in:
+  - li2024single
+  - chakraborty2024can
+  - chen2025safety
+  targets: *id008
+  models: *id005
+- id: nlvr2
+  name: NLVR2
+  key: suhr2019corpus
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 107K caption-image pairs, 29.7K unique sentences
+  used_in:
+  - cheng2024mu
+  - cheng2024multidelete
+  targets: *id008
+  models: *id005
+- id: scienceqa
+  name: ScienceQA
+  key: lu2022learn
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 21.2K multimodal multiple-choice science questions
+  used_in:
+  - gao2024large
+  - chen2025safety
+  targets: *id008
+  models: *id005
+- id: gqa
+  name: GQA
+  key: hudson2019gqa
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 113K images with 22.7M compositional visual questions
+  used_in:
+  - li2024single
+  - xing2024efuf
+  - li2024get
+  targets: *id008
+  models: *id005
+- id: unlok-vqa
+  name: UnLOK-VQA
+  key: patilunlearning2024
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 500 visual QA samples (OK-VQA <cit.> extension)
+  used_in:
+  - patilunlearning2024
+  - wu2025medforget
+  targets: *id008
+  models: *id005
+- id: vizwiz
+  name: VizWiz
+  key: gurari2018vizwiz
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 31K real-world visual questions from blind users
+  used_in:
+  - li2024single
+  - chen2025safety
+  - chen2025safeeraser
+  targets: *id008
+  models: *id005
+- id: pope
+  name: POPE
+  key: li2023evaluating
+  setting: Knowledge QA and Instruction Probes
+  modality: Image-Text
+  size: 18K object-image queries for VLM hallucination evaluation
+  used_in:
+  - xing2024efuf
+  - li2024single
+  - ma2024benchmarking
+  - xu2025pebench
+  targets: *id008
+  models: *id005
+- id: pgr
+  name: PGR
+  key: sousa2019silver
+  setting: Knowledge QA and Instruction Probes
+  modality: Text
+  size: 1.7K PubMed abstracts annotated with 4.2K phenotype-gene relations
+  used_in:
+  - cheng2024multidelete
+  targets: *id008
+  models:
+  - vlm
+- id: ms-coco
+  name: MS-COCO
+  key: lin2014microsoft
+  setting: Segmentation and I2I Unlearning
+  modality: Image
+  size: 2.5M labeled instances in 328K images (80 classes)
+  used_in:
+  - park2024direct
+  - xing2024efuf
+  - cywinski2025saeuron
+  - polowczyk2025unguide
+  targets: *id009
+  models: *id002
+- id: unlearncanvas
+  name: UnlearnCanvas
+  key: zhang2024unlearncanvas
+  setting: Segmentation and I2I Unlearning
+  modality: Image
+  size: 60 artistic styles across 20 object categories
+  used_in:
+  - caitargeted2025
+  - zhang2025concept
+  - cywinski2025saeuron
+  targets:
+  - style
+  models: *id002
+- id: amazon-reviews
+  name: Amazon Reviews
+  key: hou2024bridging
+  setting: Recommender Unlearning
+  modality: Image-Text
+  size: 571.5M reviews from 54.5 M users on 48.2 M items across 33 categories
+  used_in:
+  - sinha2025multi
+  targets: *id010
+  models: *id005
+- id: amazon-products
+  name: Amazon Products
+  key: hou2024bridging
+  setting: Recommender Unlearning
+  modality: Text-Graph
+  size: 9.3M items, 144M reviews, 237M relational edges
+  used_in:
+  - dang2025efficient
+  targets: *id010
+  models: []
+- id: yelp
+  name: Yelp
+  key: yelp_open_dataset
+  setting: Recommender Unlearning
+  modality: Text-Metadata
+  size: 6.9M reviews, 150K businesses, with user, check-in, tip, and photo data
+  used_in:
+  - dang2025efficient
+  targets: *id010
+  models: []
+- id: speech-commands
+  name: Speech Commands
+  key: warden2018speech
+  setting: Speech Unlearning
+  modality: Audio
+  size: 64.7K v1 (30words, 1.9K speakers) /105.8K v2 (35words, 2.6K speakers) utterances
+  used_in:
+  - cheng2024mu
+  - cheng2025speech
+  - pathak2025quantum
+  targets: *id011
+  models: *id007
+- id: audiomnist
+  name: AudioMNIST
+  key: becker2024audiomnist
+  setting: Speech Unlearning
+  modality: Audio
+  size: 30K spoken-digit (0–9) audio samples from 60 speakers (9.5 hours total)
+  used_in:
+  - pathak2025quantum
+  - mason-williams2025machine
+  targets: *id011
+  models: *id007
+- id: librispeech
+  name: LibriSpeech
+  key: panayotov2015librispeech
+  setting: Speech Unlearning
+  modality: Audio-Text
+  size: 1,000 h read English speech from 2.5K speakers, with transcripts
+  used_in:
+  - kim2025not
+  - pathak2025quantum
+  - liu2025unlearning
+  targets: *id011
+  models: &id012
+  - audio
+- id: italic
+  name: ITALIC
+  key: koudounas2023italic
+  setting: Speech Unlearning
+  modality: Audio-Text
+  size: 16.5K Italian intent audio samples (15.5 h), 70 speakers, 18 domains, 60 intents
+  used_in:
+  - koudounas2025alexa
+  targets: *id011
+  models: *id012
+- id: i2p
+  name: I2P
+  key: schramowski2023safe
+  setting: Safety Robustness Unlearning
+  modality: Image-Text
+  size: 4.7K text-to-image prompts for inappropriate-content evaluation
+  used_in:
+  - fan2023salun
+  - park2024direct
+  - wu2025munba
+  - moon2024holistic
+  - ko2024boosting
+  - cywinski2025saeuron
+  - li2025loreun
+  - li2025detect
+  - li2025sculpting
+  targets: *id013
+  models: *id005
+- id: sneakyprompt-nsfw-200
+  name: SneakyPrompt / NSFW_200
+  key: yang2024sneakyprompt
+  setting: Safety Robustness Unlearning
+  modality: Image-Text
+  size: 200 NSFW prompts and 100 dog/cat scenario prompts
+  used_in:
+  - li2024safegen
+  - wang2024moderator
+  - park2024direct
+  - zhang2024steerdiff
+  targets: *id013
+  models: *id005
+- id: nudenet
+  name: NudeNet
+  key: bedapudi2019nudenet
+  setting: Safety Robustness Unlearning
+  modality: Image-Text
+  size: 160K training images (auto-labeled) for nudity detection (>700K web-scraped images)
+  used_in:
+  - poppi2023removing
+  - han2024probing
+  - shirkavand2025efficient
+  - dang2025diffzoo
+  - chen2025dual
+  targets: *id013
+  models: *id005
+- id: mis
+  name: MIS
+  key: ding2025rethinking
+  setting: Safety Robustness Unlearning
+  modality: Image-Text
+  size: 6.2K multi-image safety samples
+  used_in:
+  - chen2025safety
+  - hu2025vlsbench
+  targets: *id013
+  models: *id005
+- id: figstep
+  name: FigStep
+  key: gong2025figstep
+  setting: Safety Robustness Unlearning
+  modality: Image-Text
+  size: 500 harmful questions over 10 safety topics
+  used_in:
+  - chakraborty2024can
+  - chen2025safety
+  - zhang2025sua
+  - chen2025safeeraser
+  targets: *id013
+  models: *id005
+- id: safesora
+  name: SafeSora
+  key: dai2024safesora
+  setting: Safety Robustness Unlearning
+  modality: Video-Text
+  size: 14.7K prompts, 57.3K videos, 51.7K human safety annotations
+  used_in:
+  - yoon2025safree
+  - xu2025videoeraser
+  targets: *id013
+  models:
+  - video
+- id: laion-400m
+  name: LAION-400M
+  key: schuhmann2021laion
+  setting: Web-Scale Data Hygiene via Unlearning
+  modality: Image-Text
+  size: 400M CLIP-filtered image-text pairs
+  used_in:
+  - poppi2023removing
+  - caitargeted2025
+  targets: *id014
+  models: *id005
+- id: cc3m
+  name: CC3M
+  key: sharma2018conceptual
+  setting: Web-Scale Data Hygiene via Unlearning
+  modality: Image-Text
+  size: 3.3M web-harvested image-caption pairs
+  used_in:
+  - bansal2023cleanclip
+  - liang2024badclip
+  - han2025unlearning
+  targets: *id014
+  models: *id005
+- id: flickr30k
+  name: Flickr30K
+  key: young2014image
+  setting: Web-Scale Data Hygiene via Unlearning
+  modality: Image-Text
+  size: 31K images with 158K captions
+  used_in:
+  - alabdulmohsinclip2024
+  - liu2024multimodal
+  - han2025unlearning
+  targets: *id014
+  models: *id005
+- id: imagenet
+  name: ImageNet
+  key: deng2009imagenet
+  setting: Class Unlearning
+  modality: Image
+  size: 3.2M images across 5.2K categories (synsets)
+  used_in:
+  - zhang2023unlearnable
+  - fan2023salun
+  - han2025unlearning
+  - caitargeted2025
+  targets: *id015
+  models: *id002
+- id: cifar
+  name: CIFAR
+  key: krizhevsky2009learning
+  setting: Class Unlearning
+  modality: Image
+  size: 60K images; 10 classes (CIFAR-10) or 100 classes (CIFAR-100)
+  used_in:
+  - fan2023salun
+  - kim2024negmerge
+  - ko2024boosting
+  - sendera2025semu
+  targets: *id015
+  models: *id002
+- id: mnist
+  name: MNIST
+  key: lecun2002gradient
+  setting: Class Unlearning
+  modality: Image
+  size: 70K grayscale handwritten digit images
+  used_in:
+  - zhou2024visual
+  - alberti2025data
+  targets: *id015
+  models: *id002
+- id: svhn
+  name: SVHN
+  key: netzer2011reading
+  setting: Class Unlearning
+  modality: Image
+  size: 600K digit images from Street View (10 classes)
+  used_in:
+  - fan2023salun
+  - kim2024negmerge
+  - wu2025munba
+  targets: *id015
+  models: *id002
+- id: imagenette
+  name: Imagenette
+  key: Howard_Imagenette_2019
+  setting: Class Unlearning
+  modality: Image
+  size: 13K images across 10 ImageNet classes
+  used_in:
+  - fan2023salun
+  - bui2025hiding
+  - wu2025munba
+  - biswas2025cure
+  targets: *id015
+  models: *id002
+- id: stanford-cars
+  name: Stanford Cars
+  key: krause20133d
+  setting: Class Unlearning
+  modality: Image
+  size: 16K images of 196 car classes
+  used_in:
+  - zhang2023unlearnable
+  - alabdulmohsinclip2024
+  targets: *id015
+  models: *id002
+- id: stanford-dogs
+  name: Stanford Dogs
+  key: khosla2011novel
+  setting: Class Unlearning
+  modality: Image
+  size: 20K images of 120 dog breeds
+  used_in:
+  - kravets2025zero
+  - kravets2025clip
+  targets: *id015
+  models: *id002
+- id: food-101
+  name: Food-101
+  key: bossard2014food
+  setting: Class Unlearning
+  modality: Image
+  size: 101K food images across 101 cuisine classes
+  used_in:
+  - zhang2023unlearnable
+  - liu2024efficient
+  - han2025unlearning
+  targets: *id015
+  models: *id002
+- id: dtd
+  name: DTD
+  key: cimpoi2014describing
+  setting: Class Unlearning
+  modality: Image
+  size: 5.6K texture images covering 47 describable categories
+  used_in:
+  - ilharcoediting2023
+  - alabdulmohsinclip2024
+  targets: *id015
+  models: *id002
+- id: sun397
+  name: SUN397
+  key: xiao2016sun
+  setting: Class Unlearning
+  modality: Image
+  size: 108.7K images, 397 scene classes
+  used_in:
+  - zhang2023unlearnable
+  - kim2024negmerge
+  - han2025unlearning
+  targets: *id015
+  models: *id002
+- id: wikiart
+  name: WikiArt
+  key: saleh2015large
+  setting: Class Unlearning
+  modality: Image
+  size: 81K artwork images across 27 styles and 45 genres
+  used_in:
+  - ma2024dataset
+  - biggs2024diffusion
+  - chen2025dual
+  targets:
+  - style
+  models: *id002
+benchmarks:
+- key: cheng2024mu
+  name: MU-Bench
+  group: Unified Benchmark Suites
+  modality: Multimodal
+  target: Mixed (instances, datasets, modalities)
+  task: Multi-task
+  stats: 9 datasets, 20 architectures
+  objective: Unified unlearning evaluation (efficacy, utility, efficiency)
+  targets:
+  - identity
+  - voice
+  - style
+  - nsfw
+  - class
+  - knowledge
+  - backdoor
+  - preference
+  models:
+  - vlm
+  - clip
+  - image-diffusion
+  - video
+  - audio
+- key: liu2025protecting
+  name: MLLMU-Bench
+  group: Unified Benchmark Suites
+  modality: VLM
+  target: Private data (fictitious
+  task: real identities)
+  stats: Multi-task QA
+  objective: 500 fictitious and 153 public celebrities, 20.7K QA pairs
+  targets:
+  - identity
+  - knowledge
+  models: &id016
+  - vlm
+- key: xu2025pebench
+  name: PEBench
+  group: Unified Benchmark Suites
+  modality: VLM
+  target: Synthetic identities
+  task: events
+  stats: Multi-task
+  objective: 200 identities, 8K images, 16K QA pairs
+  targets:
+  - identity
+  - knowledge
+  models: *id016
+- key: wang2025umu
+  name: UMU-Bench
+  group: Unified Benchmark Suites
+  modality: VLM
+  target: knowledge instances
+  task: Multi-task
+  stats: 500 fictitious, 153 real
+  objective: Modality-aligned unlearning completeness and utility
+  targets:
+  - knowledge
+  models: *id016
+- key: dontsov2024clear
+  name: CLEAR
+  group: Identity and Privacy Unlearning
+  modality: VLM
+  target: Identity
+  task: VQA
+  stats: 200 synthetic IDs, 3.7K images, 4K QA pairs
+  objective: Identity leakage reduction with VQA accuracy retention
+  targets:
+  - identity
+  models: *id016
+- key: ma2024benchmarking
+  name: FIUBench
+  group: Identity and Privacy Unlearning
+  modality: VLM
+  target: Identity
+  task: VQA
+  stats: 400 synthetic IDs, 8K QA pairs
+  objective: Right-to-be-forgotten under privacy constraints
+  targets:
+  - identity
+  models: *id016
+- key: koudounas2025alexa
+  name: UnSLU-BENCH
+  group: Identity and Privacy Unlearning
+  modality: Audio
+  target: Speaker
+  task: Intent classification
+  stats: Multi-speaker data, 4 languages
+  objective: Speaker erasure with intent accuracy retention
+  targets:
+  - voice
+  models:
+  - audio
+- key: ma2024dataset
+  name: CPDM
+  group: Content and Knowledge Unlearning
+  modality: DM
+  target: Styles/portraits
+  task: Generation
+  stats: 2.1K anchors, 18.9K generated images
+  objective: Copyright similarity reduction with quality retention
+  targets:
+  - style
+  - identity
+  models: &id017
+  - image-diffusion
+- key: zhang2024unlearncanvas
+  name: UnlearnCanvas
+  group: Content and Knowledge Unlearning
+  modality: DM
+  target: Artistic styles
+  task: Generation
+  stats: 60 styles, 20 objects, high-res stylized images
+  objective: Style forgetting with retention and generation fidelity/diversity
+  targets:
+  - style
+  models: *id017
+- key: moon2024holistic
+  name: Holistic Unlearning
+  group: Content and Knowledge Unlearning
+  modality: DM
+  target: Mixed concepts
+  task: Generation
+  stats: 33 target concepts, 16k prompts per concept
+  objective: Faithfulness, alignment, robustness, efficiency
+  targets:
+  - nsfw
+  - style
+  - class
+  models: *id017
+- key: ren2025six
+  name: Six-CD
+  group: Content and Knowledge Unlearning
+  modality: DM
+  target: Concept removal
+  task: Generation
+  stats: Six concept categories, dual-version prompts
+  objective: Cross category concept suppression with retainability checks
+  targets:
+  - nsfw
+  - style
+  - identity
+  - class
+  models: *id017
+- key: li2024single
+  name: MMUBench
+  group: Content and Knowledge Unlearning
+  modality: VLM
+  target: Concept-level visual recognition
+  task: VQA
+  stats: 20 concepts, 50 images per concept
+  objective: Concept-level visual unlearning with multimodal utility retention
+  targets:
+  - class
+  models: *id016
+- key: patilunlearning2024
+  name: UnLOK-VQA
+  group: Content and Knowledge Unlearning
+  modality: VLM
+  target: Targeted pretrained multimodal knowledge
+  task: VQA
+  stats: 500 samples with rephrase and neighborhood data
+  objective: Privacy leakage reduction under attack-and-defense evaluation
+  targets:
+  - knowledge
+  models: *id016
+- key: chen2025safeeraser
+  name: SafeEraser
+  group: Content and Knowledge Unlearning
+  modality: VLM
+  target: Harmful knowledge
+  task: VQA
+  stats: 3K images, 28.8K QA pairs
+  objective: Harmful response reduction while preserving VQA utility
+  targets:
+  - nsfw
+  models: *id016
+dimensions:
+- id: forget-quality
+  name: Forget quality and safety
+  side: forget
+  metrics:
+  - id: ua
+    name: UA
+    description: 'Unlearning Accuracy (UA) measures forgetting efficacy as the complement of predictive accuracy on the forget
+      set: where D_f denotes the subset designated for removal.'
+    formula: \mathrm{UA} = 100\% - \mathrm{Accuracy}(D_f),
+    keys:
+    - wu2025munba
+    - schioppa2024model
+    - sendera2025semu
+    - pathak2025quantum
+    - aravindan2025sealing
+    - jha2025backdoor
+    models: []
+    why: []
+  - id: fa-k
+    name: FA@K
+    description: For VLMs with zero-shot prediction, FA@k measures whether the true label of a forget example appears among
+      the top-k model predictions.
+    formula: \mathrm{FA}@k = \frac{1}{\lvert D_f\rvert} \sum_{(x,y)\in D_f} \mathbf{1}\!\left\{\, y \in \operatorname{Top\mbox{-}k}\!\big(f(x)\big)
+      \,\right\}.
+    keys:
+    - caitargeted2025
+    models:
+    - clip
+    - vlm
+    why:
+    - For VLMs with zero-shot prediction
+  - id: wasserstein-distance
+    name: Wasserstein distance
+    description: Distributional change in concept scores before and after unlearning can be quantified using the 1-Wasserstein
+      distance.
+    formula: \gamma = \frac{W_1(A,B)}{W_1(B,R)},
+    keys:
+    - solomon2014earth
+    - tong2021diffusion
+    models: []
+    why: []
+  - id: clip-cls-drop
+    name: CLIP-Cls Drop
+    description: Concept erasure in image generation can be verified through classification performance on generated samples.
+    formula: \Delta_{\mathrm{cls}}=\frac{1}{n}\sum_{i=1}^{n} c\!\left(x_i^{\mathrm{pre}}\right) -\frac{1}{n}\sum_{i=1}^{n}
+      c\!\left(x_i^{\mathrm{post}}\right).
+    keys:
+    - gandikota2023erasing
+    - lu2024mace
+    models:
+    - image-diffusion
+    why:
+    - Concept erasure in image generation
+  - id: clip-sim-drop
+    name: CLIP-Sim Drop
+    description: CLIP image-text similarity provides a continuous signal of residual concept alignment.
+    formula: s_{\mathrm{pre}} = \frac{1}{n}\sum_{i=1}^{n}\cos\!\big(f_{\mathrm{img}}(x_i^{\mathrm{pre}}),\, f_{\mathrm{text}}(t)\big)
+    keys:
+    - gandikota2023erasing
+    - rusanovsky2025memories
+    - wang2025precise
+    models:
+    - image-diffusion
+    why:
+    - CLIP image-text similarity provides a continuous signal of residual concept alignment
+- id: safety-content
+  name: Safety and content forgetting
+  side: forget
+  metrics:
+  - id: refusal-rate
+    name: Refusal Rate
+    description: Also referred to as rejection rate, Refusal Rate (RR) measures how often the model refuses harmful queries
+      after unlearning.
+    formula: RR = \frac{1}{\lvert D\rvert} \sum_{i=1}^{\lvert D\rvert} I_R\!\left(R_i\right),
+    keys:
+    - chen2025safety
+    models:
+    - vlm
+    why:
+    - evaluation set of harmful text-image inputs
+  - id: vlm-as-judge
+    name: VLM-as-Judge
+    description: Pretrained VLMs can serve as external judges for presence of a forbidden concept.
+    formula: \Delta_{\mathrm{VQA}} = \frac{1}{n}\sum_{i=1}^{n} g(y_i^{\mathrm{pre}}) - \frac{1}{n}\sum_{i=1}^{n} g(y_i^{\mathrm{post}}),
+    keys:
+    - lin2024evaluating
+    models: []
+    why: []
+  - id: inappropriate-content-rate
+    name: Inappropriate Content Rate
+    description: This metric measures how often a model produces unsafe content under sensitive prompts.
+    formula: null
+    keys:
+    - schramowski2023safe
+    - wang2024moderator
+    models:
+    - image-diffusion
+    why:
+    - In image generation, a standard protocol samples outputs
+- id: attack-privacy
+  name: Attack-based privacy
+  side: forget
+  metrics:
+  - id: mia
+    name: MIA
+    description: Membership Inference Attacks (MIA) are a standard privacy test for evaluating whether an unlearned model
+      still leaks information about forgotten data.
+    formula: \mathrm{MIA} = \frac{1}{\lvert D_f \rvert} \sum_{x_i \in D_f} \mathbf{1}\!\big[\,A(F_T, x_i) \in \{0,1\}\,\big],
+    keys:
+    - shokri2017membership
+    - carlini2022membership
+    - jia2023model
+    - wang2025membership
+    - dontsov2024clear
+    - wang2025muc
+    - koudounas2025alexa
+    models: []
+    why: []
+  - id: identity-matching
+    name: Identity Matching
+    description: Identity leakage metrics assess whether model outputs still reveal a forgotten identity after unlearning.
+    formula: null
+    keys:
+    - biswas2025cure
+    - caitargeted2025
+    - nagasubramaniam2025prompting
+    - liu2024metacloak
+    - wu2025unlearning
+    - dontsov2024clear
+    - ma2024benchmarking
+    models: []
+    why: []
+  - id: sim
+    name: SIM
+    description: In speech unlearning, privacy evaluation assesses whether a model can still recognize or reproduce a forgotten
+      speaker after unlearning.
+    formula: null
+    keys:
+    - chen2022wavlm
+    - kim2025not
+    models:
+    - audio
+    why:
+    - In speech unlearning, privacy evaluation
+  - id: spk-zrf
+    name: spk-ZRF
+    description: In speech unlearning, privacy evaluation assesses whether a model can still recognize or reproduce a forgotten
+      speaker after unlearning.
+    formula: \mathrm{spk\text{-}ZRF} = 1 - \frac{1}{n_f} \sum_{i=1}^{n_f} JSD_i,
+    keys:
+    - chen2022wavlm
+    - kim2025not
+    models:
+    - audio
+    why:
+    - In speech unlearning, privacy evaluation
+- id: utility
+  name: Utility and faithfulness
+  side: retain
+  metrics:
+  - id: top-k-acc
+    name: Top-k Acc
+    description: 'Retained utility on non-forgotten data is commonly measured by Top-k classification accuracy on remaining
+      classes: where y_i denotes the ground-truth label and 𝐩̂_i the predicted class scores.'
+    formula: \mathrm{Top\mbox{-}k\ Acc} = \frac{1}{N}\sum_{i=1}^{N}\mathbf{1}\!\left[\,y_i \in \mathrm{Top\mbox{-}k}\big(\hat{\mathbf{p}}_i\big)\,\right],
+    keys:
+    - bansal2023cleanclip
+    - struppek2024exploiting
+    - han2025unlearning
+    - biswas2025cure
+    models: []
+    why: []
+  - id: recall-k
+    name: Recall@K
+    description: 'For multimodal models, utility retention is evaluated using retrieval metrics such as Recall@K and R-Precision
+      on held-out benchmarks:'
+    formula: \mathrm{Recall@}K = \frac{1}{N}\sum_{i=1}^{N} \mathbf{1}\!\left[\,R(q_i)\cap \mathrm{TopK}(q_i)\neq\varnothing\,\right].
+    keys:
+    - yang2024cliperase
+    - sinha2025multi
+    models: []
+    why: []
+  - id: bleu
+    name: BLEU
+    description: Retained capability on non-forgotten data is tracked with standard NLP scores.
+    formula: null
+    keys:
+    - zhang2025does
+    - dontsov2024clear
+    - liu2024large
+    - hessel2021clipscore
+    - yang2024cliperase
+    - cheng2024multidelete
+    models:
+    - vlm
+    why:
+    - For VLMs that perform question answering or caption generation
+  - id: clip-score
+    name: CLIP Score
+    description: Retained capability on non-forgotten data is tracked with standard NLP scores.
+    formula: null
+    keys:
+    - zhang2025does
+    - dontsov2024clear
+    - liu2024large
+    - hessel2021clipscore
+    - yang2024cliperase
+    - cheng2024multidelete
+    models: []
+    why: []
+  - id: fid
+    name: FID
+    description: To ensure image generation quality is retained, vision metrics like Fréchet Inception Distance (FID), Fréchet
+      Video Distance (FVD), Kernel Inception Distance (KID) and inverted FID (IFID) are commonly reported.
+    formula: \begin{aligned} \mathrm{FID}(r,g) &= \lVert \mu_r - \mu_g \rVert_2^2 \\ &\quad + \operatorname{Tr}\!\big( \Sigma_r
+      + \Sigma_g - 2(\Sigma_r \Sigma_g)^{1/2} \big). \end{aligned}
+    keys:
+    - heusel2017gans
+    - unterthiner2019fvd
+    - facchiano2025video
+    - binkowski2018demystifying
+    - li2024get
+    - fan2023salun
+    - zhang2024unlearncanvas
+    - chen2025score
+    - kirstain2023pick
+    - schuhmann2022laion
+    - li2023evaluating
+    - ma2024benchmarking
+    - li2024single
+    models:
+    - image-diffusion
+    - video
+    why:
+    - To ensure image generation quality is retained
+    - Fréchet Video Distance (FVD)
+  - id: lpips
+    name: LPIPS
+    description: Perceptual similarity metrics assess whether unlearning alters model outputs on benign inputs by comparing
+      generations from the unlearned model to those of the original model.
+    formula: null
+    keys:
+    - zhang2018unreasonable
+    - dai2023training
+    - park2024direct
+    - biswas2025cure
+    models:
+    - image-diffusion
+    why:
+    - comparing generations from the unlearned model to those of the original model
+  - id: llm-as-a-judge
+    name: LLM-as-a-Judge
+    description: Several multimodal unlearning studies use large language models as semantic evaluators to score model outputs.
+    formula: null
+    keys:
+    - ma2024benchmarking
+    - park2024direct
+    - xu2025pebench
+    - liu2025protecting
+    models: []
+    why: []
+  - id: human-as-judge
+    name: Human-as-Judge
+    description: While most unlearning work relies on automatic metrics, several multimodal studies incorporate human judgment
+      to assess perceived safety and fidelity.
+    formula: null
+    keys:
+    - chakraborty2024can
+    - huang2024freezeasguard
+    models: []
+    why: []
+- id: robustness
+  name: Adversarial robustness
+  side: robustness
+  metrics:
+  - id: attack-success-rate
+    name: Attack Success Rate
+    description: Attack Success Rate (ASR) quantifies how often adversarially perturbed inputs still elicit forbidden content
+      from an unlearned model.
+    formula: \mathrm{ASR} = \frac{1}{\lvert D\rvert} \sum_{i=1}^{\lvert D\rvert} I_A\!\left(R_i\right),
+    keys:
+    - chen2025safeeraser
+    - bansal2023cleanclip
+    - zhang2024steerdiff
+    - biswas2025cure
+    models: []
+    why: []
+- id: compute
+  name: Compute and environment
+  side: cost
+  metrics:
+  - id: wct
+    name: WCT
+    description: Compute footprint anchors the edit budget for unlearning methods.
+    formula: null
+    keys:
+    - zhang2024learning
+    - fan2023salun
+    - li2025loreun
+    - dang2025diffzoo
+    - cywinski2025saeuron
+    - wang2025muc
+    - spartalis2025unleashing
+    models: []
+    why: []
+  - id: memory
+    name: Memory
+    description: Compute footprint anchors the edit budget for unlearning methods.
+    formula: null
+    keys:
+    - zhang2024learning
+    - fan2023salun
+    - li2025loreun
+    - dang2025diffzoo
+    - cywinski2025saeuron
+    - wang2025muc
+    - spartalis2025unleashing
+    models: []
+    why: []
+  - id: flops
+    name: FLOPs
+    description: Compute footprint anchors the edit budget for unlearning methods.
+    formula: null
+    keys:
+    - zhang2024learning
+    - fan2023salun
+    - li2025loreun
+    - dang2025diffzoo
+    - cywinski2025saeuron
+    - wang2025muc
+    - spartalis2025unleashing
+    models: []
+    why: []
+  - id: energy
+    name: Energy
+    description: Beyond accuracy and robustness, multimodal unlearning also introduces an environmental cost.
+    formula: null
+    keys:
+    - dodge2022measuring
+    - chakraborty2024can
+    models: []
+    why: []
+  - id: co2e
+    name: CO2e
+    description: Beyond accuracy and robustness, multimodal unlearning also introduces an environmental cost.
+    formula: null
+    keys:
+    - dodge2022measuring
+    - chakraborty2024can
+    models: []
+    why: []
+applications:
+- id: privacy
+  name: Privacy and Regulatory Compliance
+  keys:
+  - cheng2024multidelete
+  - dontsov2024clear
+  - ma2024benchmarking
+  - li2024machine
+  - zhang2023unlearnable
+  - sun2024unseg
+  - liu2024metacloak
+  - kim2025not
+  - cheng2025speech
+- id: safety
+  name: Safety-Aligned Generation
+  keys:
+  - chakraborty2024can
+  - chen2025safeeraser
+  - poppi2023removing
+  - fan2023salun
+  - li2024safegen
+  - liu2024unlearning
+  - de2025human
+- id: copyright
+  name: Copyright and Style Governance
+  keys:
+  - kumari2023ablating
+  - ma2024dataset
+  - biswas2025cure
+  - kim2025no
+  - liu2024unlearning
+- id: fairness
+  name: Fairness and Reliability in Deployed Models
+  keys:
+  - struppek2024exploiting
+  - zhang2024forget
+  - schioppa2024model
+  - gao2024meta
+  - cheng2025speech
+- id: personalization
+  name: Personalization and Preference Control
+  keys:
+  - sinha2025multi
+  - zhou2024visual
+  - biggs2024diffusion
+  - li2024get
+  - polowczyk2025unguide
+- id: security
+  name: Supply-Chain and Backdoor Security
+  keys:
+  - bansal2023cleanclip
+  - liang2024unlearning
+  - liang2024badclip
+  - liu2024metacloak
+  - aravindan2025sealing
+  - jha2025backdoor
+  - han2025adaptive
+  - li2025towards
+challenges:
+- id: guarantees
+  name: Theoretical Guarantees
+  keys:
+  - cheng2024multidelete
+  - li2024single
+  - liu2024pre
+  - wang2025muc
+  - kim2023towards
+  - park2024direct
+  - zhang2024forget
+  - suriyakumar2024unstable
+  - dai2023training
+  type: challenge
+- id: cross-modal-generalization
+  name: Cross-Modal Generalization
+  keys:
+  - li2024single
+  - dontsov2024clear
+  - cheng2024mu
+  - liu2025protecting
+  - moon2024holistic
+  - li2025sculpting
+  - kim2025not
+  - koudounas2025alexa
+  type: challenge
+- id: evaluation-reliability
+  name: Evaluation Reliability
+  keys:
+  - poppi2023removing
+  - xing2024efuf
+  - dai2023training
+  - moon2024holistic
+  - zhang2024unlearncanvas
+  type: challenge
+- id: adversarial-robustness
+  name: Adversarial Robustness
+  keys:
+  - bansal2023cleanclip
+  - zhang2023unlearnable
+  - liu2024multimodal
+  - liang2024badclip
+  - kumari2023ablating
+  - park2024direct
+  - liu2024metacloak
+  - chen2025score
+  - han2024probing
+  - dang2025diffzoo
+  - huang2024freezeasguard
+  - yoon2025safree
+  - han2025adaptive
+  - li2025towards
+  type: challenge
+- id: utility-tradeoffs
+  name: Utility Trade-offs
+  keys:
+  - bansal2023cleanclip
+  - cheng2024multidelete
+  - li2024single
+  - cheng2024mu
+  - kumari2023ablating
+  - liu2024metacloak
+  - han2025adaptive
+  - kim2024negmerge
+  - dai2023training
+  - biggs2024diffusion
+  - cywinski2025saeuron
+  - polowczyk2025unguide
+  type: challenge
+- id: unified-benchmarks
+  name: Unified Benchmarks
+  keys:
+  - cheng2024mu
+  - ma2024benchmarking
+  - xu2025pebench
+  - liu2025protecting
+  - koudounas2025alexa
+  - zhang2024unlearncanvas
+  - moon2024holistic
+  - sharma2024unlearning
+  type: challenge
+- id: temporal-dynamic
+  name: Temporal and Dynamic Modalities
+  keys:
+  - liu2024multimodal
+  - pathak2025quantum
+  - liu2024unlearning
+  - de2025human
+  type: direction
+- id: frontier-scale
+  name: Frontier-Scale Model Unlearning
+  keys:
+  - dontsov2024clear
+  - patilunlearning2024
+  - cheng2024mu
+  type: direction
+- id: continual
+  name: Sequential and Continual Unlearning
+  keys:
+  - kawakami2025pulse
+  - suriyakumar2024unstable
+  - li2025towards
+  - li2025sculpting
+  type: direction
+- id: fine-grained
+  name: Controllable and Fine-Grained Unlearning
+  keys:
+  - li2024single
+  - xing2024efuf
+  - sinha2025multi
+  - cheng2025speech
+  - kim2025no
+  - liu2024efficient
+  - park2024direct
+  - cywinski2025saeuron
+  - zhang2024unlearncanvas
+  type: direction
+- id: inference-time
+  name: Inference-Time Unlearning
+  keys:
+  - li2024get
+  - zhang2024steerdiff
+  - han2025adaptive
+  - park2025steering
+  type: direction
+- id: cross-modal-leakage
+  name: Cross-Modal Leakage Mitigation
+  keys:
+  - chakraborty2024can
+  - patilunlearning2024
+  - kawakami2025pulse
+  - liu2025protecting
+  type: direction
+attacks:
+- id: reactivation
+  name: Adversarial Reactivation Attacks
+  keys:
+  - kim2024automatic
+  - dang2025diffzoo
+  - zhang2025does
+  - han2024probing
+  - liu2025image
+- id: inference-defenses
+  name: Inference-time Defenses
+  keys:
+  - chen2025dual
+  - han2025adaptive
+surveys:
+- si2023knowledge
+- liu2024machine
+- blanco2025digital
+- liu2025rethinking
+- feng2025survey
+- geng2025comprehensive
+planner:
+  targets:
+  - id: identity
+    label: a face or identity
+  - id: voice
+    label: a voice or speaker
+  - id: style
+    label: an art style or copyrighted work
+  - id: nsfw
+    label: NSFW or harmful content
+  - id: class
+    label: an object class
+  - id: knowledge
+    label: a fact or private knowledge
+  - id: backdoor
+    label: a backdoor or poisoned data
+  - id: preference
+    label: a user preference
+  models:
+  - id: vlm
+    label: a VLM or MLLM
+  - id: clip
+    label: a CLIP-style encoder
+  - id: image-diffusion
+    label: an image diffusion model
+  - id: video
+    label: a video model
+  - id: audio
+    label: an audio or speech model
+  constraints:
+  - id: none
+    label: any limit
+  - id: no-retraining
+    label: retraining
+  - id: keep-weights
+    label: changing the base weights
+  stage_rules:
+    data-side:
+      no-retraining:
+        fit: 'no'
+        reason: It changes what future training sees.
+        why: reduce the learnability of targeted clusters
+      keep-weights:
+        fit: 'no'
+        reason: It acts before or during training, not on a deployed model.
+        why: edits inputs, not weights
+    training-time:
+      no-retraining:
+        fit: 'no'
+        reason: It updates the model by optimization.
+        why: updates parameters so that responses on the forget set degrade
+      keep-weights:
+        fit: 'no'
+        reason: It changes the weights.
+        why: updates parameters so that responses on the forget set degrade
+    architecture:
+      no-retraining:
+        fit: 'no'
+        reason: Pruning is followed by light fine-tuning.
+        why: modality-aware pruning with light fine-tuning
+      keep-weights:
+        fit: 'no'
+        reason: It changes the network structure.
+        why: modifying network structure through pruning, freezing, or controlled regrowth
+    training-free:
+      no-retraining:
+        fit: fits
+        reason: It uses closed-form edits instead of training.
+        why: replaces iterative optimization with closed-form edits in parameter space
+      keep-weights:
+        fit: partly
+        reason: Projecting activations keeps the weights; weight-space edits change them.
+        why: Instead of updating model parameters, these methods suppress target concepts by projecting internal activations
+    decoding-time:
+      no-retraining:
+        fit: fits
+        reason: It changes the sampler, not the model.
+        why: modifying the sampler rather than the model parameters
+      keep-weights:
+        fit: fits
+        reason: The base checkpoint stays fixed.
+        why: The base checkpoint remains fixed
+  gap_links:
+    audio: temporal-dynamic
+    video: temporal-dynamic
+    default: cross-modal-generalization
+background:
+- binkowski2018demystifying
+- carlini2022membership
+- chen2022wavlm
+- chu2023qwen
+- dodge2022measuring
+- dwork2006calibrating
+- goldman2020introduction
+- hessel2021clipscore
+- heusel2017gans
+- ho2020denoising
+- huang2024audiogpt
+- kirstain2023pick
+- lin2024evaluating
+- marino2019ok
+- schuhmann2022laion
+- shokri2017membership
+- solomon2014earth
+- team2023gemini
+- tong2021diffusion
+- unterthiner2019fvd
+- voigt2017eu
+- wang2025membership
+- yang2025qwen3
+- zhang2018unreasonable
