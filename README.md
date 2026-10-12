@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-<a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/"><img src="https://img.shields.io/badge/Project%20Page-1f77b4?style=for-the-badge&logo=google-chrome&logoColor=white"></a>&nbsp;<!----><a href="https://aclanthology.org/2026.findings-acl.1379/"><img src="https://img.shields.io/badge/Paper-ACL%202026-4B6CB7?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>&nbsp;<!----><a href="https://arxiv.org/abs/2607.07907"><img src="https://img.shields.io/badge/arXiv-2607.07907-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white"></a>&nbsp;<!----><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/"><img src="https://img.shields.io/badge/Project%20Page-1f77b4?style=for-the-badge&logo=google-chrome&logoColor=white"></a>&nbsp;<!----><a href="https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/explorer/"><img src="https://img.shields.io/badge/Explorer-search%20papers-1baf7a?style=for-the-badge&logo=google-chrome&logoColor=white"></a>&nbsp;<!----><a href="https://aclanthology.org/2026.findings-acl.1379/"><img src="https://img.shields.io/badge/Paper-ACL%202026-4B6CB7?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>&nbsp;<!----><a href="https://arxiv.org/abs/2607.07907"><img src="https://img.shields.io/badge/arXiv-2607.07907-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white"></a>&nbsp;<!----><a href="https://github.com/smsnobin77/Awesome-Multimodal-Unlearning/pulls"><img src="https://img.shields.io/badge/PRs-welcome-2ca02c?style=for-the-badge&logo=github&logoColor=white"></a>
 </div>
 &nbsp;
 
@@ -14,6 +14,7 @@
 
 ## 🎉 Latest News
 
+- **[2026-10-11]** 🔎 We release the **[Explorer](https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/explorer/)**: search the papers, and find methods, datasets, benchmarks, and metrics for what you need to forget.
 - **[2026-04-06]** 🎉 Our **Multimodal Unlearning Survey** is **accepted as Findings at ACL 2026**. We will present this work at the **ACL 2026** in **San Diego, CA**.
 - **[2026-02-28]** 🌐 We release the **[Project Page](https://smsnobin77.github.io/Awesome-Multimodal-Unlearning/)** for our **Multimodal Unlearning survey**.
 - **[2026-02-14]** 🚀 We launch the **Awesome Multimodal Unlearning** repository to track methods, datasets, and benchmarks. Check it out: [GitHub](https://github.com/smsnobin77/Awesome-Multimodal-Unlearning)  

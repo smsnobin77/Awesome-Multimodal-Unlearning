@@ -1,0 +1,39 @@
+name: Suggest a paper
+description: Suggest a paper on multimodal unlearning for the list and the explorer.
+title: "[Paper] "
+labels: ["paper suggestion"]
+body:
+  - type: input
+    id: paper-title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: arXiv, DOI, or venue page.
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Where does it fit?
+      options:
+        - Data-side
+        - Training-time
+        - Architecture-constrained
+        - Training-free
+        - Decoding-time
+        - Benchmark or dataset
+        - Evaluation or attack
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: What does it add?
+      description: One or two sentences, for example what it forgets and from which model.

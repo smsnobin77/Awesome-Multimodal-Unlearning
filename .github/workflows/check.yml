@@ -1,0 +1,22 @@
+name: Check paper list
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate data and generated files
+        run: uv run scripts/build.py --check
+      - name: Python tests
+        run: uv run --group dev --group import pytest -q
+      - name: JavaScript tests
+        run: node --test "tests/js/*.test.mjs"
+      - name: Search quality
+        run: node scripts/eval_search.mjs
